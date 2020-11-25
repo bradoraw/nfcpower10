@@ -5,6 +5,10 @@ D 475890001
 F https://www.molex.com/pdm_docs/ps/PS-47589-001-001.pdf
 $ENDCMP
 #
+$CMP ABM8G-25.000MHz-B4Y-T
+F http://www.abracon.com/Resonators/ABM8G.pdf
+$ENDCMP
+#
 $CMP ATTINY85-20MU
 D ATTINY85-20MU
 $ENDCMP
@@ -15,6 +19,10 @@ $ENDCMP
 #
 $CMP BAT54T1G
 F http://www.onsemi.cn/pub_link/Collateral/BAT54T1-D.PDF
+$ENDCMP
+#
+$CMP BSS138
+F https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
 $ENDCMP
 #
 $CMP C0603C209C5GACTU
@@ -155,6 +163,10 @@ $ENDCMP
 $CMP ST25R3916-AQWT
 D ST25R3916-AQWT
 F https://www.st.com/content/st_com/en/products/nfc/st25-nfc-rfid-tags-readers/st25-nfc-rfid-readers/st25r3916.html#resource
+$ENDCMP
+#
+$CMP Si5351A-B-GM
+F http://www.silabs.com/Support%20Documents/TechnicalDocs/Si5351.pdf
 $ENDCMP
 #
 $CMP TSX-3225_16.0000MF09Z-AC3

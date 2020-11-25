@@ -145,6 +145,42 @@ X MNT_4 9 -800 -300 100 R 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
+# project_ABM8G-25.000MHz-B4Y-T
+#
+DEF project_ABM8G-25.000MHz-B4Y-T Y 0 40 Y Y 1 L N
+F0 "Y" 0 200 50 H V L CNN
+F1 "project_ABM8G-25.000MHz-B4Y-T" 0 300 50 H V L CNN
+F2 "Abracon-ABM8G-25.000MHz-B4Y-T-*" 0 400 50 H I L CNN
+F3 "http://www.abracon.com/Resonators/ABM8G.pdf" 0 500 50 H I L CNN
+F4 "Crys" 0 600 50 H I L CNN "category"
+F5 "CRYSTAL 25.0000MHZ 10PF SMD" 0 700 50 H I L CNN "digikey description"
+F6 "535-10297-1-ND" 0 800 50 H I L CNN "digikey part number"
+F7 "yes" 0 900 50 H I L CNN "lead free"
+F8 "56785623d8bc8343" 0 1000 50 H I L CNN "library id"
+F9 "Abracon" 0 1100 50 H I L CNN "manufacturer"
+F10 "815-ABM8G-25-B4Y-T" 0 1200 50 H I L CNN "mouser part number"
+F11 "XTAL_SMT_3MM2_2MM5" 0 1300 50 H I L CNN "package"
+F12 "yes" 0 1400 50 H I L CNN "rohs"
+F13 "+70°C" 0 1500 50 H I L CNN "temperature range high"
+F14 "-20°C" 0 1600 50 H I L CNN "temperature range low"
+DRAW
+S 200 100 700 -500 1 1 0 f
+S 400 -60 530 -300 1 1 0 f
+P 2 1 1 0 200 -400 270 -400 N
+P 2 1 1 0 270 -180 270 -400 N
+P 2 1 1 0 360 -180 270 -180 N
+P 2 1 1 0 360 -60 360 -300 N
+P 2 1 1 0 570 -180 650 -180 N
+P 2 1 1 0 570 -60 570 -300 N
+P 2 1 1 0 650 -180 650 0 N
+P 2 1 1 0 650 0 700 0 N
+X 1 1 100 -400 100 R 40 0 1 1 U
+X GND 2 800 -400 100 L 40 0 1 1 U
+X 3 3 800 0 100 L 40 0 1 1 U
+X GND 4 100 0 100 R 40 0 1 1 U
+ENDDRAW
+ENDDEF
+#
 # project_ATMEGA328P-MU
 #
 DEF project_ATMEGA328P-MU U 0 40 Y Y 1 F N
@@ -289,6 +325,81 @@ P 2 1 1 0 200 100 200 -100 N
 P 4 1 1 0 100 -100 200 0 100 100 100 -100 N
 X K 1 300 0 100 L 40 0 1 1 P
 X A 2 0 0 100 R 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# project_BSS138
+#
+DEF project_BSS138 Q 0 40 Y Y 1 F N
+F0 "Q" 0 300 50 H V L CNN
+F1 "project_BSS138" 0 400 50 H V L CNN
+F2 "ON_Semiconductor-318-08-01_2018-AS-*" 0 500 50 H I L CNN
+F3 "" 0 600 50 H I L CNN
+F4 "No" 0 700 50 H I L CNN "automotive"
+F5 "Trans" 0 800 50 H I L CNN "category"
+F6 "0.22A" 0 900 50 H V L CNN "continuous drain current"
+F7 "False" 0 1000 50 H I L CNN "depletion mode"
+F8 "Discrete Semiconductors" 0 1100 50 H I L CNN "device class L1"
+F9 "Transistors" 0 1200 50 H I L CNN "device class L2"
+F10 "MOSFETs" 0 1300 50 H I L CNN "device class L3"
+F11 "MOSFET N-CH 50V 220MA SOT-23" 0 1400 50 H I L CNN "digikey description"
+F12 "BSS138CT-ND" 0 1500 50 H I L CNN "digikey part number"
+F13 "50V" 0 1600 50 H V L CNN "drain to source breakdown voltage"
+F14 "0.7Ω" 0 1700 50 H I L CNN "drain to source resistance"
+F15 "50V" 0 1800 50 H I L CNN "drain to source voltage"
+F16 "https://www.onsemi.com/pub/Collateral/318-08.PDF" 0 1900 50 H I L CNN "footprint url"
+F17 "1.7nC @ 10V" 0 2000 50 H I L CNN "gate charge at vgs"
+F18 "20V" 0 2100 50 H I L CNN "gate to source voltage"
+F19 "1.11mm" 0 2200 50 H I L CNN "height"
+F20 "27pF @ 25V" 0 2300 50 H I L CNN "input capacitace at vds"
+F21 "Yes" 0 2400 50 H I L CNN "lead free"
+F22 "3f36dc230686dcb0" 0 2500 50 H I L CNN "library id"
+F23 "ON Semiconductor" 0 2600 50 H I L CNN "manufacturer"
+F24 "1.4V" 0 2700 50 H I L CNN "max forward diode voltage"
+F25 "+150°C" 0 2800 50 H I L CNN "max junction temp"
+F26 "N-Channel Logic Level Enhancement Mode Field Effect Transistor, 50V, 220mA" 0 2900 50 H I L CNN "mouser description"
+F27 "512-BSS138" 0 3000 50 H I L CNN "mouser part number"
+F28 "1" 0 3100 50 H I L CNN "number of N channels"
+F29 "1" 0 3200 50 H I L CNN "number of channels"
+F30 "SOT23-3" 0 3300 50 H V L CNN "package"
+F31 "0.36W" 0 3400 50 H I L CNN "power dissipation"
+F32 "0.88A" 0 3500 50 H I L CNN "pulse drain current"
+F33 "Yes" 0 3600 50 H I L CNN "rohs"
+F34 "350°C/W" 0 3700 50 H I L CNN "rthja max"
+F35 "0.01mm" 0 3800 50 H I L CNN "standoff height"
+F36 "+150°C" 0 3900 50 H I L CNN "temperature range high"
+F37 "-55°C" 0 4000 50 H I L CNN "temperature range low"
+F38 "1.5V" 0 4100 50 H I L CNN "threshold vgs max"
+F39 "0.8V" 0 4200 50 H I L CNN "threshold vgs min"
+F40 "0.5S" 0 4300 50 H I L CNN "transconductance"
+F41 "20ns" 0 4400 50 H I L CNN "turn off delay time"
+F42 "2.5ns" 0 4500 50 H I L CNN "turn on delay time"
+F43 "0.8V" 0 4600 50 H I L CNN "typ forward diode voltage"
+DRAW
+C 400 -80 10 1 1 0 N
+C 400 80 10 1 1 0 N
+P 2 1 1 0 240 -100 240 100 N
+P 2 1 1 0 270 -80 400 -80 N
+P 2 1 1 0 270 -60 270 -100 N
+P 2 1 1 0 270 20 270 -20 N
+P 2 1 1 0 270 60 270 100 N
+P 2 1 1 0 270 80 400 80 N
+P 2 1 1 0 290 0 340 -30 N
+P 2 1 1 0 290 0 340 30 N
+P 2 1 1 0 300 0 400 0 N
+P 2 1 1 0 330 10 330 -20 N
+P 2 1 1 0 340 30 340 -30 N
+P 2 1 1 0 400 -80 470 -80 N
+P 2 1 1 0 450 -20 490 -20 N
+P 2 1 1 0 470 -80 470 80 N
+P 2 1 1 0 470 20 450 -20 N
+P 2 1 1 0 470 20 450 20 N
+P 2 1 1 0 470 20 490 20 N
+P 2 1 1 0 470 80 400 80 N
+P 2 1 1 0 490 -20 470 20 N
+X G 1 100 0 140 R 40 0 1 1 P
+X S 2 400 -200 200 U 40 0 1 1 P
+X D 3 400 200 120 D 40 0 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -1335,6 +1446,61 @@ X GND_D 6 1500 -2300 100 L 40 40 1 1 W
 X VDD_A 7 100 -100 100 R 40 40 1 1 W
 X VDD 8 100 0 100 R 40 40 1 1 W
 X VDD_RF 9 100 -600 100 R 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# project_Si5351A-B-GM
+#
+DEF project_Si5351A-B-GM U 0 40 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "project_Si5351A-B-GM" 0 300 50 H V L CNN
+F2 "Silicon_Labs-Si5351A-B-GM-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "J-STD-020" 0 600 50 H I L CNN "Code  IPC"
+F5 "MO-220" 0 700 50 H I L CNN "Code  JEDEC"
+F6 "Manufacturer URL" 0 800 50 H I L CNN "Component Link 1 Description"
+F7 "http://www.silabs.com/" 0 900 50 H I L CNN "Component Link 1 URL"
+F8 "Package Specification" 0 1000 50 H I L CNN "Component Link 3 Description"
+F9 "http://www.silabs.com/Support%20Documents/TechnicalDocs/Si5351.pdf" 0 1100 50 H I L CNN "Component Link 3 URL"
+F10 "Rev. 0.95" 0 1200 50 H I L CNN "Datasheet Version"
+F11 "Surface Mount" 0 1300 50 H I L CNN "Mounting Technology"
+F12 "LVCMOS" 0 1400 50 H I L CNN "Output Format"
+F13 "0.008 to 160" 0 1500 50 H I L CNN "Output Frequency MHz"
+F14 "20-Pin Quad-Flat No-Leads Package, Body 4 x 4 mm, Pitch 0.5 mm" 0 1600 50 H I L CNN "Package Description"
+F15 "1" 0 1700 50 H I L CNN "Reference Inputs"
+F16 "Clock Generators" 0 1800 50 H V L CNN "Sub  Family"
+F17 "2.5 V; 3.3 V" 0 1900 50 H I L CNN "VDD"
+F18 "IC" 0 2000 50 H I L CNN "category"
+F19 "4386444" 0 2100 50 H I L CNN "ciiva ids"
+F20 "94dbc972997910aa" 0 2200 50 H I L CNN "library id"
+F21 "Silicon Labs" 0 2300 50 H I L CNN "manufacturer"
+F22 "QFN-20" 0 2400 50 H V L CNN "package"
+F23 "1382511475" 0 2500 50 H I L CNN "release date"
+F24 "D7A7B2FA-AF5F-4168-9E2B-FBA693861CC4" 0 2600 50 H I L CNN "vault revision"
+F25 "yes" 0 2700 50 H I L CNN "imported"
+DRAW
+S 200 100 1000 -1400 1 1 0 f
+X XA 1 100 0 100 R 40 40 1 1 I C
+X VDDOB 10 100 -1100 100 R 40 40 1 1 W
+X VDDOA 11 100 -1000 100 R 40 40 1 1 W
+X CLK1 12 1100 -100 100 L 40 40 1 1 U
+X CLK0 13 1100 0 100 L 40 40 1 1 U
+X VDDOD 14 100 -1300 100 R 40 40 1 1 W
+X CLK7 15 1100 -700 100 L 40 40 1 1 U
+X CLK6 16 1100 -600 100 L 40 40 1 1 U
+X CLK5 17 1100 -500 100 L 40 40 1 1 U
+X VDDOC 18 100 -1200 100 R 40 40 1 1 W
+X CLK4 19 1100 -400 100 L 40 40 1 1 U
+X XB 2 100 -100 100 R 40 40 1 1 P
+X VDD 20 100 -900 100 R 40 40 1 1 W
+X GND 21 1100 -1300 100 L 40 40 1 1 W
+X A0 3 100 -500 100 R 40 40 1 1 I
+X SCL 4 100 -300 100 R 40 40 1 1 I C
+X SDA 5 100 -400 100 R 40 40 1 1 B
+X SSEN 6 100 -700 100 R 40 40 1 1 I
+X OEB 7 100 -600 100 R 40 40 1 1 I
+X CLK3 8 1100 -300 100 L 40 40 1 1 U
+X CLK2 9 1100 -200 100 L 40 40 1 1 U
 ENDDRAW
 ENDDEF
 #

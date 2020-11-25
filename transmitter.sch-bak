@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 6 11
+Sheet 2 11
 Title "NFC Power Transmitter"
 Date "2020-11-24"
 Rev "1"
@@ -24,20 +24,20 @@ SDA
 Text HLabel 3600 5900 2    50   UnSpc ~ 0
 IRQ
 $Comp
-L project:ST25R3916-AQWT U?
+L project:ST25R3916-AQWT U5
 U 1 1 5FBD9A74
 P 4850 1050
-AR Path="/5FBD86FB/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1DCBA/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1E11E/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1E1DD/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1E32F/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1FA4C/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1FA54/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1FA5C/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1FA64/5FBD9A74" Ref="U?"  Part="1" 
-AR Path="/5FC1FA6C/5FBD9A74" Ref="U?"  Part="1" 
-F 0 "U?" H 5650 1315 50  0000 C CNN
+AR Path="/5FBD86FB/5FBD9A74" Ref="U5"  Part="1" 
+AR Path="/5FC1DCBA/5FBD9A74" Ref="U7"  Part="1" 
+AR Path="/5FC1E11E/5FBD9A74" Ref="U9"  Part="1" 
+AR Path="/5FC1E1DD/5FBD9A74" Ref="U11"  Part="1" 
+AR Path="/5FC1E32F/5FBD9A74" Ref="U13"  Part="1" 
+AR Path="/5FC1FA4C/5FBD9A74" Ref="U15"  Part="1" 
+AR Path="/5FC1FA54/5FBD9A74" Ref="U17"  Part="1" 
+AR Path="/5FC1FA5C/5FBD9A74" Ref="U19"  Part="1" 
+AR Path="/5FC1FA64/5FBD9A74" Ref="U21"  Part="1" 
+AR Path="/5FC1FA6C/5FBD9A74" Ref="U23"  Part="1" 
+F 0 "U5" H 5650 1315 50  0000 C CNN
 F 1 "ST25R3916-AQWT" H 5650 1224 50  0000 C CNN
 F 2 "STMicroelectronics-VFQFPN32-B04R-0-1-*" H 4850 1450 50  0001 L CNN
 F 3 "https://www.st.com/content/st_com/en/products/nfc/st25-nfc-rfid-tags-readers/st25-nfc-rfid-readers/st25r3916.html#resource" H 4850 1550 50  0001 L CNN
@@ -70,20 +70,20 @@ F 28 "-40°C" H 4850 4050 50  0001 L CNN "temperature range low"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:CGA3E2C0G1H060D080AA C?
+L project:CGA3E2C0G1H060D080AA C26
 U 1 1 5FBDBDE3
 P 4450 3650
-AR Path="/5FBD86FB/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FBDBDE3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FBDBDE3" Ref="C?"  Part="1" 
-F 0 "C?" H 4578 3687 50  0000 L CNN
+AR Path="/5FBD86FB/5FBDBDE3" Ref="C26"  Part="1" 
+AR Path="/5FC1DCBA/5FBDBDE3" Ref="C54"  Part="1" 
+AR Path="/5FC1E11E/5FBDBDE3" Ref="C82"  Part="1" 
+AR Path="/5FC1E1DD/5FBDBDE3" Ref="C110"  Part="1" 
+AR Path="/5FC1E32F/5FBDBDE3" Ref="C138"  Part="1" 
+AR Path="/5FC1FA4C/5FBDBDE3" Ref="C166"  Part="1" 
+AR Path="/5FC1FA54/5FBDBDE3" Ref="C194"  Part="1" 
+AR Path="/5FC1FA5C/5FBDBDE3" Ref="C222"  Part="1" 
+AR Path="/5FC1FA64/5FBDBDE3" Ref="C250"  Part="1" 
+AR Path="/5FC1FA6C/5FBDBDE3" Ref="C278"  Part="1" 
+F 0 "C26" H 4578 3687 50  0000 L CNN
 F 1 "CGA3E2C0G1H060D080AA" H 4578 3596 50  0001 L CNN
 F 2 "TDK-CGA3E-0.3-0.1-0-0-*" H 4450 3950 50  0001 L CNN
 F 3 "https://product.tdk.com/info/en/catalog/spec/mlccspec_automotive_general_en.pdf" H 4450 4050 50  0001 L CNN
@@ -152,20 +152,20 @@ Connection ~ 6700 4000
 Wire Wire Line
 	6700 4000 6700 4100
 $Comp
-L project:CC0603MRX5R5BB225 C?
+L project:CC0603MRX5R5BB225 C32
 U 1 1 5FBE0122
 P 6700 2200
-AR Path="/5FBD86FB/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FBE0122" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FBE0122" Ref="C?"  Part="1" 
-F 0 "C?" H 6828 2237 50  0000 L CNN
+AR Path="/5FBD86FB/5FBE0122" Ref="C32"  Part="1" 
+AR Path="/5FC1DCBA/5FBE0122" Ref="C60"  Part="1" 
+AR Path="/5FC1E11E/5FBE0122" Ref="C88"  Part="1" 
+AR Path="/5FC1E1DD/5FBE0122" Ref="C116"  Part="1" 
+AR Path="/5FC1E32F/5FBE0122" Ref="C144"  Part="1" 
+AR Path="/5FC1FA4C/5FBE0122" Ref="C172"  Part="1" 
+AR Path="/5FC1FA54/5FBE0122" Ref="C200"  Part="1" 
+AR Path="/5FC1FA5C/5FBE0122" Ref="C228"  Part="1" 
+AR Path="/5FC1FA64/5FBE0122" Ref="C256"  Part="1" 
+AR Path="/5FC1FA6C/5FBE0122" Ref="C284"  Part="1" 
+F 0 "C32" H 6828 2237 50  0000 L CNN
 F 1 "CC0603MRX5R5BB225" H 6828 2055 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 6700 2500 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6700 2600 50  0001 L CNN
@@ -212,20 +212,20 @@ Wire Wire Line
 	6700 2400 6700 2600
 Connection ~ 6700 2950
 $Comp
-L project:CC0603KRX7R9BB103 C?
+L project:CC0603KRX7R9BB103 C33
 U 1 1 5FBE555E
 P 7200 2200
-AR Path="/5FBD86FB/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FBE555E" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FBE555E" Ref="C?"  Part="1" 
-F 0 "C?" H 7328 2237 50  0000 L CNN
+AR Path="/5FBD86FB/5FBE555E" Ref="C33"  Part="1" 
+AR Path="/5FC1DCBA/5FBE555E" Ref="C61"  Part="1" 
+AR Path="/5FC1E11E/5FBE555E" Ref="C89"  Part="1" 
+AR Path="/5FC1E1DD/5FBE555E" Ref="C117"  Part="1" 
+AR Path="/5FC1E32F/5FBE555E" Ref="C145"  Part="1" 
+AR Path="/5FC1FA4C/5FBE555E" Ref="C173"  Part="1" 
+AR Path="/5FC1FA54/5FBE555E" Ref="C201"  Part="1" 
+AR Path="/5FC1FA5C/5FBE555E" Ref="C229"  Part="1" 
+AR Path="/5FC1FA64/5FBE555E" Ref="C257"  Part="1" 
+AR Path="/5FC1FA6C/5FBE555E" Ref="C285"  Part="1" 
+F 0 "C33" H 7328 2237 50  0000 L CNN
 F 1 "CC0603KRX7R9BB103" H 7200 2400 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 7200 2500 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 7200 2600 50  0001 L CNN
@@ -270,20 +270,20 @@ Connection ~ 6700 2600
 Wire Wire Line
 	6700 2600 6700 2950
 $Comp
-L project:MLJ1608WR27JT000 L?
+L project:MLJ1608WR27JT000 L1
 U 1 1 5FBE783B
 P 7050 1050
-AR Path="/5FBD86FB/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1DCBA/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1E11E/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1E1DD/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1E32F/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1FA4C/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1FA54/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1FA5C/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1FA64/5FBE783B" Ref="L?"  Part="1" 
-AR Path="/5FC1FA6C/5FBE783B" Ref="L?"  Part="1" 
-F 0 "L?" H 7050 1424 50  0000 C CNN
+AR Path="/5FBD86FB/5FBE783B" Ref="L1"  Part="1" 
+AR Path="/5FC1DCBA/5FBE783B" Ref="L3"  Part="1" 
+AR Path="/5FC1E11E/5FBE783B" Ref="L5"  Part="1" 
+AR Path="/5FC1E1DD/5FBE783B" Ref="L7"  Part="1" 
+AR Path="/5FC1E32F/5FBE783B" Ref="L9"  Part="1" 
+AR Path="/5FC1FA4C/5FBE783B" Ref="L11"  Part="1" 
+AR Path="/5FC1FA54/5FBE783B" Ref="L13"  Part="1" 
+AR Path="/5FC1FA5C/5FBE783B" Ref="L15"  Part="1" 
+AR Path="/5FC1FA64/5FBE783B" Ref="L17"  Part="1" 
+AR Path="/5FC1FA6C/5FBE783B" Ref="L19"  Part="1" 
+F 0 "L1" H 7050 1424 50  0000 C CNN
 F 1 "MLJ1608WR27JT000" H 6850 1600 50  0001 L BNN
 F 2 "INDC1608X95N" H 6850 1500 50  0001 L BNN
 F 3 "" H 7050 1050 50  0001 C CNN
@@ -295,20 +295,20 @@ F 7 "260MHz" H 7000 1700 50  0001 C CNN "Self Resonance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:MLJ1608WR27JT000 L?
+L project:MLJ1608WR27JT000 L2
 U 1 1 5FBE93D3
 P 7050 1850
-AR Path="/5FBD86FB/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1DCBA/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1E11E/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1E1DD/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1E32F/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1FA4C/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1FA54/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1FA5C/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1FA64/5FBE93D3" Ref="L?"  Part="1" 
-AR Path="/5FC1FA6C/5FBE93D3" Ref="L?"  Part="1" 
-F 0 "L?" H 7050 2224 50  0000 C CNN
+AR Path="/5FBD86FB/5FBE93D3" Ref="L2"  Part="1" 
+AR Path="/5FC1DCBA/5FBE93D3" Ref="L4"  Part="1" 
+AR Path="/5FC1E11E/5FBE93D3" Ref="L6"  Part="1" 
+AR Path="/5FC1E1DD/5FBE93D3" Ref="L8"  Part="1" 
+AR Path="/5FC1E32F/5FBE93D3" Ref="L10"  Part="1" 
+AR Path="/5FC1FA4C/5FBE93D3" Ref="L12"  Part="1" 
+AR Path="/5FC1FA54/5FBE93D3" Ref="L14"  Part="1" 
+AR Path="/5FC1FA5C/5FBE93D3" Ref="L16"  Part="1" 
+AR Path="/5FC1FA64/5FBE93D3" Ref="L18"  Part="1" 
+AR Path="/5FC1FA6C/5FBE93D3" Ref="L20"  Part="1" 
+F 0 "L2" H 7050 2224 50  0000 C CNN
 F 1 "MLJ1608WR27JT000" H 6850 2400 50  0001 L BNN
 F 2 "INDC1608X95N" H 6850 2300 50  0001 L BNN
 F 3 "" H 7050 1850 50  0001 C CNN
@@ -326,20 +326,20 @@ Wire Wire Line
 Wire Wire Line
 	6600 1850 6750 1850
 $Comp
-L project:CC0603KRX7R9BB102 C?
+L project:CC0603KRX7R9BB102 C36
 U 1 1 5FBECF7A
 P 7500 1150
-AR Path="/5FBD86FB/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FBECF7A" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FBECF7A" Ref="C?"  Part="1" 
-F 0 "C?" H 7628 1187 50  0000 L CNN
+AR Path="/5FBD86FB/5FBECF7A" Ref="C36"  Part="1" 
+AR Path="/5FC1DCBA/5FBECF7A" Ref="C64"  Part="1" 
+AR Path="/5FC1E11E/5FBECF7A" Ref="C92"  Part="1" 
+AR Path="/5FC1E1DD/5FBECF7A" Ref="C120"  Part="1" 
+AR Path="/5FC1E32F/5FBECF7A" Ref="C148"  Part="1" 
+AR Path="/5FC1FA4C/5FBECF7A" Ref="C176"  Part="1" 
+AR Path="/5FC1FA54/5FBECF7A" Ref="C204"  Part="1" 
+AR Path="/5FC1FA5C/5FBECF7A" Ref="C232"  Part="1" 
+AR Path="/5FC1FA64/5FBECF7A" Ref="C260"  Part="1" 
+AR Path="/5FC1FA6C/5FBECF7A" Ref="C288"  Part="1" 
+F 0 "C36" H 7628 1187 50  0000 L CNN
 F 1 "CC0603KRX7R9BB102" H 7500 1350 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 7500 1450 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 7500 1550 50  0001 L CNN
@@ -372,20 +372,20 @@ F 28 "50 V" H 7500 4050 50  0001 L CNN "voltage rating"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:CC0603KRX7R9BB102 C?
+L project:CC0603KRX7R9BB102 C37
 U 1 1 5FBEFCB6
 P 7500 1550
-AR Path="/5FBD86FB/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FBEFCB6" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FBEFCB6" Ref="C?"  Part="1" 
-F 0 "C?" H 7628 1587 50  0000 L CNN
+AR Path="/5FBD86FB/5FBEFCB6" Ref="C37"  Part="1" 
+AR Path="/5FC1DCBA/5FBEFCB6" Ref="C65"  Part="1" 
+AR Path="/5FC1E11E/5FBEFCB6" Ref="C93"  Part="1" 
+AR Path="/5FC1E1DD/5FBEFCB6" Ref="C121"  Part="1" 
+AR Path="/5FC1E32F/5FBEFCB6" Ref="C149"  Part="1" 
+AR Path="/5FC1FA4C/5FBEFCB6" Ref="C177"  Part="1" 
+AR Path="/5FC1FA54/5FBEFCB6" Ref="C205"  Part="1" 
+AR Path="/5FC1FA5C/5FBEFCB6" Ref="C233"  Part="1" 
+AR Path="/5FC1FA64/5FBEFCB6" Ref="C261"  Part="1" 
+AR Path="/5FC1FA6C/5FBEFCB6" Ref="C289"  Part="1" 
+F 0 "C37" H 7628 1587 50  0000 L CNN
 F 1 "CC0603KRX7R9BB102" H 7500 1750 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 7500 1850 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 7500 1950 50  0001 L CNN
@@ -431,20 +431,20 @@ Wire Wire Line
 Text Label 7300 1450 0    50   ~ 0
 GND
 $Comp
-L project:Coil_49_18_6T_2Layer Y?
+L project:Coil_49_18_6T_2Layer Y4
 U 1 1 5FBF2B0F
 P 8750 1650
-AR Path="/5FBD86FB/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1DCBA/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1E11E/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1E1DD/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1E32F/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1FA4C/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1FA54/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1FA5C/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1FA64/5FBF2B0F" Ref="Y?"  Part="1" 
-AR Path="/5FC1FA6C/5FBF2B0F" Ref="Y?"  Part="1" 
-F 0 "Y?" H 9278 1696 50  0000 L CNN
+AR Path="/5FBD86FB/5FBF2B0F" Ref="Y4"  Part="1" 
+AR Path="/5FC1DCBA/5FBF2B0F" Ref="Y7"  Part="1" 
+AR Path="/5FC1E11E/5FBF2B0F" Ref="Y10"  Part="1" 
+AR Path="/5FC1E1DD/5FBF2B0F" Ref="Y13"  Part="1" 
+AR Path="/5FC1E32F/5FBF2B0F" Ref="Y16"  Part="1" 
+AR Path="/5FC1FA4C/5FBF2B0F" Ref="Y19"  Part="1" 
+AR Path="/5FC1FA54/5FBF2B0F" Ref="Y22"  Part="1" 
+AR Path="/5FC1FA5C/5FBF2B0F" Ref="Y25"  Part="1" 
+AR Path="/5FC1FA64/5FBF2B0F" Ref="Y28"  Part="1" 
+AR Path="/5FC1FA6C/5FBF2B0F" Ref="Y31"  Part="1" 
+F 0 "Y4" H 9278 1696 50  0000 L CNN
 F 1 "Coil_49_18_6T_2Layer" H 9278 1605 50  0000 L CNN
 F 2 "NFCPower:Coil_49_18_6T_2Layer" H 9750 1450 50  0001 C CNN
 F 3 "" H 8750 1650 50  0001 C CNN
@@ -486,20 +486,20 @@ NoConn ~ 4950 3050
 Text HLabel 3200 3450 0    50   Input ~ 0
 CLK
 $Comp
-L project:CGA3E2C0G1H060D080AA C?
+L project:CGA3E2C0G1H060D080AA C25
 U 1 1 5FBFF6D7
 P 3950 3650
-AR Path="/5FBD86FB/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FBFF6D7" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FBFF6D7" Ref="C?"  Part="1" 
-F 0 "C?" H 4078 3687 50  0000 L CNN
+AR Path="/5FBD86FB/5FBFF6D7" Ref="C25"  Part="1" 
+AR Path="/5FC1DCBA/5FBFF6D7" Ref="C53"  Part="1" 
+AR Path="/5FC1E11E/5FBFF6D7" Ref="C81"  Part="1" 
+AR Path="/5FC1E1DD/5FBFF6D7" Ref="C109"  Part="1" 
+AR Path="/5FC1E32F/5FBFF6D7" Ref="C137"  Part="1" 
+AR Path="/5FC1FA4C/5FBFF6D7" Ref="C165"  Part="1" 
+AR Path="/5FC1FA54/5FBFF6D7" Ref="C193"  Part="1" 
+AR Path="/5FC1FA5C/5FBFF6D7" Ref="C221"  Part="1" 
+AR Path="/5FC1FA64/5FBFF6D7" Ref="C249"  Part="1" 
+AR Path="/5FC1FA6C/5FBFF6D7" Ref="C277"  Part="1" 
+F 0 "C25" H 4078 3687 50  0000 L CNN
 F 1 "CGA3E2C0G1H060D080AA" H 4078 3596 50  0001 L CNN
 F 2 "TDK-CGA3E-0.3-0.1-0-0-*" H 3950 3950 50  0001 L CNN
 F 3 "https://product.tdk.com/info/en/catalog/spec/mlccspec_automotive_general_en.pdf" H 3950 4050 50  0001 L CNN
@@ -543,20 +543,20 @@ Wire Wire Line
 	4700 1050 4700 850 
 Connection ~ 4700 1050
 $Comp
-L project:CC0603KRX7R9BB181 C?
+L project:CC0603KRX7R9BB181 C38
 U 1 1 5FC15023
 P 8600 1150
-AR Path="/5FBD86FB/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC15023" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC15023" Ref="C?"  Part="1" 
-F 0 "C?" H 8728 1187 50  0000 L CNN
+AR Path="/5FBD86FB/5FC15023" Ref="C38"  Part="1" 
+AR Path="/5FC1DCBA/5FC15023" Ref="C66"  Part="1" 
+AR Path="/5FC1E11E/5FC15023" Ref="C94"  Part="1" 
+AR Path="/5FC1E1DD/5FC15023" Ref="C122"  Part="1" 
+AR Path="/5FC1E32F/5FC15023" Ref="C150"  Part="1" 
+AR Path="/5FC1FA4C/5FC15023" Ref="C178"  Part="1" 
+AR Path="/5FC1FA54/5FC15023" Ref="C206"  Part="1" 
+AR Path="/5FC1FA5C/5FC15023" Ref="C234"  Part="1" 
+AR Path="/5FC1FA64/5FC15023" Ref="C262"  Part="1" 
+AR Path="/5FC1FA6C/5FC15023" Ref="C290"  Part="1" 
+F 0 "C38" H 8728 1187 50  0000 L CNN
 F 1 "CC0603KRX7R9BB181" H 8600 1350 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 8600 1450 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 8600 1550 50  0001 L CNN
@@ -600,20 +600,20 @@ Wire Wire Line
 	8600 1050 7500 1050
 Connection ~ 7500 1050
 $Comp
-L project:CC0603MRX5R5BB225 C?
+L project:CC0603MRX5R5BB225 C14
 U 1 1 5FC212B3
 P 1250 1400
-AR Path="/5FBD86FB/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC212B3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC212B3" Ref="C?"  Part="1" 
-F 0 "C?" H 1378 1437 50  0000 L CNN
+AR Path="/5FBD86FB/5FC212B3" Ref="C14"  Part="1" 
+AR Path="/5FC1DCBA/5FC212B3" Ref="C42"  Part="1" 
+AR Path="/5FC1E11E/5FC212B3" Ref="C70"  Part="1" 
+AR Path="/5FC1E1DD/5FC212B3" Ref="C98"  Part="1" 
+AR Path="/5FC1E32F/5FC212B3" Ref="C126"  Part="1" 
+AR Path="/5FC1FA4C/5FC212B3" Ref="C154"  Part="1" 
+AR Path="/5FC1FA54/5FC212B3" Ref="C182"  Part="1" 
+AR Path="/5FC1FA5C/5FC212B3" Ref="C210"  Part="1" 
+AR Path="/5FC1FA64/5FC212B3" Ref="C238"  Part="1" 
+AR Path="/5FC1FA6C/5FC212B3" Ref="C266"  Part="1" 
+F 0 "C14" H 1378 1437 50  0000 L CNN
 F 1 "CC0603MRX5R5BB225" H 1378 1255 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 1250 1700 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 1250 1800 50  0001 L CNN
@@ -650,20 +650,20 @@ Wire Wire Line
 Wire Wire Line
 	1250 1600 1250 1800
 $Comp
-L project:CC0603KRX7R9BB103 C?
+L project:CC0603KRX7R9BB103 C16
 U 1 1 5FC212D5
 P 1750 1400
-AR Path="/5FBD86FB/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC212D5" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC212D5" Ref="C?"  Part="1" 
-F 0 "C?" H 1878 1437 50  0000 L CNN
+AR Path="/5FBD86FB/5FC212D5" Ref="C16"  Part="1" 
+AR Path="/5FC1DCBA/5FC212D5" Ref="C44"  Part="1" 
+AR Path="/5FC1E11E/5FC212D5" Ref="C72"  Part="1" 
+AR Path="/5FC1E1DD/5FC212D5" Ref="C100"  Part="1" 
+AR Path="/5FC1E32F/5FC212D5" Ref="C128"  Part="1" 
+AR Path="/5FC1FA4C/5FC212D5" Ref="C156"  Part="1" 
+AR Path="/5FC1FA54/5FC212D5" Ref="C184"  Part="1" 
+AR Path="/5FC1FA5C/5FC212D5" Ref="C212"  Part="1" 
+AR Path="/5FC1FA64/5FC212D5" Ref="C240"  Part="1" 
+AR Path="/5FC1FA6C/5FC212D5" Ref="C268"  Part="1" 
+F 0 "C16" H 1878 1437 50  0000 L CNN
 F 1 "CC0603KRX7R9BB103" H 1750 1600 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 1750 1700 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 1750 1800 50  0001 L CNN
@@ -704,20 +704,20 @@ Wire Wire Line
 Wire Wire Line
 	1750 1800 1250 1800
 $Comp
-L project:CC0603MRX5R5BB225 C?
+L project:CC0603MRX5R5BB225 C22
 U 1 1 5FC2C871
 P 3250 1400
-AR Path="/5FBD86FB/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC2C871" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC2C871" Ref="C?"  Part="1" 
-F 0 "C?" H 3378 1437 50  0000 L CNN
+AR Path="/5FBD86FB/5FC2C871" Ref="C22"  Part="1" 
+AR Path="/5FC1DCBA/5FC2C871" Ref="C50"  Part="1" 
+AR Path="/5FC1E11E/5FC2C871" Ref="C78"  Part="1" 
+AR Path="/5FC1E1DD/5FC2C871" Ref="C106"  Part="1" 
+AR Path="/5FC1E32F/5FC2C871" Ref="C134"  Part="1" 
+AR Path="/5FC1FA4C/5FC2C871" Ref="C162"  Part="1" 
+AR Path="/5FC1FA54/5FC2C871" Ref="C190"  Part="1" 
+AR Path="/5FC1FA5C/5FC2C871" Ref="C218"  Part="1" 
+AR Path="/5FC1FA64/5FC2C871" Ref="C246"  Part="1" 
+AR Path="/5FC1FA6C/5FC2C871" Ref="C274"  Part="1" 
+F 0 "C22" H 3378 1437 50  0000 L CNN
 F 1 "CC0603MRX5R5BB225" H 3378 1255 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 3250 1700 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 3250 1800 50  0001 L CNN
@@ -754,20 +754,20 @@ Wire Wire Line
 Wire Wire Line
 	3250 1600 3250 1800
 $Comp
-L project:CC0603KRX7R9BB103 C?
+L project:CC0603KRX7R9BB103 C24
 U 1 1 5FC2C893
 P 3750 1400
-AR Path="/5FBD86FB/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC2C893" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC2C893" Ref="C?"  Part="1" 
-F 0 "C?" H 3878 1437 50  0000 L CNN
+AR Path="/5FBD86FB/5FC2C893" Ref="C24"  Part="1" 
+AR Path="/5FC1DCBA/5FC2C893" Ref="C52"  Part="1" 
+AR Path="/5FC1E11E/5FC2C893" Ref="C80"  Part="1" 
+AR Path="/5FC1E1DD/5FC2C893" Ref="C108"  Part="1" 
+AR Path="/5FC1E32F/5FC2C893" Ref="C136"  Part="1" 
+AR Path="/5FC1FA4C/5FC2C893" Ref="C164"  Part="1" 
+AR Path="/5FC1FA54/5FC2C893" Ref="C192"  Part="1" 
+AR Path="/5FC1FA5C/5FC2C893" Ref="C220"  Part="1" 
+AR Path="/5FC1FA64/5FC2C893" Ref="C248"  Part="1" 
+AR Path="/5FC1FA6C/5FC2C893" Ref="C276"  Part="1" 
+F 0 "C24" H 3878 1437 50  0000 L CNN
 F 1 "CC0603KRX7R9BB103" H 3750 1600 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 3750 1700 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 3750 1800 50  0001 L CNN
@@ -808,20 +808,20 @@ Wire Wire Line
 Wire Wire Line
 	3750 1800 3250 1800
 $Comp
-L project:CC0603MRX5R5BB225 C?
+L project:CC0603MRX5R5BB225 C18
 U 1 1 5FC32725
 P 2250 1400
-AR Path="/5FBD86FB/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC32725" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC32725" Ref="C?"  Part="1" 
-F 0 "C?" H 2378 1437 50  0000 L CNN
+AR Path="/5FBD86FB/5FC32725" Ref="C18"  Part="1" 
+AR Path="/5FC1DCBA/5FC32725" Ref="C46"  Part="1" 
+AR Path="/5FC1E11E/5FC32725" Ref="C74"  Part="1" 
+AR Path="/5FC1E1DD/5FC32725" Ref="C102"  Part="1" 
+AR Path="/5FC1E32F/5FC32725" Ref="C130"  Part="1" 
+AR Path="/5FC1FA4C/5FC32725" Ref="C158"  Part="1" 
+AR Path="/5FC1FA54/5FC32725" Ref="C186"  Part="1" 
+AR Path="/5FC1FA5C/5FC32725" Ref="C214"  Part="1" 
+AR Path="/5FC1FA64/5FC32725" Ref="C242"  Part="1" 
+AR Path="/5FC1FA6C/5FC32725" Ref="C270"  Part="1" 
+F 0 "C18" H 2378 1437 50  0000 L CNN
 F 1 "CC0603MRX5R5BB225" H 2378 1255 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 2250 1700 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2250 1800 50  0001 L CNN
@@ -858,20 +858,20 @@ Wire Wire Line
 Wire Wire Line
 	2250 1600 2250 1800
 $Comp
-L project:CC0603KRX7R9BB103 C?
+L project:CC0603KRX7R9BB103 C20
 U 1 1 5FC32746
 P 2750 1400
-AR Path="/5FBD86FB/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC32746" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC32746" Ref="C?"  Part="1" 
-F 0 "C?" H 2878 1437 50  0000 L CNN
+AR Path="/5FBD86FB/5FC32746" Ref="C20"  Part="1" 
+AR Path="/5FC1DCBA/5FC32746" Ref="C48"  Part="1" 
+AR Path="/5FC1E11E/5FC32746" Ref="C76"  Part="1" 
+AR Path="/5FC1E1DD/5FC32746" Ref="C104"  Part="1" 
+AR Path="/5FC1E32F/5FC32746" Ref="C132"  Part="1" 
+AR Path="/5FC1FA4C/5FC32746" Ref="C160"  Part="1" 
+AR Path="/5FC1FA54/5FC32746" Ref="C188"  Part="1" 
+AR Path="/5FC1FA5C/5FC32746" Ref="C216"  Part="1" 
+AR Path="/5FC1FA64/5FC32746" Ref="C244"  Part="1" 
+AR Path="/5FC1FA6C/5FC32746" Ref="C272"  Part="1" 
+F 0 "C20" H 2878 1437 50  0000 L CNN
 F 1 "CC0603KRX7R9BB103" H 2750 1600 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 2750 1700 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2750 1800 50  0001 L CNN
@@ -925,20 +925,20 @@ Wire Wire Line
 	1750 1050 1750 1250
 Connection ~ 1750 1250
 $Comp
-L project:CC0603MRX5R5BB225 C?
+L project:CC0603MRX5R5BB225 C15
 U 1 1 5FC679AB
 P 1250 2250
-AR Path="/5FBD86FB/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC679AB" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC679AB" Ref="C?"  Part="1" 
-F 0 "C?" H 1378 2287 50  0000 L CNN
+AR Path="/5FBD86FB/5FC679AB" Ref="C15"  Part="1" 
+AR Path="/5FC1DCBA/5FC679AB" Ref="C43"  Part="1" 
+AR Path="/5FC1E11E/5FC679AB" Ref="C71"  Part="1" 
+AR Path="/5FC1E1DD/5FC679AB" Ref="C99"  Part="1" 
+AR Path="/5FC1E32F/5FC679AB" Ref="C127"  Part="1" 
+AR Path="/5FC1FA4C/5FC679AB" Ref="C155"  Part="1" 
+AR Path="/5FC1FA54/5FC679AB" Ref="C183"  Part="1" 
+AR Path="/5FC1FA5C/5FC679AB" Ref="C211"  Part="1" 
+AR Path="/5FC1FA64/5FC679AB" Ref="C239"  Part="1" 
+AR Path="/5FC1FA6C/5FC679AB" Ref="C267"  Part="1" 
+F 0 "C15" H 1378 2287 50  0000 L CNN
 F 1 "CC0603MRX5R5BB225" H 1378 2105 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 1250 2550 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 1250 2650 50  0001 L CNN
@@ -975,20 +975,20 @@ Wire Wire Line
 Wire Wire Line
 	1250 2450 1250 2650
 $Comp
-L project:CC0603KRX7R9BB103 C?
+L project:CC0603KRX7R9BB103 C17
 U 1 1 5FC679CC
 P 1750 2250
-AR Path="/5FBD86FB/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC679CC" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC679CC" Ref="C?"  Part="1" 
-F 0 "C?" H 1878 2287 50  0000 L CNN
+AR Path="/5FBD86FB/5FC679CC" Ref="C17"  Part="1" 
+AR Path="/5FC1DCBA/5FC679CC" Ref="C45"  Part="1" 
+AR Path="/5FC1E11E/5FC679CC" Ref="C73"  Part="1" 
+AR Path="/5FC1E1DD/5FC679CC" Ref="C101"  Part="1" 
+AR Path="/5FC1E32F/5FC679CC" Ref="C129"  Part="1" 
+AR Path="/5FC1FA4C/5FC679CC" Ref="C157"  Part="1" 
+AR Path="/5FC1FA54/5FC679CC" Ref="C185"  Part="1" 
+AR Path="/5FC1FA5C/5FC679CC" Ref="C213"  Part="1" 
+AR Path="/5FC1FA64/5FC679CC" Ref="C241"  Part="1" 
+AR Path="/5FC1FA6C/5FC679CC" Ref="C269"  Part="1" 
+F 0 "C17" H 1878 2287 50  0000 L CNN
 F 1 "CC0603KRX7R9BB103" H 1750 2450 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 1750 2550 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 1750 2650 50  0001 L CNN
@@ -1029,20 +1029,20 @@ Wire Wire Line
 Wire Wire Line
 	1750 2650 1250 2650
 $Comp
-L project:CC0603MRX5R5BB225 C?
+L project:CC0603MRX5R5BB225 C19
 U 1 1 5FC67A34
 P 2250 2250
-AR Path="/5FBD86FB/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC67A34" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC67A34" Ref="C?"  Part="1" 
-F 0 "C?" H 2378 2287 50  0000 L CNN
+AR Path="/5FBD86FB/5FC67A34" Ref="C19"  Part="1" 
+AR Path="/5FC1DCBA/5FC67A34" Ref="C47"  Part="1" 
+AR Path="/5FC1E11E/5FC67A34" Ref="C75"  Part="1" 
+AR Path="/5FC1E1DD/5FC67A34" Ref="C103"  Part="1" 
+AR Path="/5FC1E32F/5FC67A34" Ref="C131"  Part="1" 
+AR Path="/5FC1FA4C/5FC67A34" Ref="C159"  Part="1" 
+AR Path="/5FC1FA54/5FC67A34" Ref="C187"  Part="1" 
+AR Path="/5FC1FA5C/5FC67A34" Ref="C215"  Part="1" 
+AR Path="/5FC1FA64/5FC67A34" Ref="C243"  Part="1" 
+AR Path="/5FC1FA6C/5FC67A34" Ref="C271"  Part="1" 
+F 0 "C19" H 2378 2287 50  0000 L CNN
 F 1 "CC0603MRX5R5BB225" H 2378 2105 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 2250 2550 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2250 2650 50  0001 L CNN
@@ -1079,20 +1079,20 @@ Wire Wire Line
 Wire Wire Line
 	2250 2450 2250 2650
 $Comp
-L project:CC0603KRX7R9BB103 C?
+L project:CC0603KRX7R9BB103 C21
 U 1 1 5FC67A55
 P 2750 2250
-AR Path="/5FBD86FB/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/5FC67A55" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/5FC67A55" Ref="C?"  Part="1" 
-F 0 "C?" H 2878 2287 50  0000 L CNN
+AR Path="/5FBD86FB/5FC67A55" Ref="C21"  Part="1" 
+AR Path="/5FC1DCBA/5FC67A55" Ref="C49"  Part="1" 
+AR Path="/5FC1E11E/5FC67A55" Ref="C77"  Part="1" 
+AR Path="/5FC1E1DD/5FC67A55" Ref="C105"  Part="1" 
+AR Path="/5FC1E32F/5FC67A55" Ref="C133"  Part="1" 
+AR Path="/5FC1FA4C/5FC67A55" Ref="C161"  Part="1" 
+AR Path="/5FC1FA54/5FC67A55" Ref="C189"  Part="1" 
+AR Path="/5FC1FA5C/5FC67A55" Ref="C217"  Part="1" 
+AR Path="/5FC1FA64/5FC67A55" Ref="C245"  Part="1" 
+AR Path="/5FC1FA6C/5FC67A55" Ref="C273"  Part="1" 
+F 0 "C21" H 2878 2287 50  0000 L CNN
 F 1 "CC0603KRX7R9BB103" H 2750 2450 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 2750 2550 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2750 2650 50  0001 L CNN
@@ -1187,12 +1187,20 @@ SDA
 Text Label 4650 2550 0    50   ~ 0
 SCL
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
+L Connector_Generic:Conn_02x03_Odd_Even J18
 U 1 1 5FCBDD08
 P 5400 7350
-AR Path="/5FC1E32F/5FCBDD08" Ref="J?"  Part="1" 
-AR Path="/5FBD86FB/5FCBDD08" Ref="J?"  Part="1" 
-F 0 "J?" H 5450 7667 50  0000 C CNN
+AR Path="/5FC1E32F/5FCBDD08" Ref="J18"  Part="1" 
+AR Path="/5FBD86FB/5FCBDD08" Ref="J6"  Part="1" 
+AR Path="/5FC1DCBA/5FCBDD08" Ref="J9"  Part="1" 
+AR Path="/5FC1E11E/5FCBDD08" Ref="J12"  Part="1" 
+AR Path="/5FC1E1DD/5FCBDD08" Ref="J15"  Part="1" 
+AR Path="/5FC1FA4C/5FCBDD08" Ref="J21"  Part="1" 
+AR Path="/5FC1FA54/5FCBDD08" Ref="J24"  Part="1" 
+AR Path="/5FC1FA5C/5FCBDD08" Ref="J27"  Part="1" 
+AR Path="/5FC1FA64/5FCBDD08" Ref="J30"  Part="1" 
+AR Path="/5FC1FA6C/5FCBDD08" Ref="J33"  Part="1" 
+F 0 "J6" H 5450 7667 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 5450 7576 50  0000 C CNN
 F 2 "" H 5400 7350 50  0001 C CNN
 F 3 "~" H 5400 7350 50  0001 C CNN
@@ -1200,12 +1208,20 @@ F 3 "~" H 5400 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:ATMEGA328P-MU U?
+L project:ATMEGA328P-MU U12
 U 1 1 5FCC0393
 P 1450 4600
-AR Path="/5FC1E32F/5FCC0393" Ref="U?"  Part="1" 
-AR Path="/5FBD86FB/5FCC0393" Ref="U?"  Part="1" 
-F 0 "U?" H 2450 4955 50  0000 C CNN
+AR Path="/5FC1E32F/5FCC0393" Ref="U12"  Part="1" 
+AR Path="/5FBD86FB/5FCC0393" Ref="U4"  Part="1" 
+AR Path="/5FC1DCBA/5FCC0393" Ref="U6"  Part="1" 
+AR Path="/5FC1E11E/5FCC0393" Ref="U8"  Part="1" 
+AR Path="/5FC1E1DD/5FCC0393" Ref="U10"  Part="1" 
+AR Path="/5FC1FA4C/5FCC0393" Ref="U14"  Part="1" 
+AR Path="/5FC1FA54/5FCC0393" Ref="U16"  Part="1" 
+AR Path="/5FC1FA5C/5FCC0393" Ref="U18"  Part="1" 
+AR Path="/5FC1FA64/5FCC0393" Ref="U20"  Part="1" 
+AR Path="/5FC1FA6C/5FCC0393" Ref="U22"  Part="1" 
+F 0 "U4" H 2450 4955 50  0000 C CNN
 F 1 "ATMEGA328P-MU" H 2450 4864 50  0000 C CNN
 F 2 "Microchip___Atmel-ATMEGA328P-MU-*" H 1450 5000 50  0001 L CNN
 F 3 "" H 1450 5100 50  0001 L CNN
@@ -1264,12 +1280,20 @@ Wire Wire Line
 Wire Wire Line
 	1200 5100 1200 5200
 $Comp
-L project:CC0603KPX7R9BB104 C?
+L project:CC0603KPX7R9BB104 C125
 U 1 1 5FD114BD
 P 1200 5200
-AR Path="/5FC1E32F/5FD114BD" Ref="C?"  Part="1" 
-AR Path="/5FBD86FB/5FD114BD" Ref="C?"  Part="1" 
-F 0 "C?" H 1328 5237 50  0000 L CNN
+AR Path="/5FC1E32F/5FD114BD" Ref="C125"  Part="1" 
+AR Path="/5FBD86FB/5FD114BD" Ref="C13"  Part="1" 
+AR Path="/5FC1DCBA/5FD114BD" Ref="C41"  Part="1" 
+AR Path="/5FC1E11E/5FD114BD" Ref="C69"  Part="1" 
+AR Path="/5FC1E1DD/5FD114BD" Ref="C97"  Part="1" 
+AR Path="/5FC1FA4C/5FD114BD" Ref="C153"  Part="1" 
+AR Path="/5FC1FA54/5FD114BD" Ref="C181"  Part="1" 
+AR Path="/5FC1FA5C/5FD114BD" Ref="C209"  Part="1" 
+AR Path="/5FC1FA64/5FD114BD" Ref="C237"  Part="1" 
+AR Path="/5FC1FA6C/5FD114BD" Ref="C265"  Part="1" 
+F 0 "C13" H 1328 5237 50  0000 L CNN
 F 1 "CC0603KPX7R9BB104" H 1200 5400 50  0001 L CNN
 F 2 "project:YAGEO-CC0603-0-0-0" H 1200 5500 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 1200 5600 50  0001 L CNN
@@ -1304,12 +1328,20 @@ $EndComp
 Wire Wire Line
 	1200 5400 1200 5600
 $Comp
-L project:CC0603KPX7R9BB104 C?
+L project:CC0603KPX7R9BB104 C124
 U 1 1 5FD25CA5
 P 950 4700
-AR Path="/5FC1E32F/5FD25CA5" Ref="C?"  Part="1" 
-AR Path="/5FBD86FB/5FD25CA5" Ref="C?"  Part="1" 
-F 0 "C?" H 1078 4737 50  0000 L CNN
+AR Path="/5FC1E32F/5FD25CA5" Ref="C124"  Part="1" 
+AR Path="/5FBD86FB/5FD25CA5" Ref="C12"  Part="1" 
+AR Path="/5FC1DCBA/5FD25CA5" Ref="C40"  Part="1" 
+AR Path="/5FC1E11E/5FD25CA5" Ref="C68"  Part="1" 
+AR Path="/5FC1E1DD/5FD25CA5" Ref="C96"  Part="1" 
+AR Path="/5FC1FA4C/5FD25CA5" Ref="C152"  Part="1" 
+AR Path="/5FC1FA54/5FD25CA5" Ref="C180"  Part="1" 
+AR Path="/5FC1FA5C/5FD25CA5" Ref="C208"  Part="1" 
+AR Path="/5FC1FA64/5FD25CA5" Ref="C236"  Part="1" 
+AR Path="/5FC1FA6C/5FD25CA5" Ref="C264"  Part="1" 
+F 0 "C12" H 1078 4737 50  0000 L CNN
 F 1 "CC0603KPX7R9BB104" H 950 4900 50  0001 L CNN
 F 2 "project:YAGEO-CC0603-0-0-0" H 950 5000 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 950 5100 50  0001 L CNN
@@ -1419,12 +1451,20 @@ SCK
 Text Label 3400 5500 0    50   ~ 0
 RES
 $Comp
-L project:TSX-3225_16.0000MF09Z-AC3 Y?
+L project:TSX-3225_16.0000MF09Z-AC3 Y15
 U 1 1 5FDA9FE5
 P 3800 7400
-AR Path="/5FC1E32F/5FDA9FE5" Ref="Y?"  Part="1" 
-AR Path="/5FBD86FB/5FDA9FE5" Ref="Y?"  Part="1" 
-F 0 "Y?" H 4100 7755 50  0000 C CNN
+AR Path="/5FC1E32F/5FDA9FE5" Ref="Y15"  Part="1" 
+AR Path="/5FBD86FB/5FDA9FE5" Ref="Y3"  Part="1" 
+AR Path="/5FC1DCBA/5FDA9FE5" Ref="Y6"  Part="1" 
+AR Path="/5FC1E11E/5FDA9FE5" Ref="Y9"  Part="1" 
+AR Path="/5FC1E1DD/5FDA9FE5" Ref="Y12"  Part="1" 
+AR Path="/5FC1FA4C/5FDA9FE5" Ref="Y18"  Part="1" 
+AR Path="/5FC1FA54/5FDA9FE5" Ref="Y21"  Part="1" 
+AR Path="/5FC1FA5C/5FDA9FE5" Ref="Y24"  Part="1" 
+AR Path="/5FC1FA64/5FDA9FE5" Ref="Y27"  Part="1" 
+AR Path="/5FC1FA6C/5FDA9FE5" Ref="Y30"  Part="1" 
+F 0 "Y3" H 4100 7755 50  0000 C CNN
 F 1 "TSX-3225_16.0000MF09Z-AC3" H 3800 7700 50  0001 L CNN
 F 2 "Epson-TSX-3225_16.0000MF09Z-AC3-*" H 3800 7800 50  0001 L CNN
 F 3 "https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-238V_en.pdf" H 3800 7900 50  0001 L CNN
@@ -1447,12 +1487,20 @@ $EndComp
 Wire Wire Line
 	3350 7000 3600 7000
 $Comp
-L project:CGA3E2C0G1H060D080AA C?
+L project:CGA3E2C0G1H060D080AA C139
 U 1 1 5FE26FEC
 P 4450 7500
-AR Path="/5FC1E32F/5FE26FEC" Ref="C?"  Part="1" 
-AR Path="/5FBD86FB/5FE26FEC" Ref="C?"  Part="1" 
-F 0 "C?" H 4578 7537 50  0000 L CNN
+AR Path="/5FC1E32F/5FE26FEC" Ref="C139"  Part="1" 
+AR Path="/5FBD86FB/5FE26FEC" Ref="C27"  Part="1" 
+AR Path="/5FC1DCBA/5FE26FEC" Ref="C55"  Part="1" 
+AR Path="/5FC1E11E/5FE26FEC" Ref="C83"  Part="1" 
+AR Path="/5FC1E1DD/5FE26FEC" Ref="C111"  Part="1" 
+AR Path="/5FC1FA4C/5FE26FEC" Ref="C167"  Part="1" 
+AR Path="/5FC1FA54/5FE26FEC" Ref="C195"  Part="1" 
+AR Path="/5FC1FA5C/5FE26FEC" Ref="C223"  Part="1" 
+AR Path="/5FC1FA64/5FE26FEC" Ref="C251"  Part="1" 
+AR Path="/5FC1FA6C/5FE26FEC" Ref="C279"  Part="1" 
+F 0 "C27" H 4578 7537 50  0000 L CNN
 F 1 "CGA3E2C0G1H060D080AA" H 4450 7700 50  0001 L CNN
 F 2 "TDK-CGA3E-0.3-0.1-0-0-*" H 4450 7800 50  0001 L CNN
 F 3 "https://product.tdk.com/info/en/catalog/spec/mlccspec_automotive_general_en.pdf" H 4450 7900 50  0001 L CNN
@@ -1481,12 +1529,20 @@ F 24 "50V" H 4578 7264 50  0000 L CNN "voltage rating"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:CGA3E2C0G1H060D080AA C?
+L project:CGA3E2C0G1H060D080AA C135
 U 1 1 5FE39FC9
 P 3550 7500
-AR Path="/5FC1E32F/5FE39FC9" Ref="C?"  Part="1" 
-AR Path="/5FBD86FB/5FE39FC9" Ref="C?"  Part="1" 
-F 0 "C?" H 3678 7537 50  0000 L CNN
+AR Path="/5FC1E32F/5FE39FC9" Ref="C135"  Part="1" 
+AR Path="/5FBD86FB/5FE39FC9" Ref="C23"  Part="1" 
+AR Path="/5FC1DCBA/5FE39FC9" Ref="C51"  Part="1" 
+AR Path="/5FC1E11E/5FE39FC9" Ref="C79"  Part="1" 
+AR Path="/5FC1E1DD/5FE39FC9" Ref="C107"  Part="1" 
+AR Path="/5FC1FA4C/5FE39FC9" Ref="C163"  Part="1" 
+AR Path="/5FC1FA54/5FE39FC9" Ref="C191"  Part="1" 
+AR Path="/5FC1FA5C/5FE39FC9" Ref="C219"  Part="1" 
+AR Path="/5FC1FA64/5FE39FC9" Ref="C247"  Part="1" 
+AR Path="/5FC1FA6C/5FE39FC9" Ref="C275"  Part="1" 
+F 0 "C23" H 3678 7537 50  0000 L CNN
 F 1 "CGA3E2C0G1H060D080AA" H 3550 7700 50  0001 L CNN
 F 2 "TDK-CGA3E-0.3-0.1-0-0-*" H 3550 7800 50  0001 L CNN
 F 3 "https://product.tdk.com/info/en/catalog/spec/mlccspec_automotive_general_en.pdf" H 3550 7900 50  0001 L CNN
@@ -1622,12 +1678,20 @@ NoConn ~ 3350 6800
 NoConn ~ 3350 5200
 NoConn ~ 3350 5100
 $Comp
-L project:RC0603FR-071K65L R?
+L project:RC0603FR-071K65L R21
 U 1 1 5FFC6139
 P 9050 3750
-AR Path="/5FBD86FB/5FFC6139" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/5FFC6139" Ref="R?"  Part="1" 
-F 0 "R?" H 9400 4055 50  0000 C CNN
+AR Path="/5FBD86FB/5FFC6139" Ref="R21"  Part="1" 
+AR Path="/5FC1E32F/5FFC6139" Ref="R65"  Part="1" 
+AR Path="/5FC1DCBA/5FFC6139" Ref="R32"  Part="1" 
+AR Path="/5FC1E11E/5FFC6139" Ref="R43"  Part="1" 
+AR Path="/5FC1E1DD/5FFC6139" Ref="R54"  Part="1" 
+AR Path="/5FC1FA4C/5FFC6139" Ref="R76"  Part="1" 
+AR Path="/5FC1FA54/5FFC6139" Ref="R87"  Part="1" 
+AR Path="/5FC1FA5C/5FFC6139" Ref="R98"  Part="1" 
+AR Path="/5FC1FA64/5FFC6139" Ref="R109"  Part="1" 
+AR Path="/5FC1FA6C/5FFC6139" Ref="R120"  Part="1" 
+F 0 "R21" H 9400 4055 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 9400 3874 50  0001 C CNN
 F 2 "Yageo-RC0603-0-0-*" H 9050 4150 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9050 4250 50  0001 L CNN
@@ -1673,12 +1737,20 @@ RF1
 Text Label 9900 3750 0    50   ~ 0
 RF2
 $Comp
-L project:RC0603FR-071K65L R?
+L project:RC0603FR-071K65L R22
 U 1 1 5FFF2D8C
 P 9050 4650
-AR Path="/5FBD86FB/5FFF2D8C" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/5FFF2D8C" Ref="R?"  Part="1" 
-F 0 "R?" H 9400 4955 50  0000 C CNN
+AR Path="/5FBD86FB/5FFF2D8C" Ref="R22"  Part="1" 
+AR Path="/5FC1E32F/5FFF2D8C" Ref="R66"  Part="1" 
+AR Path="/5FC1DCBA/5FFF2D8C" Ref="R33"  Part="1" 
+AR Path="/5FC1E11E/5FFF2D8C" Ref="R44"  Part="1" 
+AR Path="/5FC1E1DD/5FFF2D8C" Ref="R55"  Part="1" 
+AR Path="/5FC1FA4C/5FFF2D8C" Ref="R77"  Part="1" 
+AR Path="/5FC1FA54/5FFF2D8C" Ref="R88"  Part="1" 
+AR Path="/5FC1FA5C/5FFF2D8C" Ref="R99"  Part="1" 
+AR Path="/5FC1FA64/5FFF2D8C" Ref="R110"  Part="1" 
+AR Path="/5FC1FA6C/5FFF2D8C" Ref="R121"  Part="1" 
+F 0 "R22" H 9400 4955 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 9400 4774 50  0001 C CNN
 F 2 "Yageo-RC0603-0-0-*" H 9050 5050 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9050 5150 50  0001 L CNN
@@ -1724,12 +1796,20 @@ RED
 Text Label 9900 4650 0    50   ~ 0
 GND
 $Comp
-L project:LTST-C190KGKT D?
+L project:LTST-C190KGKT D10
 U 1 1 5FFFF3B5
 P 8500 5550
-AR Path="/5FBD86FB/5FFFF3B5" Ref="D?"  Part="1" 
-AR Path="/5FC1E32F/5FFFF3B5" Ref="D?"  Part="1" 
-F 0 "D?" H 8700 6299 50  0000 C CNN
+AR Path="/5FBD86FB/5FFFF3B5" Ref="D10"  Part="1" 
+AR Path="/5FC1E32F/5FFFF3B5" Ref="D30"  Part="1" 
+AR Path="/5FC1DCBA/5FFFF3B5" Ref="D15"  Part="1" 
+AR Path="/5FC1E11E/5FFFF3B5" Ref="D20"  Part="1" 
+AR Path="/5FC1E1DD/5FFFF3B5" Ref="D25"  Part="1" 
+AR Path="/5FC1FA4C/5FFFF3B5" Ref="D35"  Part="1" 
+AR Path="/5FC1FA54/5FFFF3B5" Ref="D40"  Part="1" 
+AR Path="/5FC1FA5C/5FFFF3B5" Ref="D45"  Part="1" 
+AR Path="/5FC1FA64/5FFFF3B5" Ref="D50"  Part="1" 
+AR Path="/5FC1FA6C/5FFFF3B5" Ref="D55"  Part="1" 
+F 0 "D10" H 8700 6299 50  0000 C CNN
 F 1 "LTST-C190KGKT" H 8700 6208 50  0000 C CNN
 F 2 "Lite-On-LTST-C190KGKT-*" H 8500 6150 50  0001 L CNN
 F 3 "https://optoelectronics.liteon.com/upload/download/DS22-2000-074/LTST-C190KGKT.PDF" H 8500 6250 50  0001 L CNN
@@ -1763,12 +1843,20 @@ F 29 "576.5nm" H 8500 8850 50  0001 L CNN "wavelength"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:RC0603FR-071K65L R?
+L project:RC0603FR-071K65L R23
 U 1 1 5FFFF3D7
 P 9050 5550
-AR Path="/5FBD86FB/5FFFF3D7" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/5FFFF3D7" Ref="R?"  Part="1" 
-F 0 "R?" H 9400 5855 50  0000 C CNN
+AR Path="/5FBD86FB/5FFFF3D7" Ref="R23"  Part="1" 
+AR Path="/5FC1E32F/5FFFF3D7" Ref="R67"  Part="1" 
+AR Path="/5FC1DCBA/5FFFF3D7" Ref="R34"  Part="1" 
+AR Path="/5FC1E11E/5FFFF3D7" Ref="R45"  Part="1" 
+AR Path="/5FC1E1DD/5FFFF3D7" Ref="R56"  Part="1" 
+AR Path="/5FC1FA4C/5FFFF3D7" Ref="R78"  Part="1" 
+AR Path="/5FC1FA54/5FFFF3D7" Ref="R89"  Part="1" 
+AR Path="/5FC1FA5C/5FFFF3D7" Ref="R100"  Part="1" 
+AR Path="/5FC1FA64/5FFFF3D7" Ref="R111"  Part="1" 
+AR Path="/5FC1FA6C/5FFFF3D7" Ref="R122"  Part="1" 
+F 0 "R23" H 9400 5855 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 9400 5764 50  0001 C CNN
 F 2 "Yageo-RC0603-0-0-*" H 9050 5950 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9050 6050 50  0001 L CNN
@@ -1814,12 +1902,20 @@ GRN
 Text Label 9900 5550 0    50   ~ 0
 GND
 $Comp
-L project:RC0603FR-071K65L R?
+L project:RC0603FR-071K65L R24
 U 1 1 6003E356
 P 9050 6450
-AR Path="/5FBD86FB/6003E356" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/6003E356" Ref="R?"  Part="1" 
-F 0 "R?" H 9400 6755 50  0000 C CNN
+AR Path="/5FBD86FB/6003E356" Ref="R24"  Part="1" 
+AR Path="/5FC1E32F/6003E356" Ref="R68"  Part="1" 
+AR Path="/5FC1DCBA/6003E356" Ref="R35"  Part="1" 
+AR Path="/5FC1E11E/6003E356" Ref="R46"  Part="1" 
+AR Path="/5FC1E1DD/6003E356" Ref="R57"  Part="1" 
+AR Path="/5FC1FA4C/6003E356" Ref="R79"  Part="1" 
+AR Path="/5FC1FA54/6003E356" Ref="R90"  Part="1" 
+AR Path="/5FC1FA5C/6003E356" Ref="R101"  Part="1" 
+AR Path="/5FC1FA64/6003E356" Ref="R112"  Part="1" 
+AR Path="/5FC1FA6C/6003E356" Ref="R123"  Part="1" 
+F 0 "R24" H 9400 6755 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 9400 6664 50  0001 C CNN
 F 2 "Yageo-RC0603-0-0-*" H 9050 6850 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9050 6950 50  0001 L CNN
@@ -1865,12 +1961,20 @@ BLU
 Text Label 9900 6450 0    50   ~ 0
 GND
 $Comp
-L project:LTST-C190KRKT D?
+L project:LTST-C190KRKT D9
 U 1 1 6004A743
 P 8500 4650
-AR Path="/5FBD86FB/6004A743" Ref="D?"  Part="1" 
-AR Path="/5FC1E32F/6004A743" Ref="D?"  Part="1" 
-F 0 "D?" H 8700 5399 50  0000 C CNN
+AR Path="/5FBD86FB/6004A743" Ref="D9"  Part="1" 
+AR Path="/5FC1E32F/6004A743" Ref="D29"  Part="1" 
+AR Path="/5FC1DCBA/6004A743" Ref="D14"  Part="1" 
+AR Path="/5FC1E11E/6004A743" Ref="D19"  Part="1" 
+AR Path="/5FC1E1DD/6004A743" Ref="D24"  Part="1" 
+AR Path="/5FC1FA4C/6004A743" Ref="D34"  Part="1" 
+AR Path="/5FC1FA54/6004A743" Ref="D39"  Part="1" 
+AR Path="/5FC1FA5C/6004A743" Ref="D44"  Part="1" 
+AR Path="/5FC1FA64/6004A743" Ref="D49"  Part="1" 
+AR Path="/5FC1FA6C/6004A743" Ref="D54"  Part="1" 
+F 0 "D9" H 8700 5399 50  0000 C CNN
 F 1 "LTST-C190KRKT" H 8700 5308 50  0000 C CNN
 F 2 "Lite-On-LTST-C190KRKT-*" H 8500 5250 50  0001 L CNN
 F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8500 5350 50  0001 L CNN
@@ -1904,12 +2008,20 @@ F 29 "631nm" H 8500 7950 50  0001 L CNN "wavelength"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:LTST-C190TBKT DS?
+L project:LTST-C190TBKT DS2
 U 1 1 6004D7FB
 P 8500 6450
-AR Path="/5FBD86FB/6004D7FB" Ref="DS?"  Part="1" 
-AR Path="/5FC1E32F/6004D7FB" Ref="DS?"  Part="1" 
-F 0 "DS?" H 8700 7189 50  0000 C CNN
+AR Path="/5FBD86FB/6004D7FB" Ref="DS2"  Part="1" 
+AR Path="/5FC1E32F/6004D7FB" Ref="DS6"  Part="1" 
+AR Path="/5FC1DCBA/6004D7FB" Ref="DS3"  Part="1" 
+AR Path="/5FC1E11E/6004D7FB" Ref="DS4"  Part="1" 
+AR Path="/5FC1E1DD/6004D7FB" Ref="DS5"  Part="1" 
+AR Path="/5FC1FA4C/6004D7FB" Ref="DS7"  Part="1" 
+AR Path="/5FC1FA54/6004D7FB" Ref="DS8"  Part="1" 
+AR Path="/5FC1FA5C/6004D7FB" Ref="DS9"  Part="1" 
+AR Path="/5FC1FA64/6004D7FB" Ref="DS10"  Part="1" 
+AR Path="/5FC1FA6C/6004D7FB" Ref="DS11"  Part="1" 
+F 0 "DS2" H 8700 7189 50  0000 C CNN
 F 1 "LTST-C190TBKT" H 8700 7098 50  0000 C CNN
 F 2 "Vishay_Lite-On-LTST-C190TBKT-*" H 8500 7050 50  0001 L CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0224/S_110_LTST-C190TBKT(0630).pdf" H 8500 7150 50  0001 L CNN
@@ -1946,12 +2058,20 @@ F 32 "20mA" H 8700 6734 50  0000 C CNN "Current"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:LTST-C190KSKT D?
+L project:LTST-C190KSKT D8
 U 1 1 60052F87
 P 8400 3750
-AR Path="/5FBD86FB/60052F87" Ref="D?"  Part="1" 
-AR Path="/5FC1E32F/60052F87" Ref="D?"  Part="1" 
-F 0 "D?" H 8700 4499 50  0000 C CNN
+AR Path="/5FBD86FB/60052F87" Ref="D8"  Part="1" 
+AR Path="/5FC1E32F/60052F87" Ref="D28"  Part="1" 
+AR Path="/5FC1DCBA/60052F87" Ref="D13"  Part="1" 
+AR Path="/5FC1E11E/60052F87" Ref="D18"  Part="1" 
+AR Path="/5FC1E1DD/60052F87" Ref="D23"  Part="1" 
+AR Path="/5FC1FA4C/60052F87" Ref="D33"  Part="1" 
+AR Path="/5FC1FA54/60052F87" Ref="D38"  Part="1" 
+AR Path="/5FC1FA5C/60052F87" Ref="D43"  Part="1" 
+AR Path="/5FC1FA64/60052F87" Ref="D48"  Part="1" 
+AR Path="/5FC1FA6C/60052F87" Ref="D53"  Part="1" 
+F 0 "D8" H 8700 4499 50  0000 C CNN
 F 1 "LTST-C190KSKT" H 8700 4408 50  0000 C CNN
 F 2 "Lite-On-LTST-C190KSKT-*" H 8400 4350 50  0001 L CNN
 F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 8400 4450 50  0001 L CNN
@@ -2000,9 +2120,17 @@ L project:RC0603FR-0710KL R?
 U 1 1 601131B9
 P 4000 5300
 AR Path="/601131B9" Ref="R?"  Part="1" 
-AR Path="/5FBD86FB/601131B9" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/601131B9" Ref="R?"  Part="1" 
-F 0 "R?" H 4350 5605 50  0000 C CNN
+AR Path="/5FBD86FB/601131B9" Ref="R14"  Part="1" 
+AR Path="/5FC1E32F/601131B9" Ref="R58"  Part="1" 
+AR Path="/5FC1DCBA/601131B9" Ref="R25"  Part="1" 
+AR Path="/5FC1E11E/601131B9" Ref="R36"  Part="1" 
+AR Path="/5FC1E1DD/601131B9" Ref="R47"  Part="1" 
+AR Path="/5FC1FA4C/601131B9" Ref="R69"  Part="1" 
+AR Path="/5FC1FA54/601131B9" Ref="R80"  Part="1" 
+AR Path="/5FC1FA5C/601131B9" Ref="R91"  Part="1" 
+AR Path="/5FC1FA64/601131B9" Ref="R102"  Part="1" 
+AR Path="/5FC1FA6C/601131B9" Ref="R113"  Part="1" 
+F 0 "R14" H 4350 5605 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 4000 5600 50  0001 L CNN
 F 2 "Yageo-RC0603-0-0-*" H 4000 5700 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 4000 5800 50  0001 L CNN
@@ -2042,9 +2170,17 @@ L project:RC0603FR-0710KL R?
 U 1 1 6011F144
 P 4000 5750
 AR Path="/6011F144" Ref="R?"  Part="1" 
-AR Path="/5FBD86FB/6011F144" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/6011F144" Ref="R?"  Part="1" 
-F 0 "R?" H 4350 6055 50  0000 C CNN
+AR Path="/5FBD86FB/6011F144" Ref="R15"  Part="1" 
+AR Path="/5FC1E32F/6011F144" Ref="R59"  Part="1" 
+AR Path="/5FC1DCBA/6011F144" Ref="R26"  Part="1" 
+AR Path="/5FC1E11E/6011F144" Ref="R37"  Part="1" 
+AR Path="/5FC1E1DD/6011F144" Ref="R48"  Part="1" 
+AR Path="/5FC1FA4C/6011F144" Ref="R70"  Part="1" 
+AR Path="/5FC1FA54/6011F144" Ref="R81"  Part="1" 
+AR Path="/5FC1FA5C/6011F144" Ref="R92"  Part="1" 
+AR Path="/5FC1FA64/6011F144" Ref="R103"  Part="1" 
+AR Path="/5FC1FA6C/6011F144" Ref="R114"  Part="1" 
+F 0 "R15" H 4350 6055 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 4000 6050 50  0001 L CNN
 F 2 "Yageo-RC0603-0-0-*" H 4000 6150 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 4000 6250 50  0001 L CNN
@@ -2084,9 +2220,17 @@ L project:RC0603FR-0710KL R?
 U 1 1 6012AA35
 P 4000 6200
 AR Path="/6012AA35" Ref="R?"  Part="1" 
-AR Path="/5FBD86FB/6012AA35" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/6012AA35" Ref="R?"  Part="1" 
-F 0 "R?" H 4350 6505 50  0000 C CNN
+AR Path="/5FBD86FB/6012AA35" Ref="R16"  Part="1" 
+AR Path="/5FC1E32F/6012AA35" Ref="R60"  Part="1" 
+AR Path="/5FC1DCBA/6012AA35" Ref="R27"  Part="1" 
+AR Path="/5FC1E11E/6012AA35" Ref="R38"  Part="1" 
+AR Path="/5FC1E1DD/6012AA35" Ref="R49"  Part="1" 
+AR Path="/5FC1FA4C/6012AA35" Ref="R71"  Part="1" 
+AR Path="/5FC1FA54/6012AA35" Ref="R82"  Part="1" 
+AR Path="/5FC1FA5C/6012AA35" Ref="R93"  Part="1" 
+AR Path="/5FC1FA64/6012AA35" Ref="R104"  Part="1" 
+AR Path="/5FC1FA6C/6012AA35" Ref="R115"  Part="1" 
+F 0 "R16" H 4350 6505 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 4000 6500 50  0001 L CNN
 F 2 "Yageo-RC0603-0-0-*" H 4000 6600 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 4000 6700 50  0001 L CNN
@@ -2124,10 +2268,20 @@ $EndComp
 Text Notes 8750 2350 0    50   ~ 0
 In plane field sensor
 $Comp
-L project:CC0805ZKY5V6BB106 C?
+L project:CC0805ZKY5V6BB106 C11
 U 1 1 606CA4FF
 P 750 1400
-F 0 "C?" H 878 1437 50  0000 L CNN
+AR Path="/5FBD86FB/606CA4FF" Ref="C11"  Part="1" 
+AR Path="/5FC1DCBA/606CA4FF" Ref="C39"  Part="1" 
+AR Path="/5FC1E11E/606CA4FF" Ref="C67"  Part="1" 
+AR Path="/5FC1E1DD/606CA4FF" Ref="C95"  Part="1" 
+AR Path="/5FC1E32F/606CA4FF" Ref="C123"  Part="1" 
+AR Path="/5FC1FA4C/606CA4FF" Ref="C151"  Part="1" 
+AR Path="/5FC1FA54/606CA4FF" Ref="C179"  Part="1" 
+AR Path="/5FC1FA5C/606CA4FF" Ref="C207"  Part="1" 
+AR Path="/5FC1FA64/606CA4FF" Ref="C235"  Part="1" 
+AR Path="/5FC1FA6C/606CA4FF" Ref="C263"  Part="1" 
+F 0 "C11" H 878 1437 50  0000 L CNN
 F 1 "CC0805ZKY5V6BB106" H 750 1600 50  0001 L CNN
 F 2 "YAGEO-CC0805-0-0-*" H 750 1700 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 750 1800 50  0001 L CNN
@@ -2159,10 +2313,20 @@ Wire Wire Line
 	750  1800 950  1800
 Connection ~ 950  1800
 $Comp
-L project:Field_Sensor_54_22 Y?
+L project:Field_Sensor_54_22 Y5
 U 1 1 60985765
 P 8750 2100
-F 0 "Y?" H 9278 2146 50  0000 L CNN
+AR Path="/5FBD86FB/60985765" Ref="Y5"  Part="1" 
+AR Path="/5FC1DCBA/60985765" Ref="Y8"  Part="1" 
+AR Path="/5FC1E11E/60985765" Ref="Y11"  Part="1" 
+AR Path="/5FC1E1DD/60985765" Ref="Y14"  Part="1" 
+AR Path="/5FC1E32F/60985765" Ref="Y17"  Part="1" 
+AR Path="/5FC1FA4C/60985765" Ref="Y20"  Part="1" 
+AR Path="/5FC1FA54/60985765" Ref="Y23"  Part="1" 
+AR Path="/5FC1FA5C/60985765" Ref="Y26"  Part="1" 
+AR Path="/5FC1FA64/60985765" Ref="Y29"  Part="1" 
+AR Path="/5FC1FA6C/60985765" Ref="Y32"  Part="1" 
+F 0 "Y5" H 9278 2146 50  0000 L CNN
 F 1 "Field_Sensor_54_22" H 9278 2055 50  0000 L CNN
 F 2 "project:Field_Sensor_54_22" H 9750 1900 50  0001 C CNN
 F 3 "" H 8750 2100 50  0001 C CNN
@@ -2170,10 +2334,20 @@ F 3 "" H 8750 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:BAS40-7-F D?
+L project:BAS40-7-F D7
 U 1 1 609B0CD2
 P 7400 6100
-F 0 "D?" H 7900 5545 50  0000 C CNN
+AR Path="/5FBD86FB/609B0CD2" Ref="D7"  Part="1" 
+AR Path="/5FC1DCBA/609B0CD2" Ref="D12"  Part="1" 
+AR Path="/5FC1E11E/609B0CD2" Ref="D17"  Part="1" 
+AR Path="/5FC1E1DD/609B0CD2" Ref="D22"  Part="1" 
+AR Path="/5FC1E32F/609B0CD2" Ref="D27"  Part="1" 
+AR Path="/5FC1FA4C/609B0CD2" Ref="D32"  Part="1" 
+AR Path="/5FC1FA54/609B0CD2" Ref="D37"  Part="1" 
+AR Path="/5FC1FA5C/609B0CD2" Ref="D42"  Part="1" 
+AR Path="/5FC1FA64/609B0CD2" Ref="D47"  Part="1" 
+AR Path="/5FC1FA6C/609B0CD2" Ref="D52"  Part="1" 
+F 0 "D7" H 7900 5545 50  0000 C CNN
 F 1 "BAS40-7-F" H 7900 5636 50  0000 C CNN
 F 2 "Diodes_Inc.-SOT23-01_2017-0-*" H 7400 6600 50  0001 L CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11006.pdf" H 7400 6700 50  0001 L CNN
@@ -2208,20 +2382,20 @@ F 30 "-55°C" H 7400 9400 50  0001 L CNN "temperature range low"
 	-1   0    0    1   
 $EndComp
 $Comp
-L project:CC0603KRX7R9BB102 C?
+L project:CC0603KRX7R9BB102 C31
 U 1 1 609B2086
 P 6200 6250
-AR Path="/5FBD86FB/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/609B2086" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/609B2086" Ref="C?"  Part="1" 
-F 0 "C?" H 6328 6287 50  0000 L CNN
+AR Path="/5FBD86FB/609B2086" Ref="C31"  Part="1" 
+AR Path="/5FC1DCBA/609B2086" Ref="C59"  Part="1" 
+AR Path="/5FC1E11E/609B2086" Ref="C87"  Part="1" 
+AR Path="/5FC1E1DD/609B2086" Ref="C115"  Part="1" 
+AR Path="/5FC1E32F/609B2086" Ref="C143"  Part="1" 
+AR Path="/5FC1FA4C/609B2086" Ref="C171"  Part="1" 
+AR Path="/5FC1FA54/609B2086" Ref="C199"  Part="1" 
+AR Path="/5FC1FA5C/609B2086" Ref="C227"  Part="1" 
+AR Path="/5FC1FA64/609B2086" Ref="C255"  Part="1" 
+AR Path="/5FC1FA6C/609B2086" Ref="C283"  Part="1" 
+F 0 "C31" H 6328 6287 50  0000 L CNN
 F 1 "CC0603KRX7R9BB102" H 6200 6450 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 6200 6550 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6200 6650 50  0001 L CNN
@@ -2274,9 +2448,17 @@ L project:RC0603FR-0710KL R?
 U 1 1 60A56DFB
 P 5550 6100
 AR Path="/60A56DFB" Ref="R?"  Part="1" 
-AR Path="/5FBD86FB/60A56DFB" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/60A56DFB" Ref="R?"  Part="1" 
-F 0 "R?" H 5900 6405 50  0000 C CNN
+AR Path="/5FBD86FB/60A56DFB" Ref="R18"  Part="1" 
+AR Path="/5FC1E32F/60A56DFB" Ref="R62"  Part="1" 
+AR Path="/5FC1DCBA/60A56DFB" Ref="R29"  Part="1" 
+AR Path="/5FC1E11E/60A56DFB" Ref="R40"  Part="1" 
+AR Path="/5FC1E1DD/60A56DFB" Ref="R51"  Part="1" 
+AR Path="/5FC1FA4C/60A56DFB" Ref="R73"  Part="1" 
+AR Path="/5FC1FA54/60A56DFB" Ref="R84"  Part="1" 
+AR Path="/5FC1FA5C/60A56DFB" Ref="R95"  Part="1" 
+AR Path="/5FC1FA64/60A56DFB" Ref="R106"  Part="1" 
+AR Path="/5FC1FA6C/60A56DFB" Ref="R117"  Part="1" 
+F 0 "R18" H 5900 6405 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 5550 6400 50  0001 L CNN
 F 2 "Yageo-RC0603-0-0-*" H 5550 6500 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 5550 6600 50  0001 L CNN
@@ -2319,9 +2501,17 @@ L project:RC0603FR-0710KL R?
 U 1 1 60A64AEF
 P 5650 6050
 AR Path="/60A64AEF" Ref="R?"  Part="1" 
-AR Path="/5FBD86FB/60A64AEF" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/60A64AEF" Ref="R?"  Part="1" 
-F 0 "R?" V 5909 6128 50  0000 L CNN
+AR Path="/5FBD86FB/60A64AEF" Ref="R20"  Part="1" 
+AR Path="/5FC1E32F/60A64AEF" Ref="R64"  Part="1" 
+AR Path="/5FC1DCBA/60A64AEF" Ref="R31"  Part="1" 
+AR Path="/5FC1E11E/60A64AEF" Ref="R42"  Part="1" 
+AR Path="/5FC1E1DD/60A64AEF" Ref="R53"  Part="1" 
+AR Path="/5FC1FA4C/60A64AEF" Ref="R75"  Part="1" 
+AR Path="/5FC1FA54/60A64AEF" Ref="R86"  Part="1" 
+AR Path="/5FC1FA5C/60A64AEF" Ref="R97"  Part="1" 
+AR Path="/5FC1FA64/60A64AEF" Ref="R108"  Part="1" 
+AR Path="/5FC1FA6C/60A64AEF" Ref="R119"  Part="1" 
+F 0 "R20" V 5909 6128 50  0000 L CNN
 F 1 "RC0603FR-0710KL" H 5650 6350 50  0001 L CNN
 F 2 "Yageo-RC0603-0-0-*" H 5650 6450 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 5650 6550 50  0001 L CNN
@@ -2363,10 +2553,20 @@ Wire Wire Line
 Wire Wire Line
 	6200 6450 6200 6650
 $Comp
-L project:C0603C209C5GACTU C?
+L project:C0603C209C5GACTU C35
 U 1 1 60AAAD59
 P 7350 6250
-F 0 "C?" H 7478 6287 50  0000 L CNN
+AR Path="/5FBD86FB/60AAAD59" Ref="C35"  Part="1" 
+AR Path="/5FC1DCBA/60AAAD59" Ref="C63"  Part="1" 
+AR Path="/5FC1E11E/60AAAD59" Ref="C91"  Part="1" 
+AR Path="/5FC1E1DD/60AAAD59" Ref="C119"  Part="1" 
+AR Path="/5FC1E32F/60AAAD59" Ref="C147"  Part="1" 
+AR Path="/5FC1FA4C/60AAAD59" Ref="C175"  Part="1" 
+AR Path="/5FC1FA54/60AAAD59" Ref="C203"  Part="1" 
+AR Path="/5FC1FA5C/60AAAD59" Ref="C231"  Part="1" 
+AR Path="/5FC1FA64/60AAAD59" Ref="C259"  Part="1" 
+AR Path="/5FC1FA6C/60AAAD59" Ref="C287"  Part="1" 
+F 0 "C35" H 7478 6287 50  0000 L CNN
 F 1 "C0603C209C5GACTU" H 7478 6241 50  0001 L CNN
 F 2 "KEMET-C0603C-CF-0-0-*" H 7350 6550 50  0001 L CNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf" H 7350 6650 50  0001 L CNN
@@ -2398,20 +2598,20 @@ F 27 "50 V" H 7478 6014 50  0000 L CNN "voltage rating"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:CC0603KRX7R9BB103 C?
+L project:CC0603KRX7R9BB103 C29
 U 1 1 60AAD48F
 P 5200 6250
-AR Path="/5FBD86FB/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/60AAD48F" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/60AAD48F" Ref="C?"  Part="1" 
-F 0 "C?" H 5328 6287 50  0000 L CNN
+AR Path="/5FBD86FB/60AAD48F" Ref="C29"  Part="1" 
+AR Path="/5FC1DCBA/60AAD48F" Ref="C57"  Part="1" 
+AR Path="/5FC1E11E/60AAD48F" Ref="C85"  Part="1" 
+AR Path="/5FC1E1DD/60AAD48F" Ref="C113"  Part="1" 
+AR Path="/5FC1E32F/60AAD48F" Ref="C141"  Part="1" 
+AR Path="/5FC1FA4C/60AAD48F" Ref="C169"  Part="1" 
+AR Path="/5FC1FA54/60AAD48F" Ref="C197"  Part="1" 
+AR Path="/5FC1FA5C/60AAD48F" Ref="C225"  Part="1" 
+AR Path="/5FC1FA64/60AAD48F" Ref="C253"  Part="1" 
+AR Path="/5FC1FA6C/60AAD48F" Ref="C281"  Part="1" 
+F 0 "C29" H 5328 6287 50  0000 L CNN
 F 1 "CC0603KRX7R9BB103" H 5200 6450 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 5200 6550 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5200 6650 50  0001 L CNN
@@ -2467,10 +2667,20 @@ NoConn ~ 7300 5900
 Text Label 6750 6650 0    50   ~ 0
 GND
 $Comp
-L project:BAS40-7-F D?
+L project:BAS40-7-F D6
 U 1 1 60B9BE1A
 P 7400 4900
-F 0 "D?" H 7900 4345 50  0000 C CNN
+AR Path="/5FBD86FB/60B9BE1A" Ref="D6"  Part="1" 
+AR Path="/5FC1DCBA/60B9BE1A" Ref="D11"  Part="1" 
+AR Path="/5FC1E11E/60B9BE1A" Ref="D16"  Part="1" 
+AR Path="/5FC1E1DD/60B9BE1A" Ref="D21"  Part="1" 
+AR Path="/5FC1E32F/60B9BE1A" Ref="D26"  Part="1" 
+AR Path="/5FC1FA4C/60B9BE1A" Ref="D31"  Part="1" 
+AR Path="/5FC1FA54/60B9BE1A" Ref="D36"  Part="1" 
+AR Path="/5FC1FA5C/60B9BE1A" Ref="D41"  Part="1" 
+AR Path="/5FC1FA64/60B9BE1A" Ref="D46"  Part="1" 
+AR Path="/5FC1FA6C/60B9BE1A" Ref="D51"  Part="1" 
+F 0 "D6" H 7900 4345 50  0000 C CNN
 F 1 "BAS40-7-F" H 7900 4436 50  0000 C CNN
 F 2 "Diodes_Inc.-SOT23-01_2017-0-*" H 7400 5400 50  0001 L CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11006.pdf" H 7400 5500 50  0001 L CNN
@@ -2505,20 +2715,20 @@ F 30 "-55°C" H 7400 8200 50  0001 L CNN "temperature range low"
 	-1   0    0    1   
 $EndComp
 $Comp
-L project:CC0603KRX7R9BB102 C?
+L project:CC0603KRX7R9BB102 C30
 U 1 1 60B9BE39
 P 6200 5050
-AR Path="/5FBD86FB/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/60B9BE39" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/60B9BE39" Ref="C?"  Part="1" 
-F 0 "C?" H 6328 5087 50  0000 L CNN
+AR Path="/5FBD86FB/60B9BE39" Ref="C30"  Part="1" 
+AR Path="/5FC1DCBA/60B9BE39" Ref="C58"  Part="1" 
+AR Path="/5FC1E11E/60B9BE39" Ref="C86"  Part="1" 
+AR Path="/5FC1E1DD/60B9BE39" Ref="C114"  Part="1" 
+AR Path="/5FC1E32F/60B9BE39" Ref="C142"  Part="1" 
+AR Path="/5FC1FA4C/60B9BE39" Ref="C170"  Part="1" 
+AR Path="/5FC1FA54/60B9BE39" Ref="C198"  Part="1" 
+AR Path="/5FC1FA5C/60B9BE39" Ref="C226"  Part="1" 
+AR Path="/5FC1FA64/60B9BE39" Ref="C254"  Part="1" 
+AR Path="/5FC1FA6C/60B9BE39" Ref="C282"  Part="1" 
+F 0 "C30" H 6328 5087 50  0000 L CNN
 F 1 "CC0603KRX7R9BB102" H 6200 5250 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 6200 5350 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6200 5450 50  0001 L CNN
@@ -2563,9 +2773,17 @@ L project:RC0603FR-0710KL R?
 U 1 1 60B9BE5F
 P 5550 4900
 AR Path="/60B9BE5F" Ref="R?"  Part="1" 
-AR Path="/5FBD86FB/60B9BE5F" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/60B9BE5F" Ref="R?"  Part="1" 
-F 0 "R?" H 5900 5205 50  0000 C CNN
+AR Path="/5FBD86FB/60B9BE5F" Ref="R17"  Part="1" 
+AR Path="/5FC1E32F/60B9BE5F" Ref="R61"  Part="1" 
+AR Path="/5FC1DCBA/60B9BE5F" Ref="R28"  Part="1" 
+AR Path="/5FC1E11E/60B9BE5F" Ref="R39"  Part="1" 
+AR Path="/5FC1E1DD/60B9BE5F" Ref="R50"  Part="1" 
+AR Path="/5FC1FA4C/60B9BE5F" Ref="R72"  Part="1" 
+AR Path="/5FC1FA54/60B9BE5F" Ref="R83"  Part="1" 
+AR Path="/5FC1FA5C/60B9BE5F" Ref="R94"  Part="1" 
+AR Path="/5FC1FA64/60B9BE5F" Ref="R105"  Part="1" 
+AR Path="/5FC1FA6C/60B9BE5F" Ref="R116"  Part="1" 
+F 0 "R17" H 5900 5205 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 5550 5200 50  0001 L CNN
 F 2 "Yageo-RC0603-0-0-*" H 5550 5300 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 5550 5400 50  0001 L CNN
@@ -2608,9 +2826,17 @@ L project:RC0603FR-0710KL R?
 U 1 1 60B9BE83
 P 5650 4850
 AR Path="/60B9BE83" Ref="R?"  Part="1" 
-AR Path="/5FBD86FB/60B9BE83" Ref="R?"  Part="1" 
-AR Path="/5FC1E32F/60B9BE83" Ref="R?"  Part="1" 
-F 0 "R?" V 5909 4928 50  0000 L CNN
+AR Path="/5FBD86FB/60B9BE83" Ref="R19"  Part="1" 
+AR Path="/5FC1E32F/60B9BE83" Ref="R63"  Part="1" 
+AR Path="/5FC1DCBA/60B9BE83" Ref="R30"  Part="1" 
+AR Path="/5FC1E11E/60B9BE83" Ref="R41"  Part="1" 
+AR Path="/5FC1E1DD/60B9BE83" Ref="R52"  Part="1" 
+AR Path="/5FC1FA4C/60B9BE83" Ref="R74"  Part="1" 
+AR Path="/5FC1FA54/60B9BE83" Ref="R85"  Part="1" 
+AR Path="/5FC1FA5C/60B9BE83" Ref="R96"  Part="1" 
+AR Path="/5FC1FA64/60B9BE83" Ref="R107"  Part="1" 
+AR Path="/5FC1FA6C/60B9BE83" Ref="R118"  Part="1" 
+F 0 "R19" V 5909 4928 50  0000 L CNN
 F 1 "RC0603FR-0710KL" H 5650 5150 50  0001 L CNN
 F 2 "Yageo-RC0603-0-0-*" H 5650 5250 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 5650 5350 50  0001 L CNN
@@ -2652,10 +2878,20 @@ Wire Wire Line
 Wire Wire Line
 	6200 5250 6200 5450
 $Comp
-L project:C0603C209C5GACTU C?
+L project:C0603C209C5GACTU C34
 U 1 1 60B9BEA4
 P 7350 5050
-F 0 "C?" H 7478 5087 50  0000 L CNN
+AR Path="/5FBD86FB/60B9BEA4" Ref="C34"  Part="1" 
+AR Path="/5FC1DCBA/60B9BEA4" Ref="C62"  Part="1" 
+AR Path="/5FC1E11E/60B9BEA4" Ref="C90"  Part="1" 
+AR Path="/5FC1E1DD/60B9BEA4" Ref="C118"  Part="1" 
+AR Path="/5FC1E32F/60B9BEA4" Ref="C146"  Part="1" 
+AR Path="/5FC1FA4C/60B9BEA4" Ref="C174"  Part="1" 
+AR Path="/5FC1FA54/60B9BEA4" Ref="C202"  Part="1" 
+AR Path="/5FC1FA5C/60B9BEA4" Ref="C230"  Part="1" 
+AR Path="/5FC1FA64/60B9BEA4" Ref="C258"  Part="1" 
+AR Path="/5FC1FA6C/60B9BEA4" Ref="C286"  Part="1" 
+F 0 "C34" H 7478 5087 50  0000 L CNN
 F 1 "C0603C209C5GACTU" H 7478 5041 50  0001 L CNN
 F 2 "KEMET-C0603C-CF-0-0-*" H 7350 5350 50  0001 L CNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf" H 7350 5450 50  0001 L CNN
@@ -2687,20 +2923,20 @@ F 27 "50 V" H 7478 4814 50  0000 L CNN "voltage rating"
 	1    0    0    -1  
 $EndComp
 $Comp
-L project:CC0603KRX7R9BB103 C?
+L project:CC0603KRX7R9BB103 C28
 U 1 1 60B9BEC3
 P 5200 5050
-AR Path="/5FBD86FB/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1DCBA/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1E11E/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1E1DD/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1E32F/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA4C/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA54/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA5C/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA64/60B9BEC3" Ref="C?"  Part="1" 
-AR Path="/5FC1FA6C/60B9BEC3" Ref="C?"  Part="1" 
-F 0 "C?" H 5328 5087 50  0000 L CNN
+AR Path="/5FBD86FB/60B9BEC3" Ref="C28"  Part="1" 
+AR Path="/5FC1DCBA/60B9BEC3" Ref="C56"  Part="1" 
+AR Path="/5FC1E11E/60B9BEC3" Ref="C84"  Part="1" 
+AR Path="/5FC1E1DD/60B9BEC3" Ref="C112"  Part="1" 
+AR Path="/5FC1E32F/60B9BEC3" Ref="C140"  Part="1" 
+AR Path="/5FC1FA4C/60B9BEC3" Ref="C168"  Part="1" 
+AR Path="/5FC1FA54/60B9BEC3" Ref="C196"  Part="1" 
+AR Path="/5FC1FA5C/60B9BEC3" Ref="C224"  Part="1" 
+AR Path="/5FC1FA64/60B9BEC3" Ref="C252"  Part="1" 
+AR Path="/5FC1FA6C/60B9BEC3" Ref="C280"  Part="1" 
+F 0 "C28" H 5328 5087 50  0000 L CNN
 F 1 "CC0603KRX7R9BB103" H 5200 5250 50  0001 L CNN
 F 2 "YAGEO-CC0603-DA-05_2018-24-*" H 5200 5350 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5200 5450 50  0001 L CNN
@@ -2780,10 +3016,20 @@ Wire Wire Line
 Text Notes 8750 2900 0    50   ~ 0
 Offset field sensor
 $Comp
-L project:SSW-102-01-T-S J?
+L project:SSW-102-01-T-S J7
 U 1 1 60D4A0E1
 P 8750 2600
-F 0 "J?" V 8754 3028 50  0000 L CNN
+AR Path="/5FBD86FB/60D4A0E1" Ref="J7"  Part="1" 
+AR Path="/5FC1DCBA/60D4A0E1" Ref="J10"  Part="1" 
+AR Path="/5FC1E11E/60D4A0E1" Ref="J13"  Part="1" 
+AR Path="/5FC1E1DD/60D4A0E1" Ref="J16"  Part="1" 
+AR Path="/5FC1E32F/60D4A0E1" Ref="J19"  Part="1" 
+AR Path="/5FC1FA4C/60D4A0E1" Ref="J22"  Part="1" 
+AR Path="/5FC1FA54/60D4A0E1" Ref="J25"  Part="1" 
+AR Path="/5FC1FA5C/60D4A0E1" Ref="J28"  Part="1" 
+AR Path="/5FC1FA64/60D4A0E1" Ref="J31"  Part="1" 
+AR Path="/5FC1FA6C/60D4A0E1" Ref="J34"  Part="1" 
+F 0 "J7" V 8754 3028 50  0000 L CNN
 F 1 "SSW-102-01-T-S" V 8845 3028 50  0000 L CNN
 F 2 "project:Samtec-SSW-102-01-T-S-Manufacturer_Recommended" H 8750 3300 50  0001 L CNN
 F 3 "http://www.samtec.com/documents/webfiles/pdf/SLW.PDF" H 8750 3400 50  0001 L CNN
@@ -2810,10 +3056,20 @@ F 22 "yes" H 8750 5300 50  0001 L CNN "imported"
 	0    1    1    0   
 $EndComp
 $Comp
-L project:SSW-102-01-T-S J?
+L project:SSW-102-01-T-S J8
 U 1 1 60D4C115
 P 10350 2700
-F 0 "J?" V 10715 2942 50  0000 C CNN
+AR Path="/5FBD86FB/60D4C115" Ref="J8"  Part="1" 
+AR Path="/5FC1DCBA/60D4C115" Ref="J11"  Part="1" 
+AR Path="/5FC1E11E/60D4C115" Ref="J14"  Part="1" 
+AR Path="/5FC1E1DD/60D4C115" Ref="J17"  Part="1" 
+AR Path="/5FC1E32F/60D4C115" Ref="J20"  Part="1" 
+AR Path="/5FC1FA4C/60D4C115" Ref="J23"  Part="1" 
+AR Path="/5FC1FA54/60D4C115" Ref="J26"  Part="1" 
+AR Path="/5FC1FA5C/60D4C115" Ref="J29"  Part="1" 
+AR Path="/5FC1FA64/60D4C115" Ref="J32"  Part="1" 
+AR Path="/5FC1FA6C/60D4C115" Ref="J35"  Part="1" 
+F 0 "J8" V 10715 2942 50  0000 C CNN
 F 1 "SSW-102-01-T-S" V 10624 2942 50  0000 C CNN
 F 2 "project:Samtec-SSW-102-01-T-S-Manufacturer_Recommended" H 10350 3400 50  0001 L CNN
 F 3 "http://www.samtec.com/documents/webfiles/pdf/SLW.PDF" H 10350 3500 50  0001 L CNN
