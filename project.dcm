@@ -1,0 +1,169 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 475890001
+D 475890001
+F https://www.molex.com/pdm_docs/ps/PS-47589-001-001.pdf
+$ENDCMP
+#
+$CMP ATTINY85-20MU
+D ATTINY85-20MU
+$ENDCMP
+#
+$CMP BAS40-7-F
+F https://www.diodes.com/assets/Datasheets/ds11006.pdf
+$ENDCMP
+#
+$CMP BAT54T1G
+F http://www.onsemi.cn/pub_link/Collateral/BAT54T1-D.PDF
+$ENDCMP
+#
+$CMP C0603C209C5GACTU
+F https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf
+$ENDCMP
+#
+$CMP CC0603JRNPO9BN101
+D CC0603JRNPO9BN101
+F http://www.yageo.com/documents/recent/UPY-GP_NP0_16V-to-50V_16.pdf
+$ENDCMP
+#
+$CMP CC0603KPX7R9BB104
+F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
+$ENDCMP
+#
+$CMP CC0603KRX7R9BB102
+F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
+$ENDCMP
+#
+$CMP CC0603KRX7R9BB103
+D CC0603KRX7R9BB103
+F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
+$ENDCMP
+#
+$CMP CC0603KRX7R9BB181
+F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
+$ENDCMP
+#
+$CMP CC0603KRX7R9BB681
+D CC0603KRX7R9BB681
+F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
+$ENDCMP
+#
+$CMP CC0603MRX5R5BB225
+D CC0603MRX5R5BB225
+F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
+$ENDCMP
+#
+$CMP CC0805ZKY5V6BB106
+D CC0805ZKY5V6BB106
+F http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf
+$ENDCMP
+#
+$CMP CGA3E2C0G1H060D080AA
+D CGA3E2C0G1H060D080AA
+F https://product.tdk.com/info/en/catalog/spec/mlccspec_automotive_general_en.pdf
+$ENDCMP
+#
+$CMP Coil_49_18_6T_2Layer
+D Coil 49x18mm 6 Turns using 2 Copper Layers
+$ENDCMP
+#
+$CMP FSM2JSMAA
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F2-1437565-8
+$ENDCMP
+#
+$CMP FT231XQ-R
+F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf
+$ENDCMP
+#
+$CMP Field_Sensor_54_22
+D Coil 49x18mm 6 Turns using 2 Copper Layers
+$ENDCMP
+#
+$CMP LTST-C190KGKT
+D LTST-C190KGKT
+F https://optoelectronics.liteon.com/upload/download/DS22-2000-074/LTST-C190KGKT.PDF
+$ENDCMP
+#
+$CMP LTST-C190KRKT
+F https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf
+$ENDCMP
+#
+$CMP LTST-C190KSKT
+F https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf
+$ENDCMP
+#
+$CMP LTST-C190TBKT
+F http://optoelectronics.liteon.com/upload/download/DS-22-99-0224/S_110_LTST-C190TBKT(0630).pdf
+$ENDCMP
+#
+$CMP MM3Z3V6T1G
+D MM3Z3V6T1G
+F http://www.onsemi.cn/pub_link/Collateral/MM3Z2V4T1-D.PDF
+$ENDCMP
+#
+$CMP PJ-002AH
+F https://www.cui.com/product/resource/pj-002ah.pdf
+$ENDCMP
+#
+$CMP RC0603FR-07100RL
+F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
+$ENDCMP
+#
+$CMP RC0603FR-0710KL
+F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
+$ENDCMP
+#
+$CMP RC0603FR-071K65L
+D RC0603FR-071K65L
+F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
+$ENDCMP
+#
+$CMP RC0603FR-071KL
+D RC0603FR-071KL
+F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
+$ENDCMP
+#
+$CMP RC0603FR-074K7L
+F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
+$ENDCMP
+#
+$CMP RC0603FR-0768RL
+D RC0603FR-0768RL
+F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
+$ENDCMP
+#
+$CMP SLW-102-01-T-S
+F http://www.samtec.com/documents/webfiles/pdf/SLW.PDF
+$ENDCMP
+#
+$CMP SLW-104-01-T-S
+F http://www.samtec.com/documents/webfiles/pdf/SLW.PDF
+$ENDCMP
+#
+$CMP SSW-102-01-T-S
+F http://www.samtec.com/documents/webfiles/pdf/SLW.PDF
+$ENDCMP
+#
+$CMP SSW-104-01-T-S
+F http://www.samtec.com/documents/webfiles/pdf/SLW.PDF
+$ENDCMP
+#
+$CMP SSW-106-02-T-S
+F http://www.samtec.com/documents/webfiles/pdf/SSW_TH.PDF
+$ENDCMP
+#
+$CMP ST25R3916-AQWT
+D ST25R3916-AQWT
+F https://www.st.com/content/st_com/en/products/nfc/st25-nfc-rfid-tags-readers/st25-nfc-rfid-readers/st25r3916.html#resource
+$ENDCMP
+#
+$CMP TSX-3225_16.0000MF09Z-AC3
+F https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-238V_en.pdf
+$ENDCMP
+#
+$CMP XRCGB27M120F3M00R0
+D XRCGB27M120F3M00R0
+F https://www.murata.com/~/media/webrenewal/campaign/ads/america/timing/p79e.ashx?la=en-us
+$ENDCMP
+#
+#End Doc Library

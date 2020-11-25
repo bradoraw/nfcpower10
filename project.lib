@@ -1,0 +1,1714 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 475890001
+#
+DEF 475890001 J 0 0 Y Y 1 L N
+F0 "J" -700 -1050 50 H V L CNN
+F1 "475890001" -700 -1150 50 H V L CNN
+F2 "Molex-475890001-*" 0 500 50 H I L CNN
+F3 "https://www.molex.com/pdm_docs/ps/PS-47589-001-001.pdf" 0 600 50 H I L CNN
+F4 "No" 0 700 50 H I L CNN "automotive"
+F5 "Conn" 0 800 50 H I L CNN "category"
+F6 "Gold,Nickel" 0 900 50 H I L CNN "contact material"
+F7 "1/1.8A" 0 1000 50 H I L CNN "current rating"
+F8 "Connectors" 0 1100 50 H I L CNN "device class L1"
+F9 "USB Connectors" 0 1200 50 H I L CNN "device class L2"
+F10 "unset" 0 1300 50 H I L CNN "device class L3"
+F11 "CONN RCPT MICRO USB AB 5P SMD RA" -700 -1250 50 H V L CNN "digikey description"
+F12 "WM17143CT-ND" 0 1500 50 H I L CNN "digikey part number"
+F13 "https://www.molex.com/pdm_docs/sd/475890001_sd.pdf" 0 1600 50 H I L CNN "footprint url"
+F14 "2.86mm" 0 1700 50 H I L CNN "height"
+F15 "yes" 0 1800 50 H I L CNN "is connector"
+F16 "yes" 0 1900 50 H I L CNN "is female"
+F17 "Yes" 0 2000 50 H I L CNN "lead free"
+F18 "35c17e53108c3912" 0 2100 50 H I L CNN "library id"
+F19 "Molex" 0 2200 50 H I L CNN "manufacturer"
+F20 "538-47589-0001" 0 2300 50 H I L CNN "mouser part number"
+F21 "5" 0 2400 50 H I L CNN "number of contacts"
+F22 "CONN_USB_8MM2_5MM6" 0 2500 50 H I L CNN "package"
+F23 "0.65mm" 0 2600 50 H I L CNN "pitch"
+F24 "Yes" 0 2700 50 H I L CNN "rohs"
+F25 "true" 0 2800 50 H I L CNN "shielding"
+F26 "+85°C" 0 2900 50 H I L CNN "temperature range high"
+F27 "-30°C" 0 3000 50 H I L CNN "temperature range low"
+F28 "USB 2.0" 0 3100 50 H I L CNN "usb standard"
+F29 "30V" 0 3200 50 H I L CNN "voltage rating"
+DRAW
+C -450 -800 30 1 1 0 N
+C -450 -600 30 1 1 0 N
+C -450 -400 30 1 1 0 N
+C -450 -200 30 1 1 0 N
+C -450 0 30 1 1 0 N
+S -700 200 -200 -1000 1 1 0 f
+P 2 1 1 0 -420 -800 -200 -800 N
+P 2 1 1 0 -420 -600 -200 -600 N
+P 2 1 1 0 -420 -400 -200 -400 N
+P 2 1 1 0 -420 -200 -200 -200 N
+P 2 1 1 0 -420 0 -200 0 N
+X VBUS 1 -100 0 100 L 40 40 1 1 P
+X MNT_5 10 -800 -100 100 R 40 40 1 1 P
+X MNT_6 11 -800 100 100 R 40 40 1 1 P
+X D- 2 -100 -200 100 L 40 40 1 1 P
+X D+ 3 -100 -400 100 L 40 40 1 1 P
+X ID 4 -100 -600 100 L 40 40 1 1 P
+X GND 5 -100 -800 100 L 40 40 1 1 P
+X MNT_1 6 -800 -900 100 R 40 40 1 1 P
+X MNT_2 7 -800 -700 100 R 40 40 1 1 P
+X MNT_3 8 -800 -500 100 R 40 40 1 1 P
+X MNT_4 9 -800 -300 100 R 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ATMEGA328P-MU
+#
+DEF ATMEGA328P-MU U 0 40 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "ATMEGA328P-MU" 0 300 50 H V L CNN
+F2 "Microchip___Atmel-ATMEGA328P-MU-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "MO-220-VHHD-2" 0 600 50 H I L CNN "Code  JEDEC"
+F5 "Manufacturer URL" 0 700 50 H I L CNN "Component Link 1 Description"
+F6 "http://www.atmel.com/" 0 800 50 H I L CNN "Component Link 1 URL"
+F7 "ATmega48A/48PA/88A/88PA/168A/168PA/328/328P Datasheet" 0 900 50 H I L CNN "Component Link 2 Description"
+F8 "http://www.atmel.com/dyn/resources/prod_documents/8271.pdf" 0 1000 50 H I L CNN "Component Link 2 URL"
+F9 "ATmega48A/48PA/88A/88PA/168A/168PA/328/328P Summary" 0 1100 50 H I L CNN "Component Link 3 Description"
+F10 "http://www.atmel.com/dyn/resources/prod_documents/8271S.pdf" 0 1200 50 H I L CNN "Component Link 3 URL"
+F11 "revD, May-2011" 0 1300 50 H I L CNN "Datasheet Version"
+F12 "32-Pin Micro Lead Frame Package (MLF),  5 x 5 x 1.0 mm Body, Pitch 0.50 mm, 3.10mm Exposed Pad" 0 1400 50 H I L CNN "Package Description"
+F13 "revE, May-2006" 0 1500 50 H I L CNN "Package Version"
+F14 "IC" 0 1600 50 H I L CNN "category"
+F15 "973187" 0 1700 50 H I L CNN "ciiva ids"
+F16 "7d83c92a723a3371" 0 1800 50 H I L CNN "library id"
+F17 "Microchip / Atmel" 0 1900 50 H I L CNN "manufacturer"
+F18 "QFN-32" 0 2000 50 H V L CNN "package"
+F19 "1329192673" 0 2100 50 H I L CNN "release date"
+F20 "417A53D3-7F28-4C25-88A7-47DF99564268" 0 2200 50 H I L CNN "vault revision"
+F21 "yes" 0 2300 50 H I L CNN "imported"
+DRAW
+S 200 100 1800 -2800 1 1 0 f
+X PD3/PCINT19/OC2B/INT1 1 1900 -1400 100 L 40 40 1 1 B
+X PD6/PCINT22/OC0A/AIN0 10 1900 -1700 100 L 40 40 1 1 B
+X PD7/PCINT23/AIN1 11 1900 -1800 100 L 40 40 1 1 B
+X PB0/PCINT0/CLKO/ICP1 12 1900 -2000 100 L 40 40 1 1 B
+X PB1/PCINT1/OC1A 13 1900 -2100 100 L 40 40 1 1 B
+X RB2/~SS~/OC1B 14 1900 -2200 100 L 40 40 1 1 B
+X PB3/PCINT3/OC2A/MOSI 15 1900 -2300 100 L 40 40 1 1 B
+X PB4/PCINT4/MISO 16 1900 -2400 100 L 40 40 1 1 B
+X PB5/SCK/PCINT5 17 1900 -2500 100 L 40 40 1 1 B
+X AVCC 18 100 -300 100 R 40 40 1 1 W
+X ADC6 19 1900 0 100 L 40 40 1 1 I
+X PD4/PCINT20/XCK/T0 2 1900 -1500 100 L 40 40 1 1 B
+X AREF 20 100 -500 100 R 40 40 1 1 P
+X GND 21 100 -2500 100 R 40 40 1 1 W
+X ADC7 22 1900 -100 100 L 40 40 1 1 I
+X PC0/ADC0/PCINT8 23 1900 -300 100 L 40 40 1 1 B
+X PC1/ADC1/PCINT9 24 1900 -400 100 L 40 40 1 1 B
+X PC2/ADC2/PCINT10 25 1900 -500 100 L 40 40 1 1 B
+X PC3/ADC3/PCINT11 26 1900 -600 100 L 40 40 1 1 B
+X PC4/ADC4/SDA/PCINT12 27 1900 -700 100 L 40 40 1 1 B
+X PC5/ADC5/SCL/PCINT13 28 1900 -800 100 L 40 40 1 1 B
+X ~RESET~/PCINT14 29 1900 -900 100 L 40 40 1 1 B
+X GND 3 100 -2300 100 R 40 40 1 1 W
+X PD0/RXD/PCINT16 30 1900 -1100 100 L 40 40 1 1 B
+X PD1/TXD/PCINT17 31 1900 -1200 100 L 40 40 1 1 B
+X PD2/INT0/PCINT18 32 1900 -1300 100 L 40 40 1 1 B
+X DAP 33 100 -2700 100 R 40 40 1 1 W
+X VCC 4 100 -100 100 R 40 40 1 1 W
+X GND 5 100 -2400 100 R 40 40 1 1 W
+X VCC 6 100 0 100 R 40 40 1 1 W
+X PB6/PCINT6/XTAL1/TOSC1 7 1900 -2600 100 L 40 40 1 1 B
+X PB7/PCINT7/XTAL2/TOSC2 8 1900 -2700 100 L 40 40 1 1 B
+X PD5/PCINT21/OC0B/T1 9 1900 -1600 100 L 40 40 1 1 B
+ENDDRAW
+ENDDEF
+#
+# ATTINY85-20MU
+#
+DEF ATTINY85-20MU U 0 40 Y Y 2 L N
+F0 "U" 200 -650 50 H V L CNN
+F1 "ATTINY85-20MU" 200 -750 50 H V L CNN
+F2 "Microchip___Atmel-ATTINY85-20MU-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "MO-220WGGD-5" 0 600 50 H I L CNN "Code  JEDEC"
+F5 "Manufacturer URL" 0 700 50 H I L CNN "Component Link 1 Description"
+F6 "http://www.atmel.com/" 0 800 50 H I L CNN "Component Link 1 URL"
+F7 "ATtiny25/45/85 Datasheet" 0 900 50 H I L CNN "Component Link 2 Description"
+F8 "http://www.atmel.com/dyn/resources/prod_documents/doc2586.pdf" 0 1000 50 H I L CNN "Component Link 2 URL"
+F9 "ATtiny25/45/85 Summary" 0 1100 50 H I L CNN "Component Link 3 Description"
+F10 "http://www.atmel.com/dyn/resources/prod_documents/2586S.pdf" 0 1200 50 H I L CNN "Component Link 3 URL"
+F11 "revN, Apr-2011" 0 1300 50 H I L CNN "Datasheet Version"
+F12 "20-pad, 4 x 4 x 0.8 mm Body, Lead Pitch 0.50 mm, 2.6 mm Exposed Pad, Micro Lead Frame Package (MLF)" 0 1400 50 H I L CNN "Package Description"
+F13 "revA, Oct-2004" 0 1500 50 H I L CNN "Package Version"
+F14 "IC" 0 1600 50 H I L CNN "category"
+F15 "2569068" 0 1700 50 H I L CNN "ciiva ids"
+F16 "4889a0997dd4094a" 0 1800 50 H I L CNN "library id"
+F17 "Microchip / Atmel" 0 1900 50 H I L CNN "manufacturer"
+F18 "QFN-20" 200 -850 50 H V L CNN "package"
+F19 "1329202621" 0 2100 50 H I L CNN "release date"
+F20 "8886E185-C2AB-407F-B1BD-1E87CC9D3EF3" 0 2200 50 H I L CNN "vault revision"
+F21 "yes" 0 2300 50 H I L CNN "imported"
+DRAW
+S 200 100 1900 -600 1 1 0 f
+S 200 100 900 -800 2 1 0 f
+X PB5/PCINT5/~RESET~/ADC0/DW 1 100 -500 100 R 40 40 1 1 B
+X PB0/MOSI/DI/SDA/AIN0/OC0A/~OC1A~/AREF/PCINT0 11 100 0 100 R 40 40 1 1 B
+X PB1/MISO/DO/AIN1/OC0B/OC1A/PCINT1 12 100 -100 100 R 40 40 1 1 B
+X PB2/SCK/USCK/SCL/ADC1/T0/INT0/PCINT2 14 100 -200 100 R 40 40 1 1 B
+X VCC 15 2000 -400 100 L 40 40 1 1 W
+X PB3/PCINT3/XTAL1/CLKI/~OC1B~/ADC3 2 100 -300 100 R 40 40 1 1 B
+X PB4/PCINT4/XTAL2/CLKO/OC1B/ADC2 5 100 -400 100 R 40 40 1 1 B
+X GND 8 2000 -500 100 L 40 40 1 1 W
+X DNC 10 1000 -200 100 L 40 40 2 1 P
+X DNC 13 1000 -100 100 L 40 40 2 1 P
+X DNC 16 1000 0 100 L 40 40 2 1 P
+X DNC 17 100 0 100 R 40 40 2 1 P
+X DNC 18 100 -100 100 R 40 40 2 1 P
+X DNC 19 100 -200 100 R 40 40 2 1 P
+X DNC 20 100 -300 100 R 40 40 2 1 P
+X DAP 21 100 -700 100 R 40 40 2 1 P
+X DNC 3 100 -400 100 R 40 40 2 1 P
+X DNC 4 100 -500 100 R 40 40 2 1 P
+X DNC 6 1000 -500 100 L 40 40 2 1 P
+X DNC 7 1000 -400 100 L 40 40 2 1 P
+X DNC 9 1000 -300 100 L 40 40 2 1 P
+ENDDRAW
+ENDDEF
+#
+# BAS40-7-F
+#
+DEF BAS40-7-F D 0 40 Y Y 1 F N
+F0 "D" 0 300 50 H V L CNN
+F1 "BAS40-7-F" 0 400 50 H V L CNN
+F2 "Diodes_Inc.-SOT23-01_2017-0-*" 0 500 50 H I L CNN
+F3 "" 0 600 50 H I L CNN
+F4 "Yes" 0 700 50 H I L CNN "automotive"
+F5 "Grade 1" 0 800 50 H I L CNN "automotive grade"
+F6 "4pF" 0 900 50 H I L CNN "capacitance"
+F7 "Diode" 0 1000 50 H I L CNN "category"
+F8 "Discrete Semiconductors" 0 1100 50 H I L CNN "device class L1"
+F9 "Diodes" 0 1200 50 H I L CNN "device class L2"
+F10 "Schottky Diodes" 0 1300 50 H I L CNN "device class L3"
+F11 "DIODE SCHOTTKY 40V 200MA SOT23-3" 0 1400 50 H I L CNN "digikey description"
+F12 "BAS40-FDICT-ND" 0 1500 50 H I L CNN "digikey part number"
+F13 "https://www.diodes.com/assets/Package-Files/SOT23.pdf" 0 1600 50 H I L CNN "footprint url"
+F14 "200mA" 0 1700 50 H I L CNN "forward current"
+F15 "1.1mm" 0 1800 50 H I L CNN "height"
+F16 "Yes" 0 1900 50 H I L CNN "lead free"
+F17 "c4a7d7c409903337" 0 2000 50 H I L CNN "library id"
+F18 "Diodes Inc." 0 2100 50 H I L CNN "manufacturer"
+F19 "+125°C" 0 2200 50 H I L CNN "max junction temp"
+F20 "40V" 0 2300 50 H I L CNN "max repetitive reverse voltage"
+F21 "600mA" 0 2400 50 H I L CNN "max surge forward current"
+F22 "Schottky Diodes & Rectifiers 40V 350mW" 0 2500 50 H I L CNN "mouser description"
+F23 "621-BAS40-F" 0 2600 50 H I L CNN "mouser part number"
+F24 "SOT23" 0 2700 50 H V L CNN "package"
+F25 "0.2uA" 0 2800 50 H I L CNN "peak reverse current"
+F26 "40V" 0 2900 50 H I L CNN "reverse voltage"
+F27 "Yes" 0 3000 50 H I L CNN "rohs"
+F28 "0.013mm" 0 3100 50 H I L CNN "standoff height"
+F29 "+125°C" 0 3200 50 H I L CNN "temperature range high"
+F30 "-55°C" 0 3300 50 H I L CNN "temperature range low"
+DRAW
+S 200 200 800 -300 1 1 0 f
+P 2 1 1 0 400 -100 600 0 N
+P 2 1 1 0 400 100 400 -100 N
+P 2 1 1 0 600 0 400 100 N
+P 2 1 1 0 600 100 600 -100 N
+X ANODE 1 100 0 300 R 40 0 1 1 P
+X NC 2 100 -200 100 R 40 40 1 1 P
+X CATHODE 3 900 0 300 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# BAT54T1G
+#
+DEF BAT54T1G D 0 40 Y Y 1 F N
+F0 "D" 0 200 50 H V L CNN
+F1 "BAT54T1G" 0 300 50 H V L CNN
+F2 "On_Semiconductor-BAT54T1G-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "Manufacturer URL" 0 600 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.onsemi.com/" 0 700 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 800 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.onsemi.com/pub_link/Collateral/425-04.PDF" 0 900 50 H I L CNN "Component Link 3 URL"
+F8 "Single" 0 1000 50 H I L CNN "Configuration"
+F9 "Rev. 9" 0 1100 50 H I L CNN "Datasheet Version"
+F10 "0.6" 0 1200 50 H I L CNN "IFSM Max A"
+F11 "Surface Mount" 0 1300 50 H I L CNN "Mounting Technology"
+F12 "2-Pin SOD, Body 1.6 x 2.69 mm" 0 1400 50 H I L CNN "Package Description"
+F13 "Rev. G, 10/2009" 0 1500 50 H I L CNN "Package Version"
+F14 "Tape and Reel" 0 1600 50 H I L CNN "Packing"
+F15 "Diode" 0 1700 50 H I L CNN "category"
+F16 "19353990" 0 1800 50 H I L CNN "ciiva ids"
+F17 "f50e6730bced61e6" 0 1900 50 H I L CNN "library id"
+F18 "On Semiconductor" 0 2000 50 H I L CNN "manufacturer"
+F19 "SOD-123" 0 2100 50 H V L CNN "package"
+F20 "1407123099" 0 2200 50 H I L CNN "release date"
+F21 "Yes" 0 2300 50 H I L CNN "rohs"
+F22 "089F5CB3-91C9-4093-8502-D57A14867F47" 0 2400 50 H I L CNN "vault revision"
+F23 "yes" 0 2500 50 H I L CNN "imported"
+F24 "5" 0 2600 50 H I L CNN "trr Max ns"
+F25 "30V" 200 200 50 H V C CNN "Reverse Breakdown Voltage"
+F26 "200mA" 450 200 50 H V C CNN "Current"
+DRAW
+P 2 1 1 0 200 100 200 -100 N
+P 4 1 1 0 100 -100 200 0 100 100 100 -100 N
+X K 1 300 0 100 L 40 0 1 1 P
+X A 2 0 0 100 R 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# C0603C209C5GACTU
+#
+DEF C0603C209C5GACTU C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "C0603C209C5GACTU" 0 200 50 H I L CNN
+F2 "KEMET-C0603C-CF-0-0-*" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "Yes" 0 500 50 H I L CNN "automotive"
+F5 "Grade 1" 0 600 50 H I L CNN "automotive grade"
+F6 "2.0 pF" 0 700 50 H V L CNN "capacitance"
+F7 "Cap" 0 800 50 H I L CNN "category"
+F8 "Passive Components" 0 900 50 H I L CNN "device class L1"
+F9 "Capacitors" 0 1000 50 H I L CNN "device class L2"
+F10 "Ceramic Capacitors" 0 1100 50 H I L CNN "device class L3"
+F11 "CAP CER 2PF 50V C0G/NP0 0603" 0 1200 50 H I L CNN "digikey description"
+F12 "399-1047-2-ND" 0 1300 50 H I L CNN "digikey part number"
+F13 "0.87mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "4271a13c665e43de" 0 1600 50 H I L CNN "library id"
+F16 "KEMET" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 50volts 2.0pF C0G 0.25%" 0 1900 50 H I L CNN "mouser description"
+F19 "80-C0603C209C5G" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "C0G" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "30ppm/°C" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.25 pF" 0 2700 50 H I L CNN "tolerance"
+F27 "50 V" 0 2800 50 H V L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CC0603JRNPO9BN101
+#
+DEF CC0603JRNPO9BN101 C 0 40 Y Y 1 L N
+F0 "C" 0 100 50 H V L CNN
+F1 "CC0603JRNPO9BN101" 0 200 50 H V L CNN
+F2 "YAGEO-CC0603-0-0-*" 0 300 50 H I L CNN
+F3 "http://www.yageo.com/documents/recent/UPY-GP_NP0_16V-to-50V_16.pdf" 0 400 50 H I L CNN
+F4 "100pF" 0 500 50 H I L CNN "capacitance"
+F5 "Cap" 0 600 50 H I L CNN "category"
+F6 "CAP CER 100PF 50V C0G/NPO 0603" 0 700 50 H I L CNN "digikey description"
+F7 "311-1069-1-ND" 0 800 50 H I L CNN "digikey part number"
+F8 "yes" 0 900 50 H I L CNN "lead free"
+F9 "a104fc37095ef276" 0 1000 50 H I L CNN "library id"
+F10 "YAGEO" 0 1100 50 H I L CNN "manufacturer"
+F11 "603-CC603JRNPO9BN101" 0 1200 50 H I L CNN "mouser part number"
+F12 "0201 (0603 metric)" 0 1300 50 H I L CNN "package"
+F13 "yes" 0 1400 50 H I L CNN "rohs"
+F14 "+125°C" 0 1500 50 H I L CNN "temperature range high"
+F15 "-55°C" 0 1600 50 H I L CNN "temperature range low"
+F16 "50V" 0 1700 50 H I L CNN "voltage"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 -200 60 U 40 0 1 1 U
+X 2 2 0 0 70 D 40 0 1 1 U
+ENDDRAW
+ENDDEF
+#
+# CC0603KPX7R9BB104
+#
+DEF CC0603KPX7R9BB104 C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "CC0603KPX7R9BB104" 0 200 50 H I L CNN
+F2 "project:YAGEO-CC0603-0-0-0" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "100 nF" 0 600 50 H V L CNN "capacitance"
+F6 "Cap" 0 700 50 H I L CNN "category"
+F7 "Passive Components" 0 800 50 H I L CNN "device class L1"
+F8 "Capacitors" 0 900 50 H I L CNN "device class L2"
+F9 "Ceramic Capacitors" 0 1000 50 H I L CNN "device class L3"
+F10 "CAP CER 0.1UF 50V X7R 0603" 0 1100 50 H I L CNN "digikey description"
+F11 "CC0603KPX7R9BB104-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "http://www.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf" 0 1300 50 H I L CNN "footprint url"
+F13 "0.9mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "7cd692b09ff39865" 0 1600 50 H I L CNN "library id"
+F16 "YAGEO" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 100nF 50V X7R 10%" 0 1900 50 H I L CNN "mouser description"
+F19 "603-CC603KPX7R9BB104" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "X7R" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "15%" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.1" 0 2700 50 H I L CNN "tolerance"
+F27 "50 V" 0 2800 50 H V L CNN "voltage"
+F28 "50 V" 0 2900 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CC0603KRX7R9BB102
+#
+DEF CC0603KRX7R9BB102 C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "CC0603KRX7R9BB102" 0 200 50 H I L CNN
+F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "1.0 nF" 0 600 50 H V L CNN "capacitance"
+F6 "Cap" 0 700 50 H I L CNN "category"
+F7 "Passive Components" 0 800 50 H I L CNN "device class L1"
+F8 "Capacitors" 0 900 50 H I L CNN "device class L2"
+F9 "Ceramic Capacitors" 0 1000 50 H I L CNN "device class L3"
+F10 "CAP CER 1000PF 50V X7R 0603" 0 1100 50 H I L CNN "digikey description"
+F11 "311-1080-2-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "http://www.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf" 0 1300 50 H I L CNN "footprint url"
+F13 "0.9mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "1aeb194455b4965b" 0 1600 50 H I L CNN "library id"
+F16 "YAGEO" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1.0nF 50V X7R 10%" 0 1900 50 H I L CNN "mouser description"
+F19 "603-CC603KRX7R9BB102" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "X7R" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "15%" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.1" 0 2700 50 H I L CNN "tolerance"
+F27 "50 V" 0 2800 50 H V L CNN "voltage"
+F28 "50 V" 0 2900 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CC0603KRX7R9BB103
+#
+DEF CC0603KRX7R9BB103 C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "CC0603KRX7R9BB103" 0 200 50 H I L CNN
+F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "10 nF" 0 600 50 H V L CNN "capacitance"
+F6 "Cap" 0 700 50 H I L CNN "category"
+F7 "Passive Components" 0 800 50 H I L CNN "device class L1"
+F8 "Capacitors" 0 900 50 H I L CNN "device class L2"
+F9 "Ceramic Capacitors" 0 1000 50 H I L CNN "device class L3"
+F10 "CAP CER 10000PF 50V X7R 0603" 0 1100 50 H I L CNN "digikey description"
+F11 "311-1085-2-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "http://www.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf" 0 1300 50 H I L CNN "footprint url"
+F13 "0.9mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "2a4c50056f7872c7" 0 1600 50 H I L CNN "library id"
+F16 "YAGEO" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "Multilayer Ceramic Capacitor, CC Series, 0.01 - F, - 10%, X7R, 50 V, 0603 [1608 Metric]" 0 1900 50 H I L CNN "mouser description"
+F19 "603-CC603KRX7R9BB103" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "X7R" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "15%" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.1" 0 2700 50 H I L CNN "tolerance"
+F27 "50 V" 0 2800 50 H V L CNN "voltage"
+F28 "50 V" 0 2900 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CC0603KRX7R9BB181
+#
+DEF CC0603KRX7R9BB181 C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "CC0603KRX7R9BB181" 0 200 50 H I L CNN
+F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "180 pF" 0 600 50 H V L CNN "capacitance"
+F6 "Cap" 0 700 50 H I L CNN "category"
+F7 "Passive Components" 0 800 50 H I L CNN "device class L1"
+F8 "Capacitors" 0 900 50 H I L CNN "device class L2"
+F9 "Ceramic Capacitors" 0 1000 50 H I L CNN "device class L3"
+F10 "CAP CER 180PF 50V X7R 0603" 0 1100 50 H I L CNN "digikey description"
+F11 "CC0603KRX7R9BB181-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "http://www.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf" 0 1300 50 H I L CNN "footprint url"
+F13 "0.9mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "118bd706f38603c6" 0 1600 50 H I L CNN "library id"
+F16 "YAGEO" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 180pF 50V X7R 10%" 0 1900 50 H I L CNN "mouser description"
+F19 "603-CC603KRX7R9BB181" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "X7R" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "15%" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.1" 0 2700 50 H I L CNN "tolerance"
+F27 "50 V" 0 2800 50 H V L CNN "voltage"
+F28 "50 V" 0 2900 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CC0603KRX7R9BB681
+#
+DEF CC0603KRX7R9BB681 C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "CC0603KRX7R9BB681" 0 200 50 H I L CNN
+F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "680 pF" 0 600 50 H V L CNN "capacitance"
+F6 "Cap" 0 700 50 H I L CNN "category"
+F7 "Passive Components" 0 800 50 H I L CNN "device class L1"
+F8 "Capacitors" 0 900 50 H I L CNN "device class L2"
+F9 "Ceramic Capacitors" 0 1000 50 H I L CNN "device class L3"
+F10 "CAP CER 680PF 50V X7R 0603" 0 1100 50 H I L CNN "digikey description"
+F11 "311-1188-2-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "http://www.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf" 0 1300 50 H I L CNN "footprint url"
+F13 "0.9mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "0610f68575ade3a0" 0 1600 50 H I L CNN "library id"
+F16 "YAGEO" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 680pF 50V X7R 10%" 0 1900 50 H I L CNN "mouser description"
+F19 "603-CC603KRX7R9BB681" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "X7R" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "15%" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.1" 0 2700 50 H I L CNN "tolerance"
+F27 "50 V" 0 2800 50 H V L CNN "voltage"
+F28 "50 V" 0 2900 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CC0603MRX5R5BB225
+#
+DEF CC0603MRX5R5BB225 C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "CC0603MRX5R5BB225" 0 200 50 H I L CNN
+F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "2.2 uF" 0 600 50 H V L CNN "capacitance"
+F6 "Cap" 0 700 50 H I L CNN "category"
+F7 "Passive Components" 0 800 50 H I L CNN "device class L1"
+F8 "Capacitors" 0 900 50 H I L CNN "device class L2"
+F9 "Ceramic Capacitors" 0 1000 50 H I L CNN "device class L3"
+F10 "CAP CER 2.2UF 6.3V X5R 0603" 0 1100 50 H I L CNN "digikey description"
+F11 "311-1814-2-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "http://www.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf" 0 1300 50 H I L CNN "footprint url"
+F13 "0.9mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "d4a18ccc754c13a9" 0 1600 50 H I L CNN "library id"
+F16 "YAGEO" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "0603 2.2 uF 6.3 V ±20% Tolerance X5R SMT Multilayer Ceramic Capacitor" 0 1900 50 H I L CNN "mouser description"
+F19 "603-CC603MRX5R5BB225" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "X5R" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "15%" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.2" 0 2700 50 H I L CNN "tolerance"
+F27 "6.3 V" 0 2800 50 H V L CNN "voltage"
+F28 "6.3 V" 0 2900 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CC0805ZKY5V6BB106
+#
+DEF CC0805ZKY5V6BB106 C 0 40 Y Y 1 L N
+F0 "C" 150 0 50 H V L CNN
+F1 "CC0805ZKY5V6BB106" 0 200 50 H I L CNN
+F2 "YAGEO-CC0805-0-0-*" 0 300 50 H I L CNN
+F3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" 0 400 50 H I L CNN
+F4 "10uF" 150 -100 50 H V L CNN "capacitance"
+F5 "Cap" 0 600 50 H I L CNN "category"
+F6 "CAP CER 10UF 10V Y5V 0805" 0 700 50 H I L CNN "digikey description"
+F7 "311-1355-1-ND" 0 800 50 H I L CNN "digikey part number"
+F8 "yes" 0 900 50 H I L CNN "lead free"
+F9 "852e7d0cf36849be" 0 1000 50 H I L CNN "library id"
+F10 "YAGEO" 0 1100 50 H I L CNN "manufacturer"
+F11 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10uF 10V Y5V-20/+80%" 0 1200 50 H I L CNN "mouser description"
+F12 "603-CC805ZKY5V6BB106" 0 1300 50 H I L CNN "mouser part number"
+F13 "0805" 150 -200 50 H V L CNN "package"
+F14 "yes" 0 1500 50 H I L CNN "rohs"
+F15 "+85°C" 0 1600 50 H I L CNN "temperature range high"
+F16 "-30°C" 0 1700 50 H I L CNN "temperature range low"
+F17 "10V" 150 -300 50 H V L CNN "voltage"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 -200 60 U 40 0 1 1 U
+X 2 2 0 0 70 D 40 0 1 1 U
+ENDDRAW
+ENDDEF
+#
+# CGA3E2C0G1H060D080AA
+#
+DEF CGA3E2C0G1H060D080AA C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "CGA3E2C0G1H060D080AA" 0 200 50 H I L CNN
+F2 "TDK-CGA3E-0.3-0.1-0-0-*" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "Yes" 0 500 50 H I L CNN "automotive"
+F5 "Grade 1" 0 600 50 H I L CNN "automotive grade"
+F6 "6pF" 0 700 50 H V L CNN "capacitance"
+F7 "Cap" 0 800 50 H I L CNN "category"
+F8 "Passive Components" 0 900 50 H I L CNN "device class L1"
+F9 "Capacitors" 0 1000 50 H I L CNN "device class L2"
+F10 "Ceramic Capacitors" 0 1100 50 H I L CNN "device class L3"
+F11 "1.1mm" 0 1200 50 H I L CNN "height"
+F12 "CAPC16080X80" 0 1300 50 H I L CNN "ipc land pattern name"
+F13 "Yes" 0 1400 50 H I L CNN "lead free"
+F14 "9251288ec5c7c3b4" 0 1500 50 H I L CNN "library id"
+F15 "TDK" 0 1600 50 H I L CNN "manufacturer"
+F16 "Ceramic" 0 1700 50 H I L CNN "material"
+F17 "0603" 0 1900 50 H V L CNN "package"
+F18 "Yes" 0 2000 50 H I L CNN "rohs"
+F19 "C0G" 0 2100 50 H I L CNN "temperature characteristic"
+F20 "30ppm/°C" 0 2200 50 H I L CNN "temperature coefficient"
+F21 "+125°C" 0 2300 50 H I L CNN "temperature range high"
+F22 "-55°C" 0 2400 50 H I L CNN "temperature range low"
+F23 "0.5pF" 0 2500 50 H I L CNN "tolerance"
+F24 "50V" 0 2600 50 H V L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Coil_49_18_6T_2Layer
+#
+DEF Coil_49_18_6T_2Layer Y 0 40 Y Y 1 F N
+F0 "Y" 550 50 50 H V C CNN
+F1 "Coil_49_18_6T_2Layer" 950 -100 50 H V C CNN
+F2 "project:Coil_49_18_6T_2Layer" 1000 -200 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 200 150 500 -150 0 1 0 N
+X 1 1 0 50 200 R 50 50 1 1 P
+X 2 2 0 -50 200 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# FSM2JSMAA
+#
+DEF FSM2JSMAA SW 0 40 Y Y 1 F N
+F0 "SW" 0 0 50 H V L CNN
+F1 "FSM2JSMAA" 0 100 50 H V L CNN
+F2 "TE_Connectivity-FSM2JSMAA-*" 0 200 50 H I L CNN
+F3 "" 0 300 50 H I L CNN
+F4 "No" 0 400 50 H I L CNN "automotive"
+F5 "Switch" 0 500 50 H I L CNN "category"
+F6 "50mA" 0 600 50 H I L CNN "contact current rating"
+F7 "100mΩ" 0 700 50 H I L CNN "contact resistance"
+F8 "Electromechanical" 0 800 50 H I L CNN "device class L1"
+F9 "Switches" 0 900 50 H I L CNN "device class L2"
+F10 "Pushbutton Switches" 0 1000 50 H I L CNN "device class L3"
+F11 "SWITCH TACTILE SPST-NO 0.05A 24V" 0 1100 50 H I L CNN "digikey description"
+F12 "450-3355-ND" 0 1200 50 H I L CNN "digikey part number"
+F13 "100000Cycles" 0 1300 50 H I L CNN "electromechanical life"
+F14 "4.59mm" 0 1400 50 H I L CNN "height"
+F15 "Yes" 0 1500 50 H I L CNN "lead free"
+F16 "7458e20eae944245" 0 1600 50 H I L CNN "library id"
+F17 "TE Connectivity" 0 1700 50 H I L CNN "manufacturer"
+F18 "Surface Mount" 0 1800 50 H I L CNN "mount"
+F19 "Tactile Switch 260G" 0 1900 50 H V L CNN "mouser description"
+F20 "506-2-1437565-8" 0 2000 50 H I L CNN "mouser part number"
+F21 "260gf" 0 2100 50 H I L CNN "operating force"
+F22 "SMT_SW_6MM00_6MM00" 0 2200 50 H V L CNN "package"
+F23 "Yes" 0 2300 50 H I L CNN "rohs"
+F24 "0.05mm" 0 2400 50 H I L CNN "standoff height"
+F25 "+85°C" 0 2500 50 H I L CNN "temperature range high"
+F26 "-35°C" 0 2600 50 H I L CNN "temperature range low"
+F27 "SPST-NO" 0 2700 50 H I L CNN "throw configuration"
+F28 "24V" 0 2800 50 H I L CNN "voltage rating DC"
+DRAW
+C 130 -200 20 1 1 0 N
+C 270 -200 20 1 1 0 N
+P 2 1 1 0 0 -200 100 -200 N
+P 2 1 1 0 150 -190 250 -130 N
+P 2 1 1 0 400 -200 300 -200 N
+X 1 1 0 -100 200 D 40 0 1 1 P
+X 2 2 0 -300 200 U 40 0 1 1 P
+X 3 3 400 -100 200 D 40 0 1 1 P
+X 4 4 400 -300 200 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# FT231XQ-R
+#
+DEF FT231XQ-R U 0 40 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "FT231XQ-R" 0 300 50 H V L CNN
+F2 "FTDI-QFN-20-0-0-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "+85°C" 0 600 50 H I L CNN "ambient temperature range high"
+F5 "-40°C" 0 700 50 H I L CNN "ambient temperature range low"
+F6 "No" 0 800 50 H I L CNN "automotive"
+F7 "IC" 0 900 50 H I L CNN "category"
+F8 "Integrated Circuits (ICs)" 0 1000 50 H I L CNN "device class L1"
+F9 "Interface ICs" 0 1100 50 H I L CNN "device class L2"
+F10 "Controllers" 0 1200 50 H I L CNN "device class L3"
+F11 "IC USB SERIAL FULL UART 20QFN" 0 1300 50 H I L CNN "digikey description"
+F12 "768-1128-1-ND" 0 1400 50 H I L CNN "digikey part number"
+F13 "https://www.ftdichip.com/Support/Documents/TechnicalNotes/TN_166%20FTDI%20Example%20IC%20PCB%20Footprints.pdf" 0 1500 50 H I L CNN "footprint url"
+F14 "USB to UART" 0 1600 50 H I L CNN "function"
+F15 "0.8mm" 0 1700 50 H I L CNN "height"
+F16 "UART,USB" 0 1800 50 H I L CNN "interface"
+F17 "QFN50P400X400X75-20" 0 1900 50 H I L CNN "ipc land pattern name"
+F18 "Yes" 0 2000 50 H I L CNN "lead free"
+F19 "d3944f6512027fdf" 0 2100 50 H I L CNN "library id"
+F20 "FTDI" 0 2200 50 H I L CNN "manufacturer"
+F21 "5.5V" 0 2300 50 H I L CNN "max supply voltage"
+F22 "1.62V" 0 2400 50 H I L CNN "min supply voltage"
+F23 "895-FT231XQ-R" 0 2500 50 H I L CNN "mouser part number"
+F24 "125-8000uA" 0 2600 50 H I L CNN "nominal supply current"
+F25 "QFN20" 0 2700 50 H V L CNN "package"
+F26 "Yes" 0 2800 50 H I L CNN "rohs"
+F27 "0mm" 0 2900 50 H I L CNN "standoff height"
+F28 "+85°C" 0 3000 50 H I L CNN "temperature range high"
+F29 "-40°C" 0 3100 50 H I L CNN "temperature range low"
+DRAW
+S 200 100 1700 -1700 1 1 0 f
+X RXD 1 1800 -100 100 L 40 40 1 1 I
+X 3V3OUT 10 100 -900 100 R 40 40 1 1 O
+X ~RESET~ 11 100 -600 100 R 40 40 1 1 I
+X VCC 12 100 0 100 R 40 40 1 1 W
+X GND 13 1800 -1500 100 L 40 40 1 1 E
+X CBUS1 14 1800 -1000 100 L 40 40 1 1 B
+X CBUS0 15 1800 -900 100 L 40 40 1 1 B
+X CBUS3 16 1800 -1200 100 L 40 40 1 1 B
+X TXD 17 1800 0 100 L 40 40 1 1 O
+X ~DTR~ 18 1800 -400 100 L 40 40 1 1 O
+X ~RTS~ 19 1800 -200 100 L 40 40 1 1 O
+X ~RI~ 2 1800 -700 100 L 40 40 1 1 I
+X VCCIO 20 100 -100 100 R 40 40 1 1 W
+X GND 21 1800 -1600 100 L 40 40 1 1 W
+X GND 3 1800 -1400 100 L 40 40 1 1 W
+X ~DSR~ 4 1800 -500 100 L 40 40 1 1 I
+X ~DCD~ 5 1800 -600 100 L 40 40 1 1 I
+X ~CTS~ 6 1800 -300 100 L 40 40 1 1 I
+X CBUS2 7 1800 -1100 100 L 40 40 1 1 B
+X USBDP 8 100 -400 100 R 40 40 1 1 I
+X USBDM 9 100 -300 100 R 40 40 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Field_Sensor_54_22
+#
+DEF Field_Sensor_54_22 Y 0 40 Y Y 1 F N
+F0 "Y" 550 50 50 H V C CNN
+F1 "Field_Sensor_54_22" 950 -100 50 H V C CNN
+F2 "project:Field_Sensor_54_22" 1000 -200 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 200 150 500 -150 0 1 0 N
+X 1 1 0 50 200 R 50 50 1 1 P
+X 2 2 0 -50 200 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LTST-C190KGKT
+#
+DEF LTST-C190KGKT D 0 40 Y Y 1 F N
+F0 "D" 0 400 50 H V L CNN
+F1 "LTST-C190KGKT" 0 500 50 H V L CNN
+F2 "Lite-On-LTST-C190KGKT-*" 0 600 50 H I L CNN
+F3 "" 0 700 50 H I L CNN
+F4 "No" 0 800 50 H I L CNN "automotive"
+F5 "Diode" 0 900 50 H I L CNN "category"
+F6 "Green" 0 1000 50 H V L CNN "colour"
+F7 "Optoelectronics" 0 1100 50 H I L CNN "device class L1"
+F8 "LEDs" 0 1200 50 H I L CNN "device class L2"
+F9 "unset" 0 1300 50 H I L CNN "device class L3"
+F10 "LED GREEN CLEAR CHIP SMD" 0 1400 50 H I L CNN "digikey description"
+F11 "160-1435-1-ND" 0 1500 50 H I L CNN "digikey part number"
+F12 "20mA" 0 1600 50 H V L CNN "forward current"
+F13 "2.4V" 0 1700 50 H V L CNN "forward voltage"
+F14 "0.9mm" 0 1800 50 H I L CNN "height"
+F15 "Yes" 0 1900 50 H I L CNN "lead free"
+F16 "Top View" 0 2000 50 H I L CNN "led orientation"
+F17 "4c107ec0dbc12b09" 0 2100 50 H I L CNN "library id"
+F18 "18-71mcd" 0 2200 50 H I L CNN "luminous intensity"
+F19 "Lite-On" 0 2300 50 H I L CNN "manufacturer"
+F20 "859-LTST-C190KGKT" 0 2400 50 H I L CNN "mouser part number"
+F21 "0603" 0 2500 50 H V L CNN "package"
+F22 "574nm" 0 2600 50 H I L CNN "peak emmision wavelength"
+F23 "75mW" 0 2700 50 H I L CNN "power dissipation"
+F24 "5V" 0 2800 50 H I L CNN "reverse voltage"
+F25 "Yes" 0 2900 50 H I L CNN "rohs"
+F26 "+85°C" 0 3000 50 H I L CNN "temperature range high"
+F27 "-30°C" 0 3100 50 H I L CNN "temperature range low"
+F28 "130°" 0 3200 50 H I L CNN "viewing angle"
+F29 "576.5nm" 0 3300 50 H I L CNN "wavelength"
+DRAW
+P 2 1 1 0 100 -100 300 0 N
+P 2 1 1 0 100 100 100 -100 N
+P 2 1 1 0 100 100 300 0 N
+P 2 1 1 0 150 120 250 220 N
+P 2 1 1 0 220 80 320 180 N
+P 2 1 1 0 250 220 200 220 N
+P 2 1 1 0 250 220 250 170 N
+P 2 1 1 0 300 100 300 -100 N
+P 2 1 1 0 320 180 270 180 N
+P 2 1 1 0 320 180 320 130 N
+X CATHODE 1 400 0 100 L 40 0 1 1 P
+X ANODE 2 0 0 100 R 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LTST-C190KRKT
+#
+DEF LTST-C190KRKT D 0 40 Y Y 1 F N
+F0 "D" 0 400 50 H V L CNN
+F1 "LTST-C190KRKT" 0 500 50 H V L CNN
+F2 "Lite-On-LTST-C190KRKT-*" 0 600 50 H I L CNN
+F3 "" 0 700 50 H I L CNN
+F4 "No" 0 800 50 H I L CNN "automotive"
+F5 "Diode" 0 900 50 H I L CNN "category"
+F6 "Red" 0 1000 50 H V L CNN "colour"
+F7 "Optoelectronics" 0 1100 50 H I L CNN "device class L1"
+F8 "LEDs" 0 1200 50 H I L CNN "device class L2"
+F9 "unset" 0 1300 50 H I L CNN "device class L3"
+F10 "LED RED CLEAR CHIP SMD" 0 1400 50 H I L CNN "digikey description"
+F11 "160-1436-1-ND" 0 1500 50 H I L CNN "digikey part number"
+F12 "20mA" 0 1600 50 H V L CNN "forward current"
+F13 "2.4V" 0 1700 50 H V L CNN "forward voltage"
+F14 "0.9mm" 0 1800 50 H I L CNN "height"
+F15 "Yes" 0 1900 50 H I L CNN "lead free"
+F16 "Top View" 0 2000 50 H I L CNN "led orientation"
+F17 "3c5f6cfddbd1ff06" 0 2100 50 H I L CNN "library id"
+F18 "18-180mcd" 0 2200 50 H I L CNN "luminous intensity"
+F19 "Lite-On" 0 2300 50 H I L CNN "manufacturer"
+F20 "859-LTST-C190KRKT" 0 2400 50 H I L CNN "mouser part number"
+F21 "0603" 0 2500 50 H V L CNN "package"
+F22 "639nm" 0 2600 50 H I L CNN "peak emmision wavelength"
+F23 "62.5mW" 0 2700 50 H I L CNN "power dissipation"
+F24 "5V" 0 2800 50 H I L CNN "reverse voltage"
+F25 "Yes" 0 2900 50 H I L CNN "rohs"
+F26 "+85°C" 0 3000 50 H I L CNN "temperature range high"
+F27 "-30°C" 0 3100 50 H I L CNN "temperature range low"
+F28 "130°" 0 3200 50 H I L CNN "viewing angle"
+F29 "631nm" 0 3300 50 H I L CNN "wavelength"
+DRAW
+P 2 1 1 0 100 -100 300 0 N
+P 2 1 1 0 100 100 100 -100 N
+P 2 1 1 0 100 100 300 0 N
+P 2 1 1 0 150 120 250 220 N
+P 2 1 1 0 220 80 320 180 N
+P 2 1 1 0 250 220 200 220 N
+P 2 1 1 0 250 220 250 170 N
+P 2 1 1 0 300 100 300 -100 N
+P 2 1 1 0 320 180 270 180 N
+P 2 1 1 0 320 180 320 130 N
+X CATHODE 1 400 0 100 L 40 0 1 1 P
+X ANODE 2 0 0 100 R 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LTST-C190KSKT
+#
+DEF LTST-C190KSKT D 0 40 Y Y 1 F N
+F0 "D" 0 400 50 H V L CNN
+F1 "LTST-C190KSKT" 0 500 50 H V L CNN
+F2 "Lite-On-LTST-C190KSKT-*" 0 600 50 H I L CNN
+F3 "" 0 700 50 H I L CNN
+F4 "No" 0 800 50 H I L CNN "automotive"
+F5 "Diode" 0 900 50 H I L CNN "category"
+F6 "Yellow" 0 1000 50 H V L CNN "colour"
+F7 "Optoelectronics" 0 1100 50 H I L CNN "device class L1"
+F8 "LEDs" 0 1200 50 H I L CNN "device class L2"
+F9 "unset" 0 1300 50 H I L CNN "device class L3"
+F10 "LED YELLOW CLEAR CHIP SMD" 0 1400 50 H I L CNN "digikey description"
+F11 "160-1437-1-ND" 0 1500 50 H I L CNN "digikey part number"
+F12 "20mA" 0 1600 50 H V L CNN "forward current"
+F13 "2.4V" 0 1700 50 H V L CNN "forward voltage"
+F14 "0.9mm" 0 1800 50 H I L CNN "height"
+F15 "Yes" 0 1900 50 H I L CNN "lead free"
+F16 "Top View" 0 2000 50 H I L CNN "led orientation"
+F17 "d70eef253d640e08" 0 2100 50 H I L CNN "library id"
+F18 "28-180mcd" 0 2200 50 H I L CNN "luminous intensity"
+F19 "Lite-On" 0 2300 50 H I L CNN "manufacturer"
+F20 "859-LTST-C190KSKT" 0 2400 50 H I L CNN "mouser part number"
+F21 "0603" 0 2500 50 H V L CNN "package"
+F22 "588nm" 0 2600 50 H I L CNN "peak emmision wavelength"
+F23 "75mW" 0 2700 50 H I L CNN "power dissipation"
+F24 "5V" 0 2800 50 H I L CNN "reverse voltage"
+F25 "Yes" 0 2900 50 H I L CNN "rohs"
+F26 "+85°C" 0 3000 50 H I L CNN "temperature range high"
+F27 "-30°C" 0 3100 50 H I L CNN "temperature range low"
+F28 "130°" 0 3200 50 H I L CNN "viewing angle"
+F29 "597nm" 0 3300 50 H I L CNN "wavelength"
+DRAW
+P 2 1 1 0 200 -100 400 0 N
+P 2 1 1 0 200 100 200 -100 N
+P 2 1 1 0 200 100 400 0 N
+P 2 1 1 0 250 120 350 220 N
+P 2 1 1 0 320 80 420 180 N
+P 2 1 1 0 350 220 300 220 N
+P 2 1 1 0 350 220 350 170 N
+P 2 1 1 0 400 100 400 -100 N
+P 2 1 1 0 420 180 370 180 N
+P 2 1 1 0 420 180 420 130 N
+X CATHODE 1 500 0 100 L 40 0 1 1 P
+X ANODE 2 100 0 100 R 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LTST-C190TBKT
+#
+DEF LTST-C190TBKT DS 0 40 Y Y 1 F N
+F0 "DS" 0 400 50 H V L CNN
+F1 "LTST-C190TBKT" 0 500 50 H V L CNN
+F2 "Vishay_Lite-On-LTST-C190TBKT-*" 0 600 50 H I L CNN
+F3 "" 0 700 50 H I L CNN
+F4 "DFN" 0 800 50 H I L CNN "Case Package"
+F5 "Manufacturer URL" 0 900 50 H I L CNN "Component Link 1 Description"
+F6 "http://www.us.liteon.com/" 0 1000 50 H I L CNN "Component Link 1 URL"
+F7 "Rev. K, 08/2011" 0 1100 50 H I L CNN "Datasheet Version"
+F8 "1.1 mm" 0 1200 50 H I L CNN "Height"
+F9 "Serial" 0 1300 50 H I L CNN "Interface"
+F10 "3 mm" 0 1400 50 H I L CNN "Length"
+F11 "125 degC" 0 1500 50 H I L CNN "Max Operating Temperature"
+F12 "3.6 V" 0 1600 50 H I L CNN "Max Supply Voltage"
+F13 "-40 degC" 0 1700 50 H I L CNN "Min Operating Temperature"
+F14 "2.1 V" 0 1800 50 H I L CNN "Min Supply Voltage"
+F15 "Surface Mount" 0 1900 50 H I L CNN "Mount"
+F16 "3.3V" 0 2000 50 H V L CNN "Nominal Supply Voltage"
+F17 "2-Pin Surface Mount Device, Body 1.6 x 0.8 mm" 0 2100 50 H I L CNN "Package Description"
+F18 "Cut Tape" 0 2200 50 H I L CNN "Packaging"
+F19 "6" 0 2300 50 H I L CNN "Pins"
+F20 "No SVHC" 0 2400 50 H I L CNN "REACH SVHC"
+F21 "true" 0 2500 50 H I L CNN "Ro HSCompliant"
+F22 "3 mm" 0 2600 50 H I L CNN "Width"
+F23 "Disp" 0 2700 50 H I L CNN "category"
+F24 "1545016" 0 2800 50 H I L CNN "ciiva ids"
+F25 "01d263fa86e1fb49" 0 2900 50 H I L CNN "library id"
+F26 "Vishay Lite-On" 0 3000 50 H I L CNN "manufacturer"
+F27 "0603" 0 3100 50 H V L CNN "package"
+F28 "1475043740" 0 3200 50 H I L CNN "release date"
+F29 "6CBC32C1-F554-43EB-9EEA-D4C78589E111" 0 3300 50 H I L CNN "vault revision"
+F30 "yes" 0 3400 50 H I L CNN "imported"
+F31 "Blue" 100 300 50 H V C CNN "Color"
+F32 "20mA" 100 200 50 H V C CNN "Current"
+DRAW
+P 2 1 1 0 200 140 270 210 N
+P 2 1 1 0 240 100 310 170 N
+P 2 1 1 0 300 100 300 -100 N
+P 4 1 1 0 100 -100 300 0 100 100 100 -100 N
+P 4 1 1 0 250 170 270 210 230 190 250 170 N
+P 4 1 1 0 290 130 310 170 270 150 290 130 N
+X A 1 0 0 100 R 40 0 1 1 P
+X K 2 400 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MLJ1608WR27JT000
+#
+DEF MLJ1608WR27JT000 L 0 40 Y N 1 F N
+F0 "L" -50 300 50 H V L BNN
+F1 "MLJ1608WR27JT000" -200 550 50 H I L BNN
+F2 "INDC1608X95N" -200 450 50 H I L BNN
+F3 "" 0 0 50 H I C CNN
+F4 "270nH" 0 250 50 H V C CNN "Inductance"
+F5 "550mA" 0 150 50 H V C CNN "Current"
+F6 "0603" 0 50 50 H V C CNN "Package"
+F7 "260MHz" -50 650 50 H I C CNN "Self Resonance"
+DRAW
+A -75 2 25 1740 60 0 0 6 N -100 0 -50 0
+A -25 2 25 1740 60 0 0 6 N -50 0 0 0
+A 25 2 25 1740 60 0 0 6 N 0 0 50 0
+A 75 2 25 1740 60 0 0 6 N 50 0 100 0
+X ~ 1 -300 0 200 R 40 40 0 0 P
+X ~ 2 300 0 200 L 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# MM3Z3V6T1G
+#
+DEF MM3Z3V6T1G D 0 40 Y Y 1 L N
+F0 "D" 50 -150 50 H V L CNN
+F1 "MM3Z3V6T1G" 50 -250 50 H V L CNN
+F2 "On_Semiconductor-MM3Z3V6T1G-*" 0 400 50 H I L CNN
+F3 "http://www.onsemi.cn/pub_link/Collateral/MM3Z2V4T1-D.PDF" 0 500 50 H I L CNN
+F4 "Manufacturer URL" 0 600 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.onsemi.com/" 0 700 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 800 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.onsemi.com/pub_link/Collateral/477-02.PDF.1" 0 900 50 H I L CNN "Component Link 3 URL"
+F8 "Rev. 9" 0 1000 50 H I L CNN "Datasheet Version"
+F9 "Surface Mount" 0 1100 50 H I L CNN "Mounting Technology"
+F10 "0.3" 0 1200 50 H I L CNN "P Max W"
+F11 "2-Pin SOD, Body 1.7 x 1.25 mm" 0 1300 50 H I L CNN "Package Description"
+F12 "Rev. H, 03/2007" 0 1400 50 H I L CNN "Package Version"
+F13 "Tape and Reel" 0 1500 50 H I L CNN "Packing"
+F14 "3.6V" 50 -350 50 H V L CNN "VZ Typ V"
+F15 "Diode" 0 1700 50 H I L CNN "category"
+F16 "804016" 0 1800 50 H I L CNN "ciiva ids"
+F17 "ae19900bc63e29ef" 0 1900 50 H I L CNN "library id"
+F18 "On Semiconductor" 0 2000 50 H I L CNN "manufacturer"
+F19 "SOD-323" 50 -450 50 H V L CNN "package"
+F20 "1407165186" 0 2200 50 H I L CNN "release date"
+F21 "No" 0 2300 50 H I L CNN "rohs"
+F22 "D28FE27F-B28F-4CA1-ADD0-4C45139D9B79" 0 2400 50 H I L CNN "vault revision"
+F23 "yes" 0 2500 50 H I L CNN "imported"
+DRAW
+P 2 1 1 0 100 -60 100 60 N
+P 2 1 1 0 100 60 60 100 N
+P 2 1 1 0 140 -100 100 -60 N
+P 4 1 1 0 200 100 100 0 200 -100 200 100 N
+X K 1 0 0 100 R 40 0 1 1 P
+X A 2 300 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PJ-002AH
+#
+DEF PJ-002AH J 0 0 Y Y 1 F N
+F0 "J" 0 100 50 H V L CNN
+F1 "PJ-002AH" 0 200 50 H V L CNN
+F2 "CUI-PJ-002AH-0-0-*" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "Conn" 0 500 50 H I L CNN "category"
+F5 "Silver" 0 600 50 H I L CNN "contact material"
+F6 "5A" 0 700 50 H V L CNN "current rating"
+F7 "Connectors" 0 800 50 H I L CNN "device class L1"
+F8 "Power Connectors" 0 900 50 H I L CNN "device class L2"
+F9 "unset" 0 1000 50 H I L CNN "device class L3"
+F10 "CONN PWR JACK 2X5.5MM SOLDER" 0 1100 50 H V L CNN "digikey description"
+F11 "CP-002AH-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "11.2mm" 0 1300 50 H I L CNN "height"
+F13 "yes" 0 1400 50 H I L CNN "lead free"
+F14 "9faf6f1e7549c614" 0 1500 50 H I L CNN "library id"
+F15 "CUI" 0 1600 50 H I L CNN "manufacturer"
+F16 "DC Power Connectors Power Jacks" 0 1700 50 H I L CNN "mouser description"
+F17 "490-PJ-002AH" 0 1800 50 H I L CNN "mouser part number"
+F18 "2" 0 1900 50 H I L CNN "number of contacts"
+F19 "CONN_PWR_JACK" 0 2000 50 H I L CNN "package"
+F20 "yes" 0 2100 50 H I L CNN "rohs"
+F21 "+85°C" 0 2200 50 H I L CNN "temperature range high"
+F22 "-25°C" 0 2300 50 H I L CNN "temperature range low"
+F23 "24V" 0 2400 50 H V L CNN "voltage rating"
+DRAW
+P 2 1 1 0 -600 -200 -500 -200 N
+P 2 1 1 0 -600 0 -600 -200 N
+P 2 1 1 0 -500 -200 -500 0 N
+P 2 1 1 0 -410 -200 -380 -150 N
+P 2 1 1 0 -380 -150 -350 -200 N
+P 2 1 1 0 -280 -130 -250 -150 N
+P 2 1 1 0 -250 -150 -250 -100 N
+P 2 1 1 0 -220 -130 -250 -150 N
+X 1 1 -100 0 500 L 40 0 1 1 P
+X 2 2 -100 -200 250 L 40 0 1 1 P
+X 3 3 -100 -100 150 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# RC0603FR-07100RL
+#
+DEF RC0603FR-07100RL R 0 40 Y Y 1 F N
+F0 "R" 0 200 50 H V L CNN
+F1 "RC0603FR-07100RL" 0 300 50 H I L CNN
+F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
+F5 "Res" 0 700 50 H I L CNN "category"
+F6 "Thick Film" 0 800 50 H I L CNN "composition"
+F7 "Passive Components" 0 900 50 H I L CNN "device class L1"
+F8 "Resistors" 0 1000 50 H I L CNN "device class L2"
+F9 "Chip SMD Resistors" 0 1100 50 H I L CNN "device class L3"
+F10 "RES SMD 100 OHM 1% 1/10W 0603" 0 1200 50 H I L CNN "digikey description"
+F11 "311-100HRTR-ND" 0 1300 50 H I L CNN "digikey part number"
+F12 "0.5mm" 0 1400 50 H I L CNN "height"
+F13 "RESC15585X45" 0 1500 50 H I L CNN "ipc land pattern name"
+F14 "yes" 0 1600 50 H I L CNN "lead free"
+F15 "e6c4b1ad25ddfe2f" 0 1700 50 H I L CNN "library id"
+F16 "Yageo" 0 1800 50 H I L CNN "manufacturer"
+F17 "YAGEO (PHYCOMP) - RC0603FR-07100RL - RES, THICK FILM, 100R, 1%, 0.1W, 0603" 0 1900 50 H I L CNN "mouser description"
+F18 "603-RC0603FR-07100RL" 0 2000 50 H I L CNN "mouser part number"
+F19 "0603" 0 2100 50 H V L CNN "package"
+F20 "100mW" 0 2200 50 H I L CNN "power"
+F21 "0.1W" 0 2300 50 H I L CNN "power rating"
+F22 "100Ω" 0 2400 50 H V L CNN "resistance"
+F23 "yes" 0 2500 50 H I L CNN "rohs"
+F24 "RC" 0 2600 50 H I L CNN "series"
+F25 "0mm" 0 2700 50 H I L CNN "standoff height"
+F26 "100ppm/°C" 0 2800 50 H I L CNN "temperature coefficient"
+F27 "+155°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-55°C" 0 3000 50 H I L CNN "temperature range low"
+F29 "1%" 0 3100 50 H I L CNN "tolerance"
+F30 "75V" 0 3200 50 H I L CNN "voltage"
+F31 "75V" 0 3300 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 200 0 230 50 N
+P 2 1 1 0 230 50 280 -50 N
+P 2 1 1 0 280 -50 330 50 N
+P 2 1 1 0 330 50 380 -50 N
+P 2 1 1 0 380 -50 430 50 N
+P 2 1 1 0 430 50 480 -50 N
+P 2 1 1 0 480 -50 500 0 N
+X 1 1 100 0 100 R 40 0 1 1 P
+X 2 2 600 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# RC0603FR-0710KL
+#
+DEF RC0603FR-0710KL R 0 40 Y Y 1 F N
+F0 "R" 0 200 50 H V L CNN
+F1 "RC0603FR-0710KL" 0 300 50 H I L CNN
+F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
+F5 "Res" 0 700 50 H I L CNN "category"
+F6 "Thick Film" 0 800 50 H I L CNN "composition"
+F7 "Passive Components" 0 900 50 H I L CNN "device class L1"
+F8 "Resistors" 0 1000 50 H I L CNN "device class L2"
+F9 "Chip SMD Resistors" 0 1100 50 H I L CNN "device class L3"
+F10 "RES SMD 10K OHM 1% 1/10W 0603" 0 1200 50 H I L CNN "digikey description"
+F11 "311-10.0KHRTR-ND" 0 1300 50 H I L CNN "digikey part number"
+F12 "0.5mm" 0 1400 50 H I L CNN "height"
+F13 "RESC15585X45" 0 1500 50 H I L CNN "ipc land pattern name"
+F14 "yes" 0 1600 50 H I L CNN "lead free"
+F15 "368bdb3a487a5469" 0 1700 50 H I L CNN "library id"
+F16 "Yageo" 0 1800 50 H I L CNN "manufacturer"
+F17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" 0 1900 50 H I L CNN "mouser description"
+F18 "603-RC0603FR-0710KL" 0 2000 50 H I L CNN "mouser part number"
+F19 "0603" 0 2100 50 H V L CNN "package"
+F20 "100mW" 0 2200 50 H I L CNN "power"
+F21 "0.1W" 0 2300 50 H I L CNN "power rating"
+F22 "10kΩ" 0 2400 50 H V L CNN "resistance"
+F23 "yes" 0 2500 50 H I L CNN "rohs"
+F24 "RC" 0 2600 50 H I L CNN "series"
+F25 "0mm" 0 2700 50 H I L CNN "standoff height"
+F26 "100ppm/°C" 0 2800 50 H I L CNN "temperature coefficient"
+F27 "+155°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-55°C" 0 3000 50 H I L CNN "temperature range low"
+F29 "1%" 0 3100 50 H I L CNN "tolerance"
+F30 "75V" 0 3200 50 H I L CNN "voltage"
+F31 "75V" 0 3300 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 200 0 230 50 N
+P 2 1 1 0 230 50 280 -50 N
+P 2 1 1 0 280 -50 330 50 N
+P 2 1 1 0 330 50 380 -50 N
+P 2 1 1 0 380 -50 430 50 N
+P 2 1 1 0 430 50 480 -50 N
+P 2 1 1 0 480 -50 500 0 N
+X 1 1 100 0 100 R 40 0 1 1 P
+X 2 2 600 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# RC0603FR-071K65L
+#
+DEF RC0603FR-071K65L R 0 40 Y Y 1 F N
+F0 "R" 0 200 50 H V L CNN
+F1 "RC0603FR-071K65L" 0 300 50 H V L CNN
+F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
+F5 "Res" 0 700 50 H I L CNN "category"
+F6 "Thick Film" 0 800 50 H I L CNN "composition"
+F7 "Passive Components" 0 900 50 H I L CNN "device class L1"
+F8 "Resistors" 0 1000 50 H I L CNN "device class L2"
+F9 "Chip SMD Resistors" 0 1100 50 H I L CNN "device class L3"
+F10 "RES SMD 1.65K OHM 1% 1/10W 0603" 0 1200 50 H I L CNN "digikey description"
+F11 "311-1.65KHRTR-ND" 0 1300 50 H I L CNN "digikey part number"
+F12 "0.5mm" 0 1400 50 H I L CNN "height"
+F13 "RESC15585X45" 0 1500 50 H I L CNN "ipc land pattern name"
+F14 "yes" 0 1600 50 H I L CNN "lead free"
+F15 "ce4140018ac48837" 0 1700 50 H I L CNN "library id"
+F16 "Yageo" 0 1800 50 H I L CNN "manufacturer"
+F17 "Thick Film Resistors - SMD 1.65K OHM 1%\\n" 0 1900 50 H I L CNN "mouser description"
+F18 "603-RC0603FR-071K65L" 0 2000 50 H I L CNN "mouser part number"
+F19 "0603" 0 2100 50 H V L CNN "package"
+F20 "100mW" 0 2200 50 H I L CNN "power"
+F21 "0.1W" 0 2300 50 H I L CNN "power rating"
+F22 "1.65kΩ" 0 2400 50 H V L CNN "resistance"
+F23 "yes" 0 2500 50 H I L CNN "rohs"
+F24 "RC" 0 2600 50 H I L CNN "series"
+F25 "0mm" 0 2700 50 H I L CNN "standoff height"
+F26 "100ppm/°C" 0 2800 50 H I L CNN "temperature coefficient"
+F27 "+155°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-55°C" 0 3000 50 H I L CNN "temperature range low"
+F29 "1%" 0 3100 50 H I L CNN "tolerance"
+F30 "75V" 0 3200 50 H I L CNN "voltage"
+F31 "75V" 0 3300 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 200 0 230 50 N
+P 2 1 1 0 230 50 280 -50 N
+P 2 1 1 0 280 -50 330 50 N
+P 2 1 1 0 330 50 380 -50 N
+P 2 1 1 0 380 -50 430 50 N
+P 2 1 1 0 430 50 480 -50 N
+P 2 1 1 0 480 -50 500 0 N
+X 1 1 100 0 100 R 40 0 1 1 P
+X 2 2 600 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# RC0603FR-071KL
+#
+DEF RC0603FR-071KL R 0 40 Y Y 1 L N
+F0 "R" 0 200 50 H V L CNN
+F1 "RC0603FR-071KL" 0 300 50 H V L CNN
+F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" 0 500 50 H I L CNN
+F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
+F5 "Res" 0 700 50 H I L CNN "category"
+F6 "Thick Film" 0 800 50 H I L CNN "composition"
+F7 "Passive Components" 0 900 50 H I L CNN "device class L1"
+F8 "Resistors" 0 1000 50 H I L CNN "device class L2"
+F9 "Chip SMD Resistors" 0 1100 50 H I L CNN "device class L3"
+F10 "RES SMD 1K OHM 1% 1/10W 0603" 0 1200 50 H I L CNN "digikey description"
+F11 "311-1.00KHRTR-ND" 0 1300 50 H I L CNN "digikey part number"
+F12 "0.5mm" 0 1400 50 H I L CNN "height"
+F13 "RESC15585X45" 0 1500 50 H I L CNN "ipc land pattern name"
+F14 "yes" 0 1600 50 H I L CNN "lead free"
+F15 "3bccc4745a05cf6c" 0 1700 50 H I L CNN "library id"
+F16 "Yageo" 0 1800 50 H I L CNN "manufacturer"
+F17 "Res Thick Film 0603 1K Ohm 1% 0.1W(1/10W) }100ppm/? Molded SMD Paper T/R" 0 1900 50 H I L CNN "mouser description"
+F18 "603-RC0603FR-071KL" 0 2000 50 H I L CNN "mouser part number"
+F19 "0603 (1608 Metric)" 0 2100 50 H I L CNN "package"
+F20 "100mW" 0 2200 50 H I L CNN "power"
+F21 "0.1W" 0 2300 50 H I L CNN "power rating"
+F22 "1kΩ" 0 2400 50 H I L CNN "resistance"
+F23 "yes" 0 2500 50 H I L CNN "rohs"
+F24 "RC" 0 2600 50 H I L CNN "series"
+F25 "0mm" 0 2700 50 H I L CNN "standoff height"
+F26 "100ppm/°C" 0 2800 50 H I L CNN "temperature coefficient"
+F27 "+155°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-55°C" 0 3000 50 H I L CNN "temperature range low"
+F29 "1%" 0 3100 50 H I L CNN "tolerance"
+F30 "75V" 0 3200 50 H I L CNN "voltage"
+F31 "75V" 0 3300 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 200 0 230 50 N
+P 2 1 1 0 230 50 280 -50 N
+P 2 1 1 0 280 -50 330 50 N
+P 2 1 1 0 330 50 380 -50 N
+P 2 1 1 0 380 -50 430 50 N
+P 2 1 1 0 430 50 480 -50 N
+P 2 1 1 0 480 -50 500 0 N
+X 1 1 100 0 100 R 40 0 1 1 P
+X 2 2 600 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# RC0603FR-074K7L
+#
+DEF RC0603FR-074K7L R 0 40 Y Y 1 F N
+F0 "R" 0 200 50 H V L CNN
+F1 "RC0603FR-074K7L" 0 300 50 H I L CNN
+F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
+F5 "Res" 0 700 50 H I L CNN "category"
+F6 "Thick Film" 0 800 50 H I L CNN "composition"
+F7 "Passive Components" 0 900 50 H I L CNN "device class L1"
+F8 "Resistors" 0 1000 50 H I L CNN "device class L2"
+F9 "Chip SMD Resistors" 0 1100 50 H I L CNN "device class L3"
+F10 "RES SMD 4.7K OHM 1% 1/10W 0603" 0 1200 50 H I L CNN "digikey description"
+F11 "311-4.70KHRTR-ND" 0 1300 50 H I L CNN "digikey part number"
+F12 "0.5mm" 0 1400 50 H I L CNN "height"
+F13 "RESC15585X45" 0 1500 50 H I L CNN "ipc land pattern name"
+F14 "yes" 0 1600 50 H I L CNN "lead free"
+F15 "a94f99a03a2fe1e8" 0 1700 50 H I L CNN "library id"
+F16 "Yageo" 0 1800 50 H I L CNN "manufacturer"
+F17 "Thick Film Resistors 4.7K OHM 1%" 0 1900 50 H I L CNN "mouser description"
+F18 "603-RC0603FR-074K7L" 0 2000 50 H I L CNN "mouser part number"
+F19 "0603" 0 2100 50 H V L CNN "package"
+F20 "100mW" 0 2200 50 H I L CNN "power"
+F21 "0.1W" 0 2300 50 H I L CNN "power rating"
+F22 "4.7kΩ" 0 2400 50 H V L CNN "resistance"
+F23 "yes" 0 2500 50 H I L CNN "rohs"
+F24 "RC" 0 2600 50 H I L CNN "series"
+F25 "0mm" 0 2700 50 H I L CNN "standoff height"
+F26 "100ppm/°C" 0 2800 50 H I L CNN "temperature coefficient"
+F27 "+155°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-55°C" 0 3000 50 H I L CNN "temperature range low"
+F29 "1%" 0 3100 50 H I L CNN "tolerance"
+F30 "75V" 0 3200 50 H I L CNN "voltage"
+F31 "75V" 0 3300 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 200 0 230 50 N
+P 2 1 1 0 230 50 280 -50 N
+P 2 1 1 0 280 -50 330 50 N
+P 2 1 1 0 330 50 380 -50 N
+P 2 1 1 0 380 -50 430 50 N
+P 2 1 1 0 430 50 480 -50 N
+P 2 1 1 0 480 -50 500 0 N
+X 1 1 100 0 100 R 40 0 1 1 P
+X 2 2 600 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# RC0603FR-0768RL
+#
+DEF RC0603FR-0768RL R 0 40 Y Y 1 L N
+F0 "R" 150 -100 50 H V L CNN
+F1 "RC0603FR-0768RL" 150 -200 50 H V L CNN
+F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" 0 500 50 H I L CNN
+F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
+F5 "Res" 0 700 50 H I L CNN "category"
+F6 "Thick Film" 0 800 50 H I L CNN "composition"
+F7 "Passive Components" 0 900 50 H I L CNN "device class L1"
+F8 "Resistors" 0 1000 50 H I L CNN "device class L2"
+F9 "Chip SMD Resistors" 0 1100 50 H I L CNN "device class L3"
+F10 "RES SMD 68 OHM 1% 1/10W 0603" 150 -300 50 H V L CNN "digikey description"
+F11 "311-68.0HRTR-ND" 0 1300 50 H I L CNN "digikey part number"
+F12 "0.5mm" 0 1400 50 H I L CNN "height"
+F13 "RESC15585X45" 0 1500 50 H I L CNN "ipc land pattern name"
+F14 "yes" 0 1600 50 H I L CNN "lead free"
+F15 "75e879480bf8c53f" 0 1700 50 H I L CNN "library id"
+F16 "Yageo" 0 1800 50 H I L CNN "manufacturer"
+F17 "Thick Film Resistors - SMD 68 OHM 1%\\n" 0 1900 50 H I L CNN "mouser description"
+F18 "603-RC0603FR-0768RL" 0 2000 50 H I L CNN "mouser part number"
+F19 "0603 (1608 Metric)" 0 2100 50 H I L CNN "package"
+F20 "100mW" 0 2200 50 H I L CNN "power"
+F21 "0.1W" 0 2300 50 H I L CNN "power rating"
+F22 "68Ω" 0 2400 50 H I L CNN "resistance"
+F23 "yes" 0 2500 50 H I L CNN "rohs"
+F24 "RC" 0 2600 50 H I L CNN "series"
+F25 "0mm" 0 2700 50 H I L CNN "standoff height"
+F26 "100ppm/°C" 0 2800 50 H I L CNN "temperature coefficient"
+F27 "+155°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-55°C" 0 3000 50 H I L CNN "temperature range low"
+F29 "1%" 0 3100 50 H I L CNN "tolerance"
+F30 "75V" 0 3200 50 H I L CNN "voltage"
+F31 "75V" 0 3300 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 200 0 230 50 N
+P 2 1 1 0 230 50 280 -50 N
+P 2 1 1 0 280 -50 330 50 N
+P 2 1 1 0 330 50 380 -50 N
+P 2 1 1 0 380 -50 430 50 N
+P 2 1 1 0 430 50 480 -50 N
+P 2 1 1 0 480 -50 500 0 N
+X 1 1 100 0 100 R 40 0 1 1 P
+X 2 2 600 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SLW-102-01-T-S
+#
+DEF SLW-102-01-T-S J 0 0 Y Y 1 F N
+F0 "J" 0 500 50 H V L CNN
+F1 "SLW-102-01-T-S" 0 600 50 H V L CNN
+F2 "Samtec-SLW-102-01-T-S-*" 0 700 50 H I L CNN
+F3 "" 0 800 50 H I L CNN
+F4 "Manufacturer URL" 0 900 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.samtec.com" 0 1000 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 1100 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.samtec.com/documents/webfiles/cpdf/SLW-1XX-01-X-X-MKT.pdf" 0 1200 50 H I L CNN "Component Link 3 URL"
+F8 "F-214" 0 1300 50 H I L CNN "Datasheet Version"
+F9 "Through-hole" 0 1400 50 H I L CNN "Mounting Technology"
+F10 "Vertical" 0 1500 50 H I L CNN "Orientation"
+F11 "Low Profile Socket Strip" 0 1600 50 H I L CNN "Package Description"
+F12 "X, 9/1987" 0 1700 50 H I L CNN "Package Version"
+F13 "2.54 mm" 0 1800 50 H I L CNN "Pitch"
+F14 "-55 to 105 degC" 0 1900 50 H I L CNN "Temperature Range"
+F15 "Conn" 0 2000 50 H I L CNN "category"
+F16 "349239" 0 2100 50 H I L CNN "ciiva ids"
+F17 "97f31bfa5e778d3a" 0 2200 50 H I L CNN "library id"
+F18 "Samtec" 0 2300 50 H I L CNN "manufacturer"
+F19 "SLW-102-01-X-S" 0 2400 50 H I L CNN "package"
+F20 "1404374322" 0 2500 50 H I L CNN "release date"
+F21 "FDE8A73C-755C-42A3-8DB0-EB605DA0F6D5" 0 2600 50 H I L CNN "vault revision"
+F22 "yes" 0 2700 50 H I L CNN "imported"
+DRAW
+C 0 300 30 1 1 0 N
+C 100 300 30 1 1 0 N
+P 2 1 1 0 -100 200 -100 400 N
+P 2 1 1 0 -100 400 200 400 N
+P 2 1 1 0 0 270 0 200 N
+P 2 1 1 0 100 270 100 200 N
+P 2 1 1 0 200 200 -100 200 N
+P 2 1 1 0 200 400 200 200 N
+X 1 1 0 100 100 U 40 0 1 1 P
+X 2 2 100 100 100 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SLW-104-01-T-S
+#
+DEF SLW-104-01-T-S J 0 0 Y Y 1 F N
+F0 "J" 0 500 50 H V L CNN
+F1 "SLW-104-01-T-S" 0 600 50 H V L CNN
+F2 "Samtec-SLW-104-01-T-S-*" 0 700 50 H I L CNN
+F3 "" 0 800 50 H I L CNN
+F4 "Manufacturer URL" 0 900 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.samtec.com" 0 1000 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 1100 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.samtec.com/documents/webfiles/cpdf/SLW-1XX-01-X-X-MKT.pdf" 0 1200 50 H I L CNN "Component Link 3 URL"
+F8 "F-214" 0 1300 50 H I L CNN "Datasheet Version"
+F9 "Through-hole" 0 1400 50 H I L CNN "Mounting Technology"
+F10 "Vertical" 0 1500 50 H I L CNN "Orientation"
+F11 "Low Profile Socket Strip" 0 1600 50 H I L CNN "Package Description"
+F12 "X, 9/1987" 0 1700 50 H I L CNN "Package Version"
+F13 "2.54 mm" 0 1800 50 H I L CNN "Pitch"
+F14 "-55 to 105 degC" 0 1900 50 H I L CNN "Temperature Range"
+F15 "Conn" 0 2000 50 H I L CNN "category"
+F16 "349254" 0 2100 50 H I L CNN "ciiva ids"
+F17 "e244508a65ae41fc" 0 2200 50 H I L CNN "library id"
+F18 "Samtec" 0 2300 50 H I L CNN "manufacturer"
+F19 "SLW-104-01-X-S" 0 2400 50 H I L CNN "package"
+F20 "1404374325" 0 2500 50 H I L CNN "release date"
+F21 "3E9B3488-2A9B-444C-BFB7-BA4271584146" 0 2600 50 H I L CNN "vault revision"
+F22 "yes" 0 2700 50 H I L CNN "imported"
+DRAW
+C 0 300 30 1 1 0 N
+C 100 300 30 1 1 0 N
+C 200 300 30 1 1 0 N
+C 300 300 30 1 1 0 N
+P 2 1 1 0 -100 200 -100 400 N
+P 2 1 1 0 -100 400 400 400 N
+P 2 1 1 0 0 270 0 200 N
+P 2 1 1 0 100 270 100 200 N
+P 2 1 1 0 200 270 200 200 N
+P 2 1 1 0 300 270 300 200 N
+P 2 1 1 0 400 200 -100 200 N
+P 2 1 1 0 400 400 400 200 N
+X 1 1 0 100 100 U 40 0 1 1 P
+X 2 2 100 100 100 U 40 0 1 1 P
+X 3 3 200 100 100 U 40 0 1 1 P
+X 4 4 300 100 100 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SSW-102-01-T-S
+#
+DEF SSW-102-01-T-S J 0 0 Y Y 1 F N
+F0 "J" 0 500 50 H V L CNN
+F1 "SSW-102-01-T-S" 0 600 50 H V L CNN
+F2 "project:Samtec-SSW-102-01-T-S-Manufacturer_Recommended" 0 700 50 H I L CNN
+F3 "" 0 800 50 H I L CNN
+F4 "Manufacturer URL" 0 900 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.samtec.com" 0 1000 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 1100 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.samtec.com/documents/webfiles/cpdf/SLW-1XX-01-X-X-MKT.pdf" 0 1200 50 H I L CNN "Component Link 3 URL"
+F8 "F-214" 0 1300 50 H I L CNN "Datasheet Version"
+F9 "Through-hole" 0 1400 50 H I L CNN "Mounting Technology"
+F10 "Vertical" 0 1500 50 H I L CNN "Orientation"
+F11 "Low Profile Socket Strip" 0 1600 50 H I L CNN "Package Description"
+F12 "X, 9/1987" 0 1700 50 H I L CNN "Package Version"
+F13 "2.54 mm" 0 1800 50 H I L CNN "Pitch"
+F14 "-55 to 105 degC" 0 1900 50 H I L CNN "Temperature Range"
+F15 "Conn" 0 2000 50 H I L CNN "category"
+F16 "349239" 0 2100 50 H I L CNN "ciiva ids"
+F17 "97f31bfa5e778d3a" 0 2200 50 H I L CNN "library id"
+F18 "Samtec" 0 2300 50 H I L CNN "manufacturer"
+F19 "SSW-102-01-X-S" 0 2400 50 H I L CNN "package"
+F20 "1404374322" 0 2500 50 H I L CNN "release date"
+F21 "FDE8A73C-755C-42A3-8DB0-EB605DA0F6D5" 0 2600 50 H I L CNN "vault revision"
+F22 "yes" 0 2700 50 H I L CNN "imported"
+DRAW
+C 0 300 30 1 1 0 N
+C 100 300 30 1 1 0 N
+P 2 1 1 0 -100 200 -100 400 N
+P 2 1 1 0 -100 400 200 400 N
+P 2 1 1 0 0 270 0 200 N
+P 2 1 1 0 100 270 100 200 N
+P 2 1 1 0 200 200 -100 200 N
+P 2 1 1 0 200 400 200 200 N
+X 1 1 0 100 100 U 40 0 1 1 P
+X 2 2 100 100 100 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SSW-104-01-T-S
+#
+DEF SSW-104-01-T-S J 0 0 Y Y 1 F N
+F0 "J" 0 500 50 H V L CNN
+F1 "SSW-104-01-T-S" 0 600 50 H V L CNN
+F2 "project:Samtec-SSW-104-01-T-S-Manufacturer_Recommended" 0 700 50 H I L CNN
+F3 "" 0 800 50 H I L CNN
+F4 "Manufacturer URL" 0 900 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.samtec.com" 0 1000 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 1100 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.samtec.com/documents/webfiles/cpdf/SLW-1XX-01-X-X-MKT.pdf" 0 1200 50 H I L CNN "Component Link 3 URL"
+F8 "F-214" 0 1300 50 H I L CNN "Datasheet Version"
+F9 "Through-hole" 0 1400 50 H I L CNN "Mounting Technology"
+F10 "Vertical" 0 1500 50 H I L CNN "Orientation"
+F11 "Low Profile Socket Strip" 0 1600 50 H I L CNN "Package Description"
+F12 "X, 9/1987" 0 1700 50 H I L CNN "Package Version"
+F13 "2.54 mm" 0 1800 50 H I L CNN "Pitch"
+F14 "-55 to 105 degC" 0 1900 50 H I L CNN "Temperature Range"
+F15 "Conn" 0 2000 50 H I L CNN "category"
+F16 "349254" 0 2100 50 H I L CNN "ciiva ids"
+F17 "e244508a65ae41fc" 0 2200 50 H I L CNN "library id"
+F18 "Samtec" 0 2300 50 H I L CNN "manufacturer"
+F19 "SSW-104-01-X-S" 0 2400 50 H I L CNN "package"
+F20 "1404374325" 0 2500 50 H I L CNN "release date"
+F21 "3E9B3488-2A9B-444C-BFB7-BA4271584146" 0 2600 50 H I L CNN "vault revision"
+F22 "yes" 0 2700 50 H I L CNN "imported"
+DRAW
+C 0 300 30 1 1 0 N
+C 100 300 30 1 1 0 N
+C 200 300 30 1 1 0 N
+C 300 300 30 1 1 0 N
+P 2 1 1 0 -100 200 -100 400 N
+P 2 1 1 0 -100 400 400 400 N
+P 2 1 1 0 0 270 0 200 N
+P 2 1 1 0 100 270 100 200 N
+P 2 1 1 0 200 270 200 200 N
+P 2 1 1 0 300 270 300 200 N
+P 2 1 1 0 400 200 -100 200 N
+P 2 1 1 0 400 400 400 200 N
+X 1 1 0 100 100 U 40 0 1 1 P
+X 2 2 100 100 100 U 40 0 1 1 P
+X 3 3 200 100 100 U 40 0 1 1 P
+X 4 4 300 100 100 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SSW-106-02-T-S
+#
+DEF SSW-106-02-T-S J 0 0 Y Y 1 F N
+F0 "J" 0 500 50 H V L CNN
+F1 "SSW-106-02-T-S" 0 600 50 H V L CNN
+F2 "Samtec-SSW-106-02-T-S-*" 0 700 50 H I L CNN
+F3 "" 0 800 50 H I L CNN
+F4 "Manufacturer URL" 0 900 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.samtec.com" 0 1000 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 1100 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.samtec.com/documents/webfiles/cpdf/SSW-1XX-XX-XXX-X-XX-XXX-XX-MKT.pdf" 0 1200 50 H I L CNN "Component Link 3 URL"
+F8 "F-214" 0 1300 50 H I L CNN "Datasheet Version"
+F9 "Through-hole" 0 1400 50 H I L CNN "Mounting Technology"
+F10 "Vertical" 0 1500 50 H I L CNN "Orientation"
+F11 "Assembly, Socket Strip .016 X .031 Tail" 0 1600 50 H I L CNN "Package Description"
+F12 "CA, 6/1987" 0 1700 50 H I L CNN "Package Version"
+F13 "2.54 mm" 0 1800 50 H I L CNN "Pitch"
+F14 "-55 to 105 degC" 0 1900 50 H I L CNN "Temperature Range"
+F15 "Conn" 0 2000 50 H I L CNN "category"
+F16 "679223" 0 2100 50 H I L CNN "ciiva ids"
+F17 "68252b6a81f3dbac" 0 2200 50 H I L CNN "library id"
+F18 "Samtec" 0 2300 50 H I L CNN "manufacturer"
+F19 "SSW-106-02-X-S" 0 2400 50 H I L CNN "package"
+F20 "1404374511" 0 2500 50 H I L CNN "release date"
+F21 "515F7714-EB50-4157-8AB6-9F808CB470BE" 0 2600 50 H I L CNN "vault revision"
+F22 "yes" 0 2700 50 H I L CNN "imported"
+DRAW
+C 0 300 30 1 1 0 N
+C 100 300 30 1 1 0 N
+C 200 300 30 1 1 0 N
+C 300 300 30 1 1 0 N
+C 400 300 30 1 1 0 N
+C 500 300 30 1 1 0 N
+P 2 1 1 0 -100 200 600 200 N
+P 2 1 1 0 -100 400 -100 200 N
+P 2 1 1 0 0 200 0 270 N
+P 2 1 1 0 100 200 100 270 N
+P 2 1 1 0 200 200 200 270 N
+P 2 1 1 0 300 200 300 270 N
+P 2 1 1 0 400 200 400 270 N
+P 2 1 1 0 500 200 500 270 N
+P 2 1 1 0 600 200 600 400 N
+P 2 1 1 0 600 400 -100 400 N
+X 1 1 0 100 100 U 40 0 1 1 P
+X 2 2 100 100 100 U 40 0 1 1 P
+X 3 3 200 100 100 U 40 0 1 1 P
+X 4 4 300 100 100 U 40 0 1 1 P
+X 5 5 400 100 100 U 40 0 1 1 P
+X 6 6 500 100 100 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ST25R3916-AQWT
+#
+DEF ST25R3916-AQWT U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "ST25R3916-AQWT" 0 300 50 H V L CNN
+F2 "STMicroelectronics-VFQFPN32-B04R-0-1-*" 0 400 50 H I L CNN
+F3 "https://www.st.com/content/st_com/en/products/nfc/st25-nfc-rfid-tags-readers/st25-nfc-rfid-readers/st25r3916.html#resource" 0 500 50 H I L CNN
+F4 "No" 0 600 50 H I L CNN "automotive"
+F5 "IC" 0 700 50 H I L CNN "category"
+F6 "848kbits/s" 0 800 50 H I L CNN "data rate"
+F7 "Integrated Circuits (ICs)" 0 900 50 H I L CNN "device class L1"
+F8 "RF Semiconductors and Devices" 0 1000 50 H I L CNN "device class L2"
+F9 "Transceivers" 0 1100 50 H I L CNN "device class L3"
+F10 "IC RFID READER/TRANSP 32VFQFN" 0 1200 50 H I L CNN "digikey description"
+F11 "497-18366-1-ND" 0 1300 50 H I L CNN "digikey part number"
+F12 "1mm" 0 1400 50 H I L CNN "height"
+F13 "I2C,SPI,Other" 0 1500 50 H I L CNN "interface"
+F14 "QFN50P500X500X90-32" 0 1600 50 H I L CNN "ipc land pattern name"
+F15 "Yes" 0 1700 50 H I L CNN "lead free"
+F16 "80ef14bff18074aa" 0 1800 50 H I L CNN "library id"
+F17 "STMicroelectronics" 0 1900 50 H I L CNN "manufacturer"
+F18 "13.56MHz" 0 2000 50 H I L CNN "max frequency"
+F19 "+125°C" 0 2100 50 H I L CNN "max junction temp"
+F20 "5.5V" 0 2200 50 H I L CNN "max supply voltage"
+F21 "1.65V" 0 2300 50 H I L CNN "min supply voltage"
+F22 "511-ST25R3916-AQWT" 0 2400 50 H I L CNN "mouser part number"
+F23 "1.8-20uA" 0 2500 50 H I L CNN "nominal supply current"
+F24 "VFQFPN32" 0 2600 50 H I L CNN "package"
+F25 "Yes" 0 2700 50 H I L CNN "rohs"
+F26 "0mm" 0 2800 50 H I L CNN "standoff height"
+F27 "+125°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-40°C" 0 3000 50 H I L CNN "temperature range low"
+DRAW
+S 200 100 1400 -2600 1 1 0 f
+X VDD_IO 1 100 -500 100 R 40 40 1 1 W
+X VDD_TX 10 100 -700 100 R 40 40 1 1 W
+X VDD_AM 11 100 -200 100 R 40 40 1 1 W
+X GND_DR 12 1500 -2400 100 L 40 40 1 1 W
+X RFO1 13 1500 0 100 L 40 40 1 1 P
+X VDD_DR 14 100 -400 100 R 40 40 1 1 W
+X RFO2 15 1500 -100 100 L 40 40 1 1 P
+X GND_DR 16 1500 -2500 100 L 40 40 1 1 W
+X EXT_LM 17 1500 -1600 100 L 40 40 1 1 P
+X AAT_A 18 1500 -600 100 L 40 40 1 1 P
+X AAT_B 19 1500 -700 100 L 40 40 1 1 P
+X CSO 2 1500 -1400 100 L 40 40 1 1 P
+X I2C_EN 20 100 -1700 100 R 40 40 1 1 I
+X VSS 21 1500 -2100 100 L 40 40 1 1 W
+X RFI1 22 1500 -300 100 L 40 40 1 1 P
+X RFI2 23 1500 -400 100 L 40 40 1 1 P
+X AGDC 24 1500 -1000 100 L 40 40 1 1 P
+X CSI 25 1500 -1300 100 L 40 40 1 1 P
+X GND_A 26 1500 -2200 100 L 40 40 1 1 W
+X IRQ 27 100 -1100 100 R 40 40 1 1 O
+X MCU_CLK 28 100 -2000 100 R 40 40 1 1 O
+X BSS 29 100 -1000 100 R 40 40 1 1 I
+X VDD_D 3 100 -300 100 R 40 40 1 1 W
+X SCLK/SCL 30 100 -1500 100 R 40 40 1 1 I
+X MOSI 31 100 -1300 100 R 40 40 1 1 I
+X MISO/SDA 32 100 -1400 100 R 40 40 1 1 O
+X EP 33 1500 -1900 100 L 40 40 1 1 P
+X XTO 4 100 -2500 100 R 40 40 1 1 P
+X XTI 5 100 -2400 100 R 40 40 1 1 P
+X GND_D 6 1500 -2300 100 L 40 40 1 1 W
+X VDD_A 7 100 -100 100 R 40 40 1 1 W
+X VDD 8 100 0 100 R 40 40 1 1 W
+X VDD_RF 9 100 -600 100 R 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# TSX-3225_16.0000MF09Z-AC3
+#
+DEF TSX-3225_16.0000MF09Z-AC3 Y 0 40 Y Y 1 F N
+F0 "Y" 0 200 50 H V L CNN
+F1 "TSX-3225_16.0000MF09Z-AC3" 0 300 50 H I L CNN
+F2 "Epson-TSX-3225_16.0000MF09Z-AC3-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "Crys" 0 600 50 H I L CNN "category"
+F5 "16MHz ±10ppm Crystal 9pF 60 Ohms 4-SMD, No Lead" 0 700 50 H I L CNN "digikey description"
+F6 "SER3628CT-ND" 0 800 50 H I L CNN "digikey part number"
+F7 "yes" 0 900 50 H I L CNN "lead free"
+F8 "36bb9251123dabb2" 0 1000 50 H I L CNN "library id"
+F9 "Epson" 0 1100 50 H I L CNN "manufacturer"
+F10 "732-TX325-16F09Z-AC3" 0 1200 50 H I L CNN "mouser part number"
+F11 "XTAL_SMD_3MM2_2MM5" 0 1300 50 H I L CNN "package"
+F12 "yes" 0 1400 50 H I L CNN "rohs"
+F13 "+75°C" 0 1500 50 H I L CNN "temperature range high"
+F14 "-20°C" 0 1600 50 H I L CNN "temperature range low"
+F15 "16MHz" 300 200 50 H V C CNN "Frequency"
+F16 "9pF" 600 200 50 H V C CNN "Capacitance"
+DRAW
+C 300 -200 10 1 1 0 N
+P 2 1 1 0 200 80 200 -80 N
+P 2 1 1 0 250 100 250 -100 N
+P 2 1 1 0 250 100 350 100 N
+P 2 1 1 0 300 -200 300 -100 N
+P 2 1 1 0 350 -100 250 -100 N
+P 2 1 1 0 350 100 350 -100 N
+P 2 1 1 0 400 80 400 -80 N
+X 1 1 100 0 100 R 40 0 1 1 U
+X GND 2 200 -200 100 R 40 0 1 1 U
+X 3 3 500 0 100 L 40 0 1 1 U
+X GND 4 400 -200 100 L 40 0 1 1 U
+ENDDRAW
+ENDDEF
+#
+# XRCGB27M120F3M00R0
+#
+DEF XRCGB27M120F3M00R0 Y 0 40 Y Y 1 L N
+F0 "Y" 0 300 50 H V L CNN
+F1 "XRCGB27M120F3M00R0" 0 400 50 H V L CNN
+F2 "Murata-SMD4-0-0-*" 0 500 50 H I L CNN
+F3 "https://www.murata.com/~/media/webrenewal/campaign/ads/america/timing/p79e.ashx?la=en-us" 0 600 50 H I L CNN
+F4 "27.12MHz" 0 700 50 H I L CNN "Frequency"
+F5 "Crys" 0 800 50 H I L CNN "category"
+F6 "CRYSTAL 27.1200MHZ 6PF SMD" 0 900 50 H I L CNN "digikey description"
+F7 "490-5581-1-ND" 0 1000 50 H I L CNN "digikey part number"
+F8 "yes" 0 1100 50 H I L CNN "lead free"
+F9 "b719ebb043af67b7" 0 1200 50 H I L CNN "library id"
+F10 "Murata" 0 1300 50 H I L CNN "manufacturer"
+F11 "81-XRCGB27M120F3M0R0" 0 1400 50 H I L CNN "mouser part number"
+F12 "SMD4" 0 1500 50 H I L CNN "package"
+F13 "yes" 0 1600 50 H I L CNN "rohs"
+F14 "+85°C" 0 1700 50 H I L CNN "temperature range high"
+F15 "-30°C" 0 1800 50 H I L CNN "temperature range low"
+DRAW
+S 100 200 400 -200 1 1 0 f
+P 2 1 1 0 50 0 90 0 N
+P 2 1 1 0 150 80 150 -80 N
+P 2 1 1 0 200 100 200 -100 N
+P 2 1 1 0 200 100 300 100 N
+P 2 1 1 0 300 -100 200 -100 N
+P 2 1 1 0 300 100 300 -100 N
+P 2 1 1 0 350 80 350 -80 N
+P 2 1 1 0 360 0 440 0 N
+X 1 1 0 0 50 R 40 0 1 1 U
+X NC 2,4 200 -300 100 U 40 0 1 1 U
+X 3 3 500 0 50 L 40 0 1 1 U
+ENDDRAW
+ENDDEF
+#
+#End Library
