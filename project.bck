@@ -21,6 +21,10 @@ $CMP BAT54T1G
 F http://www.onsemi.cn/pub_link/Collateral/BAT54T1-D.PDF
 $ENDCMP
 #
+$CMP BSS138
+F https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+$ENDCMP
+#
 $CMP C0603C209C5GACTU
 F https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf
 $ENDCMP
