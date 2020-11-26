@@ -1273,7 +1273,7 @@ U 1 1 601F46CA
 P 1600 1100
 F 0 "J1" H 1257 1554 50  0000 C CNN
 F 1 "PJ-002AH" H 1257 1463 50  0000 C CNN
-F 2 "project:CUI-PJ-002AH-0-0-0" H 1600 1400 50  0001 L CNN
+F 2 "project:CUI_PJ-002AH" H 1600 1400 50  0001 L CNN
 F 3 "https://www.cui.com/product/resource/pj-002ah.pdf" H 1600 1500 50  0001 L CNN
 F 4 "Conn" H 1600 1600 50  0001 L CNN "category"
 F 5 "Silver" H 1600 1700 50  0001 L CNN "contact material"
