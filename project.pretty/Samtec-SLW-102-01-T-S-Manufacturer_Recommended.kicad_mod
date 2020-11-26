@@ -1,8 +1,8 @@
-(module Samtec-SLW-102-01-T-S-Manufacturer_Recommended (layer F.Cu) (tedit 5FBE04BD)
+(module Samtec-SLW-102-01-T-S-Manufacturer_Recommended (layer F.Cu) (tedit 5FBFC961)
   (fp_text reference REF** (at -2.619999 -1.995001) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
-  (fp_text value Val** (at 0 0) (layer F.SilkS) hide
+  (fp_text value Val** (at 1 0) (layer F.Fab)
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
   (fp_line (start 4.084999 1.420001) (end 4.084999 -1.420001) (layer F.CrtYd) (width 0.15))

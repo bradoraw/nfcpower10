@@ -88,11 +88,11 @@ ENDDEF
 #
 # project_475890001
 #
-DEF project_475890001 J 0 0 Y Y 1 L N
+DEF project_475890001 J 0 0 Y Y 1 F N
 F0 "J" -700 -1050 50 H V L CNN
 F1 "project_475890001" -700 -1150 50 H V L CNN
-F2 "Molex-475890001-*" 0 500 50 H I L CNN
-F3 "https://www.molex.com/pdm_docs/ps/PS-47589-001-001.pdf" 0 600 50 H I L CNN
+F2 "project:Molex-475890001-MFG" 0 500 50 H I L CNN
+F3 "" 0 600 50 H I L CNN
 F4 "No" 0 700 50 H I L CNN "automotive"
 F5 "Conn" 0 800 50 H I L CNN "category"
 F6 "Gold,Nickel" 0 900 50 H I L CNN "contact material"
@@ -147,11 +147,11 @@ ENDDEF
 #
 # project_ABM8G-25.000MHz-B4Y-T
 #
-DEF project_ABM8G-25.000MHz-B4Y-T Y 0 40 Y Y 1 L N
+DEF project_ABM8G-25.000MHz-B4Y-T Y 0 40 Y Y 1 F N
 F0 "Y" 0 200 50 H V L CNN
 F1 "project_ABM8G-25.000MHz-B4Y-T" 0 300 50 H V L CNN
-F2 "Abracon-ABM8G-25.000MHz-B4Y-T-*" 0 400 50 H I L CNN
-F3 "http://www.abracon.com/Resonators/ABM8G.pdf" 0 500 50 H I L CNN
+F2 "project:Abracon-ABM8G-25.000MHz-B4Y-T-0" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
 F4 "Crys" 0 600 50 H I L CNN "category"
 F5 "CRYSTAL 25.0000MHZ 10PF SMD" 0 700 50 H I L CNN "digikey description"
 F6 "535-10297-1-ND" 0 800 50 H I L CNN "digikey part number"
@@ -180,7 +180,7 @@ ENDDEF
 DEF project_ATMEGA328P-MU U 0 40 Y Y 1 F N
 F0 "U" 0 200 50 H V L CNN
 F1 "project_ATMEGA328P-MU" 0 300 50 H V L CNN
-F2 "Microchip___Atmel-ATMEGA328P-MU-*" 0 400 50 H I L CNN
+F2 "project:Microchip___Atmel-ATMEGA328P-MU-Level_A" 0 400 50 H I L CNN
 F3 "" 0 500 50 H I L CNN
 F4 "MO-220-VHHD-2" 0 600 50 H I L CNN "Code  JEDEC"
 F5 "Manufacturer URL" 0 700 50 H I L CNN "Component Link 1 Description"
@@ -243,7 +243,7 @@ ENDDEF
 DEF project_BAS40-7-F D 0 40 Y Y 1 F N
 F0 "D" 0 300 50 H V L CNN
 F1 "project_BAS40-7-F" 0 400 50 H V L CNN
-F2 "Diodes_Inc.-SOT23-01_2017-0-*" 0 500 50 H I L CNN
+F2 "project:Diodes_Inc.-SOT23-01_2017-0-MFG" 0 500 50 H I L CNN
 F3 "" 0 600 50 H I L CNN
 F4 "Yes" 0 700 50 H I L CNN "automotive"
 F5 "Grade 1" 0 800 50 H I L CNN "automotive grade"
@@ -289,7 +289,7 @@ ENDDEF
 DEF project_BAT54T1G D 0 40 Y Y 1 F N
 F0 "D" 0 200 50 H V L CNN
 F1 "project_BAT54T1G" 0 300 50 H V L CNN
-F2 "On_Semiconductor-BAT54T1G-*" 0 400 50 H I L CNN
+F2 "project:On_Semiconductor-BAT54T1G-Manufacturer_Recommended" 0 400 50 H I L CNN
 F3 "" 0 500 50 H I L CNN
 F4 "Manufacturer URL" 0 600 50 H I L CNN "Component Link 1 Description"
 F5 "http://www.onsemi.com/" 0 700 50 H I L CNN "Component Link 1 URL"
@@ -327,7 +327,7 @@ ENDDEF
 DEF project_BSS138 Q 0 40 Y Y 1 F N
 F0 "Q" 0 300 50 H V L CNN
 F1 "project_BSS138" 0 400 50 H V L CNN
-F2 "ON_Semiconductor-318-08-01_2018-AS-*" 0 500 50 H I L CNN
+F2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" 0 500 50 H I L CNN
 F3 "" 0 600 50 H I L CNN
 F4 "No" 0 700 50 H I L CNN "automotive"
 F5 "Trans" 0 800 50 H I L CNN "category"
@@ -402,7 +402,7 @@ ENDDEF
 DEF project_C0603C209C5GACTU C 0 40 Y Y 1 F N
 F0 "C" 0 100 50 H V L CNN
 F1 "project_C0603C209C5GACTU" 0 200 50 H I L CNN
-F2 "KEMET-C0603C-CF-0-0-*" 0 300 50 H I L CNN
+F2 "project:KEMET-C0603C-CF-0-0-MFG" 0 300 50 H I L CNN
 F3 "" 0 400 50 H I L CNN
 F4 "Yes" 0 500 50 H I L CNN "automotive"
 F5 "Grade 1" 0 600 50 H I L CNN "automotive grade"
@@ -481,7 +481,7 @@ ENDDEF
 DEF project_CC0603KRX7R9BB102 C 0 40 Y Y 1 F N
 F0 "C" 0 100 50 H V L CNN
 F1 "project_CC0603KRX7R9BB102" 0 200 50 H I L CNN
-F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F2 "project:YAGEO-CC0603-0-0-0" 0 300 50 H I L CNN
 F3 "" 0 400 50 H I L CNN
 F4 "No" 0 500 50 H I L CNN "automotive"
 F5 "1.0 nF" 0 600 50 H V L CNN "capacitance"
@@ -521,7 +521,7 @@ ENDDEF
 DEF project_CC0603KRX7R9BB103 C 0 40 Y Y 1 F N
 F0 "C" 0 100 50 H V L CNN
 F1 "project_CC0603KRX7R9BB103" 0 200 50 H I L CNN
-F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F2 "project:YAGEO-CC0603-0-0-0" 0 300 50 H I L CNN
 F3 "" 0 400 50 H I L CNN
 F4 "No" 0 500 50 H I L CNN "automotive"
 F5 "10 nF" 0 600 50 H V L CNN "capacitance"
@@ -561,7 +561,7 @@ ENDDEF
 DEF project_CC0603KRX7R9BB181 C 0 40 Y Y 1 F N
 F0 "C" 0 100 50 H V L CNN
 F1 "project_CC0603KRX7R9BB181" 0 200 50 H I L CNN
-F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F2 "project:YAGEO-CC0603-0-0-0" 0 300 50 H I L CNN
 F3 "" 0 400 50 H I L CNN
 F4 "No" 0 500 50 H I L CNN "automotive"
 F5 "180 pF" 0 600 50 H V L CNN "capacitance"
@@ -601,7 +601,7 @@ ENDDEF
 DEF project_CC0603MRX5R5BB225 C 0 40 Y Y 1 F N
 F0 "C" 0 100 50 H V L CNN
 F1 "project_CC0603MRX5R5BB225" 0 200 50 H I L CNN
-F2 "YAGEO-CC0603-DA-05_2018-24-*" 0 300 50 H I L CNN
+F2 "project:YAGEO-CC0603-0-0-0" 0 300 50 H I L CNN
 F3 "" 0 400 50 H I L CNN
 F4 "No" 0 500 50 H I L CNN "automotive"
 F5 "2.2 uF" 0 600 50 H V L CNN "capacitance"
@@ -638,11 +638,11 @@ ENDDEF
 #
 # project_CC0805ZKY5V6BB106
 #
-DEF project_CC0805ZKY5V6BB106 C 0 40 Y Y 1 L N
+DEF project_CC0805ZKY5V6BB106 C 0 40 Y Y 1 F N
 F0 "C" 150 0 50 H V L CNN
 F1 "project_CC0805ZKY5V6BB106" 0 200 50 H I L CNN
-F2 "YAGEO-CC0805-0-0-*" 0 300 50 H I L CNN
-F3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" 0 400 50 H I L CNN
+F2 "project:YAGEO-CC0805-0-0-0" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
 F4 "10uF" 150 -100 50 H V L CNN "capacitance"
 F5 "Cap" 0 600 50 H I L CNN "category"
 F6 "CAP CER 10UF 10V Y5V 0805" 0 700 50 H I L CNN "digikey description"
@@ -670,7 +670,7 @@ ENDDEF
 DEF project_CGA3E2C0G1H060D080AA C 0 40 Y Y 1 F N
 F0 "C" 0 100 50 H V L CNN
 F1 "project_CGA3E2C0G1H060D080AA" 0 200 50 H I L CNN
-F2 "TDK-CGA3E-0.3-0.1-0-0-*" 0 300 50 H I L CNN
+F2 "project:TDK-CGA3E-0.3-0.1-0-0-IPC_A" 0 300 50 H I L CNN
 F3 "" 0 400 50 H I L CNN
 F4 "Yes" 0 500 50 H I L CNN "automotive"
 F5 "Grade 1" 0 600 50 H I L CNN "automotive grade"
@@ -720,7 +720,7 @@ ENDDEF
 DEF project_FSM2JSMAA SW 0 40 Y Y 1 F N
 F0 "SW" 0 0 50 H V L CNN
 F1 "project_FSM2JSMAA" 0 100 50 H V L CNN
-F2 "TE_Connectivity-FSM2JSMAA-*" 0 200 50 H I L CNN
+F2 "project:TE_Connectivity-FSM2JSMAA-MFG" 0 200 50 H I L CNN
 F3 "" 0 300 50 H I L CNN
 F4 "No" 0 400 50 H I L CNN "automotive"
 F5 "Switch" 0 500 50 H I L CNN "category"
@@ -765,7 +765,7 @@ ENDDEF
 DEF project_FT231XQ-R U 0 40 Y Y 1 F N
 F0 "U" 0 200 50 H V L CNN
 F1 "project_FT231XQ-R" 0 300 50 H V L CNN
-F2 "FTDI-QFN-20-0-0-*" 0 400 50 H I L CNN
+F2 "project:FTDI-QFN-20-0-0-MFG" 0 400 50 H I L CNN
 F3 "" 0 500 50 H I L CNN
 F4 "+85°C" 0 600 50 H I L CNN "ambient temperature range high"
 F5 "-40°C" 0 700 50 H I L CNN "ambient temperature range low"
@@ -838,7 +838,7 @@ ENDDEF
 DEF project_LTST-C190KGKT D 0 40 Y Y 1 F N
 F0 "D" 0 400 50 H V L CNN
 F1 "project_LTST-C190KGKT" 0 500 50 H V L CNN
-F2 "Lite-On-LTST-C190KGKT-*" 0 600 50 H I L CNN
+F2 "project:Lite-On-LTST-C190KGKT-MFG" 0 600 50 H I L CNN
 F3 "" 0 700 50 H I L CNN
 F4 "No" 0 800 50 H I L CNN "automotive"
 F5 "Diode" 0 900 50 H I L CNN "category"
@@ -887,7 +887,7 @@ ENDDEF
 DEF project_LTST-C190KRKT D 0 40 Y Y 1 F N
 F0 "D" 0 400 50 H V L CNN
 F1 "project_LTST-C190KRKT" 0 500 50 H V L CNN
-F2 "Lite-On-LTST-C190KRKT-*" 0 600 50 H I L CNN
+F2 "project:Lite-On-LTST-C190KRKT-MFG" 0 600 50 H I L CNN
 F3 "" 0 700 50 H I L CNN
 F4 "No" 0 800 50 H I L CNN "automotive"
 F5 "Diode" 0 900 50 H I L CNN "category"
@@ -936,7 +936,7 @@ ENDDEF
 DEF project_LTST-C190KSKT D 0 40 Y Y 1 F N
 F0 "D" 0 400 50 H V L CNN
 F1 "project_LTST-C190KSKT" 0 500 50 H V L CNN
-F2 "Lite-On-LTST-C190KSKT-*" 0 600 50 H I L CNN
+F2 "project:Lite-On-LTST-C190KSKT-MFG" 0 600 50 H I L CNN
 F3 "" 0 700 50 H I L CNN
 F4 "No" 0 800 50 H I L CNN "automotive"
 F5 "Diode" 0 900 50 H I L CNN "category"
@@ -985,7 +985,7 @@ ENDDEF
 DEF project_LTST-C190TBKT D 0 40 Y Y 1 F N
 F0 "D" 0 400 50 H V L CNN
 F1 "project_LTST-C190TBKT" 0 500 50 H V L CNN
-F2 "Vishay_Lite-On-LTST-C190TBKT-*" 0 600 50 H I L CNN
+F2 "project:Vishay_Lite-On-LTST-C190TBKT-Manufacturer_Recommended" 0 600 50 H I L CNN
 F3 "" 0 700 50 H I L CNN
 F4 "DFN" 0 800 50 H I L CNN "Case Package"
 F5 "Manufacturer URL" 0 900 50 H I L CNN "Component Link 1 Description"
@@ -1033,7 +1033,7 @@ ENDDEF
 DEF project_MLJ1608WR27JT000 L 0 40 Y N 1 F N
 F0 "L" -50 300 50 H V L BNN
 F1 "project_MLJ1608WR27JT000" -200 550 50 H I L BNN
-F2 "INDC1608X95N" -200 450 50 H I L BNN
+F2 "project:INDC1608X95N" -200 450 50 H I L BNN
 F3 "" 0 0 50 H I C CNN
 F4 "270nH" 0 250 50 H V C CNN "Inductance"
 F5 "550mA" 0 150 50 H V C CNN "Current"
@@ -1054,7 +1054,7 @@ ENDDEF
 DEF project_PJ-002AH J 0 0 Y Y 1 F N
 F0 "J" 0 100 50 H V L CNN
 F1 "project_PJ-002AH" 0 200 50 H V L CNN
-F2 "CUI-PJ-002AH-0-0-*" 0 300 50 H I L CNN
+F2 "project:CUI_PJ-002AH" 0 300 50 H I L CNN
 F3 "" 0 400 50 H I L CNN
 F4 "Conn" 0 500 50 H I L CNN "category"
 F5 "Silver" 0 600 50 H I L CNN "contact material"
@@ -1096,7 +1096,7 @@ ENDDEF
 DEF project_RC0603FR-07100RL R 0 40 Y Y 1 F N
 F0 "R" 0 200 50 H V L CNN
 F1 "project_RC0603FR-07100RL" 0 300 50 H I L CNN
-F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F2 "project:Yageo-RC0603-0-0-IPC_A" 0 400 50 H I L CNN
 F3 "" 0 500 50 H I L CNN
 F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
 F5 "Res" 0 700 50 H I L CNN "category"
@@ -1144,7 +1144,7 @@ ENDDEF
 DEF project_RC0603FR-0710KL R 0 40 Y Y 1 F N
 F0 "R" 0 200 50 H V L CNN
 F1 "project_RC0603FR-0710KL" 0 300 50 H I L CNN
-F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F2 "project:Yageo-RC0603-0-0-IPC_A" 0 400 50 H I L CNN
 F3 "" 0 500 50 H I L CNN
 F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
 F5 "Res" 0 700 50 H I L CNN "category"
@@ -1192,7 +1192,7 @@ ENDDEF
 DEF project_RC0603FR-071K65L R 0 40 Y Y 1 F N
 F0 "R" 0 200 50 H V L CNN
 F1 "project_RC0603FR-071K65L" 0 300 50 H V L CNN
-F2 "Yageo-RC0603-0-0-*" 0 400 50 H I L CNN
+F2 "project:Yageo-RC0603-0-0-IPC_A" 0 400 50 H I L CNN
 F3 "" 0 500 50 H I L CNN
 F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
 F5 "Res" 0 700 50 H I L CNN "category"
@@ -1326,7 +1326,7 @@ ENDDEF
 DEF project_SSW-106-02-T-S J 0 0 Y Y 1 F N
 F0 "J" 0 500 50 H V L CNN
 F1 "project_SSW-106-02-T-S" 0 600 50 H V L CNN
-F2 "Samtec-SSW-106-02-T-S-*" 0 700 50 H I L CNN
+F2 "project:Samtec-SSW-106-02-T-S-Manufacturer_Recommended" 0 700 50 H I L CNN
 F3 "" 0 800 50 H I L CNN
 F4 "Manufacturer URL" 0 900 50 H I L CNN "Component Link 1 Description"
 F5 "http://www.samtec.com" 0 1000 50 H I L CNN "Component Link 1 URL"
@@ -1375,11 +1375,11 @@ ENDDEF
 #
 # project_ST25R3916-AQWT
 #
-DEF project_ST25R3916-AQWT U 0 40 Y Y 1 L N
+DEF project_ST25R3916-AQWT U 0 40 Y Y 1 F N
 F0 "U" 0 200 50 H V L CNN
 F1 "project_ST25R3916-AQWT" 0 300 50 H V L CNN
-F2 "STMicroelectronics-VFQFPN32-B04R-0-1-*" 0 400 50 H I L CNN
-F3 "https://www.st.com/content/st_com/en/products/nfc/st25-nfc-rfid-tags-readers/st25-nfc-rfid-readers/st25r3916.html#resource" 0 500 50 H I L CNN
+F2 "project:STMicroelectronics-VFQFPN32-B04R-0-1-IPC_A" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
 F4 "No" 0 600 50 H I L CNN "automotive"
 F5 "IC" 0 700 50 H I L CNN "category"
 F6 "848kbits/s" 0 800 50 H I L CNN "data rate"
@@ -1448,7 +1448,7 @@ ENDDEF
 DEF project_Si5351A-B-GM U 0 40 Y Y 1 F N
 F0 "U" 0 200 50 H V L CNN
 F1 "project_Si5351A-B-GM" 0 300 50 H V L CNN
-F2 "Silicon_Labs-Si5351A-B-GM-*" 0 400 50 H I L CNN
+F2 "project:Silicon_Labs-Si5351A-B-GM-Level_A" 0 400 50 H I L CNN
 F3 "" 0 500 50 H I L CNN
 F4 "J-STD-020" 0 600 50 H I L CNN "Code  IPC"
 F5 "MO-220" 0 700 50 H I L CNN "Code  JEDEC"
@@ -1503,7 +1503,7 @@ ENDDEF
 DEF project_TSX-3225_16.0000MF09Z-AC3 Y 0 40 Y Y 1 F N
 F0 "Y" 0 200 50 H V L CNN
 F1 "project_TSX-3225_16.0000MF09Z-AC3" 0 300 50 H I L CNN
-F2 "Epson-TSX-3225_16.0000MF09Z-AC3-*" 0 400 50 H I L CNN
+F2 "project:Epson-TSX-3225_16.0000MF09Z-AC3-0" 0 400 50 H I L CNN
 F3 "" 0 500 50 H I L CNN
 F4 "Crys" 0 600 50 H I L CNN "category"
 F5 "16MHz ±10ppm Crystal 9pF 60 Ohms 4-SMD, No Lead" 0 700 50 H I L CNN "digikey description"

@@ -5,7 +5,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 11
 Title "NFC Power 10 Transmitters - YSO"
-Date "2020-11-24"
+Date "2020-11-25"
 Rev "1"
 Comp "NthDegree"
 Comment1 ""
@@ -472,7 +472,7 @@ AR Path="/5FBD86FB/6007BA26" Ref="J?"  Part="1"
 AR Path="/6007BA26" Ref="J3"  Part="1" 
 F 0 "J3" H 1950 8017 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 1950 7926 50  0000 C CNN
-F 2 "" H 1900 7700 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 1900 7700 50  0001 C CNN
 F 3 "~" H 1900 7700 50  0001 C CNN
 	1    1900 7700
 	1    0    0    -1  
@@ -486,7 +486,7 @@ AR Path="/5FBD86FB/6007BA3E" Ref="U?"  Part="1"
 AR Path="/6007BA3E" Ref="U1"  Part="1" 
 F 0 "U1" H 2150 4655 50  0000 C CNN
 F 1 "ATMEGA328P-MU" H 2150 4564 50  0000 C CNN
-F 2 "Microchip___Atmel-ATMEGA328P-MU-*" H 1150 4700 50  0001 L CNN
+F 2 "project:Microchip___Atmel-ATMEGA328P-MU-Level_A" H 1150 4700 50  0001 L CNN
 F 3 "" H 1150 4800 50  0001 L CNN
 F 4 "MO-220-VHHD-2" H 1150 4900 50  0001 L CNN "Code  JEDEC"
 F 5 "Manufacturer URL" H 1150 5000 50  0001 L CNN "Component Link 1 Description"
@@ -666,7 +666,7 @@ AR Path="/5FBD86FB/6007BAC2" Ref="Y?"  Part="1"
 AR Path="/6007BAC2" Ref="Y1"  Part="1" 
 F 0 "Y1" H 3350 7300 50  0000 C CNN
 F 1 "TSX-3225_16.0000MF09Z-AC3" H 3250 7450 50  0001 L CNN
-F 2 "Epson-TSX-3225_16.0000MF09Z-AC3-*" H 3250 7550 50  0001 L CNN
+F 2 "project:Epson-TSX-3225_16.0000MF09Z-AC3-0" H 3250 7550 50  0001 L CNN
 F 3 "https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-238V_en.pdf" H 3250 7650 50  0001 L CNN
 F 4 "Crys" H 3250 7750 50  0001 L CNN "category"
 F 5 "16MHz ±10ppm Crystal 9pF 60 Ohms 4-SMD, No Lead" H 3250 7850 50  0001 L CNN "digikey description"
@@ -695,7 +695,7 @@ AR Path="/5FBD86FB/6007BADE" Ref="C?"  Part="1"
 AR Path="/6007BADE" Ref="C8"  Part="1" 
 F 0 "C8" H 3978 7287 50  0000 L CNN
 F 1 "CGA3E2C0G1H060D080AA" H 3850 7450 50  0001 L CNN
-F 2 "TDK-CGA3E-0.3-0.1-0-0-*" H 3850 7550 50  0001 L CNN
+F 2 "project:TDK-CGA3E-0.3-0.1-0-0-IPC_A" H 3850 7550 50  0001 L CNN
 F 3 "https://product.tdk.com/info/en/catalog/spec/mlccspec_automotive_general_en.pdf" H 3850 7650 50  0001 L CNN
 F 4 "Yes" H 3850 7750 50  0001 L CNN "automotive"
 F 5 "Grade 1" H 3850 7850 50  0001 L CNN "automotive grade"
@@ -730,7 +730,7 @@ AR Path="/5FBD86FB/6007BAF9" Ref="C?"  Part="1"
 AR Path="/6007BAF9" Ref="C6"  Part="1" 
 F 0 "C6" H 3178 7287 50  0000 L CNN
 F 1 "CGA3E2C0G1H060D080AA" H 3050 7450 50  0001 L CNN
-F 2 "TDK-CGA3E-0.3-0.1-0-0-*" H 3050 7550 50  0001 L CNN
+F 2 "project:TDK-CGA3E-0.3-0.1-0-0-IPC_A" H 3050 7550 50  0001 L CNN
 F 3 "https://product.tdk.com/info/en/catalog/spec/mlccspec_automotive_general_en.pdf" H 3050 7650 50  0001 L CNN
 F 4 "Yes" H 3050 7750 50  0001 L CNN "automotive"
 F 5 "Grade 1" H 3050 7850 50  0001 L CNN "automotive grade"
@@ -887,7 +887,7 @@ U 1 1 6011056E
 P 700 7800
 F 0 "R1" H 1050 8105 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 700 8100 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 700 8200 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 700 8200 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 700 8300 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 700 8400 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 700 8500 50  0001 L CNN "category"
@@ -929,7 +929,7 @@ AR Path="/5FC1E32F/6014440A" Ref="R?"  Part="1"
 AR Path="/6014440A" Ref="R3"  Part="1" 
 F 0 "R3" H 4200 6405 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 4200 6224 50  0001 C CNN
-F 2 "Yageo-RC0603-0-0-*" H 3850 6500 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 3850 6500 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 3850 6600 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 3850 6700 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 3850 6800 50  0001 L CNN "category"
@@ -975,7 +975,7 @@ AR Path="/5FC1E32F/6014442F" Ref="D?"  Part="1"
 AR Path="/6014442F" Ref="D4"  Part="1" 
 F 0 "D4" H 3700 6700 50  0000 C CNN
 F 1 "LTST-C190KRKT" H 3700 6600 50  0000 C CNN
-F 2 "Lite-On-LTST-C190KRKT-*" H 3500 6700 50  0001 L CNN
+F 2 "project:Lite-On-LTST-C190KRKT-MFG" H 3500 6700 50  0001 L CNN
 F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 3500 6800 50  0001 L CNN
 F 4 "No" H 3500 6900 50  0001 L CNN "automotive"
 F 5 "Diode" H 3500 7000 50  0001 L CNN "category"
@@ -1023,7 +1023,7 @@ U 1 1 6016C588
 P 5700 7200
 F 0 "J5" V 5450 7500 50  0000 L CNN
 F 1 "SSW-106-02-T-S" V 5550 6850 50  0000 L CNN
-F 2 "Samtec-SSW-106-02-T-S-*" H 5700 7900 50  0001 L CNN
+F 2 "project:Samtec-SSW-106-02-T-S-Manufacturer_Recommended" H 5700 7900 50  0001 L CNN
 F 3 "http://www.samtec.com/documents/webfiles/pdf/SSW_TH.PDF" H 5700 8000 50  0001 L CNN
 F 4 "Manufacturer URL" H 5700 8100 50  0001 L CNN "Component Link 1 Description"
 F 5 "http://www.samtec.com" H 5700 8200 50  0001 L CNN "Component Link 1 URL"
@@ -1213,7 +1213,7 @@ U 1 1 601CADAC
 P 2400 1100
 F 0 "D1" H 2550 1637 50  0000 C CNN
 F 1 "BAT54T1G" H 2550 1546 50  0000 C CNN
-F 2 "On_Semiconductor-BAT54T1G-*" H 2400 1500 50  0001 L CNN
+F 2 "project:On_Semiconductor-BAT54T1G-Manufacturer_Recommended" H 2400 1500 50  0001 L CNN
 F 3 "http://www.onsemi.cn/pub_link/Collateral/BAT54T1-D.PDF" H 2400 1600 50  0001 L CNN
 F 4 "Manufacturer URL" H 2400 1700 50  0001 L CNN "Component Link 1 Description"
 F 5 "http://www.onsemi.com/" H 2400 1800 50  0001 L CNN "Component Link 1 URL"
@@ -1273,7 +1273,7 @@ U 1 1 601F46CA
 P 1600 1100
 F 0 "J1" H 1257 1554 50  0000 C CNN
 F 1 "PJ-002AH" H 1257 1463 50  0000 C CNN
-F 2 "CUI-PJ-002AH-0-0-*" H 1600 1400 50  0001 L CNN
+F 2 "project:CUI-PJ-002AH-0-0-0" H 1600 1400 50  0001 L CNN
 F 3 "https://www.cui.com/product/resource/pj-002ah.pdf" H 1600 1500 50  0001 L CNN
 F 4 "Conn" H 1600 1600 50  0001 L CNN "category"
 F 5 "Silver" H 1600 1700 50  0001 L CNN "contact material"
@@ -1319,7 +1319,7 @@ U 1 1 602086E6
 P 2200 2150
 F 0 "U2" H 3150 2505 50  0000 C CNN
 F 1 "FT231XQ-R" H 3150 2414 50  0000 C CNN
-F 2 "FTDI-QFN-20-0-0-*" H 2200 2550 50  0001 L CNN
+F 2 "project:FTDI-QFN-20-0-0-MFG" H 2200 2550 50  0001 L CNN
 F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf" H 2200 2650 50  0001 L CNN
 F 4 "+85°C" H 2200 2750 50  0001 L CNN "ambient temperature range high"
 F 5 "-40°C" H 2200 2850 50  0001 L CNN "ambient temperature range low"
@@ -1376,7 +1376,7 @@ U 1 1 602402C9
 P 1750 2250
 F 0 "J2" H 1300 2705 50  0000 C CNN
 F 1 "475890001" H 1300 2614 50  0000 C CNN
-F 2 "Molex-475890001-*" H 1750 2750 50  0001 L CNN
+F 2 "project:Molex-475890001-MFG" H 1750 2750 50  0001 L CNN
 F 3 "https://www.molex.com/pdm_docs/ps/PS-47589-001-001.pdf" H 1750 2850 50  0001 L CNN
 F 4 "No" H 1750 2950 50  0001 L CNN "automotive"
 F 5 "Conn" H 1750 3050 50  0001 L CNN "category"
@@ -1416,7 +1416,7 @@ U 1 1 602A166B
 P 3350 1100
 F 0 "D2" H 3500 563 50  0000 C CNN
 F 1 "BAT54T1G" H 3500 654 50  0000 C CNN
-F 2 "On_Semiconductor-BAT54T1G-*" H 3350 1500 50  0001 L CNN
+F 2 "project:On_Semiconductor-BAT54T1G-Manufacturer_Recommended" H 3350 1500 50  0001 L CNN
 F 3 "http://www.onsemi.cn/pub_link/Collateral/BAT54T1-D.PDF" H 3350 1600 50  0001 L CNN
 F 4 "Manufacturer URL" H 3350 1700 50  0001 L CNN "Component Link 1 Description"
 F 5 "http://www.onsemi.com/" H 3350 1800 50  0001 L CNN "Component Link 1 URL"
@@ -1534,7 +1534,7 @@ AR Path="/5FC1E32F/60388A27" Ref="R?"  Part="1"
 AR Path="/60388A27" Ref="R4"  Part="1" 
 F 0 "R4" H 4750 2455 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 4750 2274 50  0001 C CNN
-F 2 "Yageo-RC0603-0-0-*" H 4400 2550 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 4400 2550 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 4400 2650 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 4400 2750 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 4400 2850 50  0001 L CNN "category"
@@ -1576,7 +1576,7 @@ AR Path="/5FC1E32F/6038A2EC" Ref="R?"  Part="1"
 AR Path="/6038A2EC" Ref="R5"  Part="1" 
 F 0 "R5" H 4750 2855 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 4750 2674 50  0001 C CNN
-F 2 "Yageo-RC0603-0-0-*" H 4400 2950 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 4400 2950 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 4400 3050 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 4400 3150 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 4400 3250 50  0001 L CNN "category"
@@ -1693,7 +1693,7 @@ U 1 1 604323B5
 P 4400 2950
 F 0 "R6" H 4750 3255 50  0000 C CNN
 F 1 "RC0603FR-07100RL" H 4400 3250 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 4400 3350 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 4400 3350 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 4400 3450 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 4400 3550 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 4400 3650 50  0001 L CNN "category"
@@ -1732,7 +1732,7 @@ U 1 1 604335EA
 P 4400 3350
 F 0 "R7" H 4750 3655 50  0000 C CNN
 F 1 "RC0603FR-07100RL" H 4400 3650 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 4400 3750 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 4400 3750 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 4400 3850 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 4400 3950 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 4400 4050 50  0001 L CNN "category"
@@ -1792,7 +1792,7 @@ AR Path="/5FC1E32F/6045B8B1" Ref="R?"  Part="1"
 AR Path="/6045B8B1" Ref="R9"  Part="1" 
 F 0 "R9" H 5450 5105 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 5450 4924 50  0001 C CNN
-F 2 "Yageo-RC0603-0-0-*" H 5100 5200 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 5100 5200 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 5100 5300 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 5100 5400 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 5100 5500 50  0001 L CNN "category"
@@ -1836,7 +1836,7 @@ AR Path="/5FC1E32F/6045B8D3" Ref="D?"  Part="1"
 AR Path="/6045B8D3" Ref="D6"  Part="1" 
 F 0 "D6" H 5900 5400 50  0000 C CNN
 F 1 "LTST-C190KSKT" H 5900 5300 50  0000 C CNN
-F 2 "Lite-On-LTST-C190KSKT-*" H 5600 5400 50  0001 L CNN
+F 2 "project:Lite-On-LTST-C190KSKT-MFG" H 5600 5400 50  0001 L CNN
 F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 5600 5500 50  0001 L CNN
 F 4 "No" H 5600 5600 50  0001 L CNN "automotive"
 F 5 "Diode" H 5600 5700 50  0001 L CNN "category"
@@ -1876,7 +1876,7 @@ AR Path="/5FC1E32F/6046B423" Ref="D?"  Part="1"
 AR Path="/6046B423" Ref="D5"  Part="1" 
 F 0 "D5" H 5700 4650 50  0000 C CNN
 F 1 "LTST-C190KGKT" H 5700 4550 50  0000 C CNN
-F 2 "Lite-On-LTST-C190KGKT-*" H 5500 4650 50  0001 L CNN
+F 2 "project:Lite-On-LTST-C190KGKT-MFG" H 5500 4650 50  0001 L CNN
 F 3 "https://optoelectronics.liteon.com/upload/download/DS22-2000-074/LTST-C190KGKT.PDF" H 5500 4750 50  0001 L CNN
 F 4 "No" H 5500 4850 50  0001 L CNN "automotive"
 F 5 "Diode" H 5500 4950 50  0001 L CNN "category"
@@ -1916,7 +1916,7 @@ AR Path="/5FC1E32F/6046B445" Ref="R?"  Part="1"
 AR Path="/6046B445" Ref="R8"  Part="1" 
 F 0 "R8" H 5450 4355 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 5450 4264 50  0001 C CNN
-F 2 "Yageo-RC0603-0-0-*" H 5100 4450 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 5100 4450 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 5100 4550 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 5100 4650 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 5100 4750 50  0001 L CNN "category"
@@ -1960,7 +1960,7 @@ AR Path="/5FC1E32F/6046B46C" Ref="R?"  Part="1"
 AR Path="/6046B46C" Ref="R2"  Part="1" 
 F 0 "R2" H 4150 7105 50  0000 C CNN
 F 1 "RC0603FR-071K65L" H 4150 7014 50  0001 C CNN
-F 2 "Yageo-RC0603-0-0-*" H 3800 7200 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 3800 7200 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 3800 7300 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 3800 7400 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 3800 7500 50  0001 L CNN "category"
@@ -2004,7 +2004,7 @@ AR Path="/5FC1E32F/6046B494" Ref="D?"  Part="1"
 AR Path="/6046B494" Ref="D3"  Part="1" 
 F 0 "D3" H 3650 7350 50  0000 C CNN
 F 1 "LTST-C190TBKT" H 3650 7250 50  0000 C CNN
-F 2 "Vishay_Lite-On-LTST-C190TBKT-*" H 3450 7400 50  0001 L CNN
+F 2 "project:Vishay_Lite-On-LTST-C190TBKT-Manufacturer_Recommended" H 3450 7400 50  0001 L CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0224/S_110_LTST-C190TBKT(0630).pdf" H 3450 7500 50  0001 L CNN
 F 4 "DFN" H 3450 7600 50  0001 L CNN "Case Package"
 F 5 "Manufacturer URL" H 3450 7700 50  0001 L CNN "Component Link 1 Description"
@@ -2114,7 +2114,7 @@ AR Path="/5FC1E32F/606FC690" Ref="C?"  Part="1"
 AR Path="/606FC690" Ref="C4"  Part="1" 
 F 0 "C4" H 2178 1237 50  0000 L CNN
 F 1 "CC0805ZKY5V6BB106" H 2050 1400 50  0001 L CNN
-F 2 "YAGEO-CC0805-0-0-*" H 2050 1500 50  0001 L CNN
+F 2 "project:YAGEO-CC0805-0-0-0" H 2050 1500 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 2050 1600 50  0001 L CNN
 F 4 "10uF" H 2178 1146 50  0000 L CNN "capacitance"
 F 5 "Cap" H 2050 1800 50  0001 L CNN "category"
@@ -2206,7 +2206,7 @@ AR Path="/5FC1E32F/60764231" Ref="C?"  Part="1"
 AR Path="/60764231" Ref="C5"  Part="1" 
 F 0 "C5" H 2978 1237 50  0000 L CNN
 F 1 "CC0805ZKY5V6BB106" H 2850 1400 50  0001 L CNN
-F 2 "YAGEO-CC0805-0-0-*" H 2850 1500 50  0001 L CNN
+F 2 "project:YAGEO-CC0805-0-0-0" H 2850 1500 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 2850 1600 50  0001 L CNN
 F 4 "10uF" H 2978 1146 50  0000 L CNN "capacitance"
 F 5 "Cap" H 2850 1800 50  0001 L CNN "category"
@@ -2280,7 +2280,7 @@ U 1 1 608B5173
 P 4550 1000
 F 0 "SW1" V 4154 800 50  0000 C CNN
 F 1 "FSM2JSMAA" V 4245 800 50  0000 C CNN
-F 2 "TE_Connectivity-FSM2JSMAA-*" H 4550 1200 50  0001 L CNN
+F 2 "project:TE_Connectivity-FSM2JSMAA-MFG" H 4550 1200 50  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F2-1437565-8" H 4550 1300 50  0001 L CNN
 F 4 "No" H 4550 1400 50  0001 L CNN "automotive"
 F 5 "Switch" H 4550 1500 50  0001 L CNN "category"
@@ -2337,7 +2337,7 @@ U 1 1 6091A4AB
 P 5500 1000
 F 0 "SW2" V 5104 800 50  0000 C CNN
 F 1 "FSM2JSMAA" V 5195 800 50  0000 C CNN
-F 2 "TE_Connectivity-FSM2JSMAA-*" H 5500 1200 50  0001 L CNN
+F 2 "project:TE_Connectivity-FSM2JSMAA-MFG" H 5500 1200 50  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F2-1437565-8" H 5500 1300 50  0001 L CNN
 F 4 "No" H 5500 1400 50  0001 L CNN "automotive"
 F 5 "Switch" H 5500 1500 50  0001 L CNN "category"
@@ -2436,7 +2436,7 @@ U 1 1 60D874A8
 P 5500 5300
 F 0 "U3" H 6100 5747 50  0000 C CNN
 F 1 "Si5351A-B-GM" H 6100 5656 50  0000 C CNN
-F 2 "Silicon_Labs-Si5351A-B-GM-*" H 5500 5700 50  0001 L CNN
+F 2 "project:Silicon_Labs-Si5351A-B-GM-Level_A" H 5500 5700 50  0001 L CNN
 F 3 "http://www.silabs.com/Support%20Documents/TechnicalDocs/Si5351.pdf" H 5500 5800 50  0001 L CNN
 F 4 "J-STD-020" H 5500 5900 50  0001 L CNN "Code  IPC"
 F 5 "MO-220" H 5500 6000 50  0001 L CNN "Code  JEDEC"
@@ -2700,7 +2700,7 @@ U 1 1 611BB5D8
 P 4500 5300
 F 0 "Y2" H 4950 5565 50  0000 C CNN
 F 1 "ABM8G-25.000MHz-B4Y-T" H 4950 5474 50  0000 C CNN
-F 2 "Abracon-ABM8G-25.000MHz-B4Y-T-*" H 4500 5700 50  0001 L CNN
+F 2 "project:Abracon-ABM8G-25.000MHz-B4Y-T-0" H 4500 5700 50  0001 L CNN
 F 3 "http://www.abracon.com/Resonators/ABM8G.pdf" H 4500 5800 50  0001 L CNN
 F 4 "Crys" H 4500 5900 50  0001 L CNN "category"
 F 5 "CRYSTAL 25.0000MHZ 10PF SMD" H 4500 6000 50  0001 L CNN "digikey description"
@@ -2754,7 +2754,7 @@ U 1 1 6129C2CB
 P 6050 700
 F 0 "R11" H 6400 1005 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 6050 1000 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 6050 1100 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6050 1100 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6050 1200 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 6050 1300 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 6050 1400 50  0001 L CNN "category"
@@ -2793,7 +2793,7 @@ U 1 1 6129E034
 P 6850 700
 F 0 "R14" H 7200 1005 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 6850 1000 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 6850 1100 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6850 1100 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6850 1200 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 6850 1300 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 6850 1400 50  0001 L CNN "category"
@@ -2872,7 +2872,7 @@ U 1 1 614310A8
 P 6050 1800
 F 0 "R12" H 6400 2105 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 6050 2100 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 6050 2200 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6050 2200 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6050 2300 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 6050 2400 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 6050 2500 50  0001 L CNN "category"
@@ -2911,7 +2911,7 @@ U 1 1 614310CA
 P 6850 1800
 F 0 "R15" H 7200 2105 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 6850 2100 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 6850 2200 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6850 2200 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6850 2300 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 6850 2400 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 6850 2500 50  0001 L CNN "category"
@@ -3017,7 +3017,7 @@ U 1 1 5FD87EB2
 P 6000 2900
 F 0 "R10" H 6350 3205 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 6000 3200 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 6000 3300 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6000 3300 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6000 3400 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 6000 3500 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 6000 3600 50  0001 L CNN "category"
@@ -3056,7 +3056,7 @@ U 1 1 5FD87ED4
 P 6800 2900
 F 0 "R13" H 7150 3205 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 6800 3200 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 6800 3300 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6800 3300 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6800 3400 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 6800 3500 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 6800 3600 50  0001 L CNN "category"
@@ -3230,7 +3230,7 @@ U 1 1 604E696D
 P 9100 5750
 F 0 "R18" H 9450 6055 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 9100 6050 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 9100 6150 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 9100 6150 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9100 6250 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 9100 6350 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 9100 6450 50  0001 L CNN "category"
@@ -3269,7 +3269,7 @@ U 1 1 604E698F
 P 9900 5750
 F 0 "R19" H 10250 6055 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 9900 6050 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 9900 6150 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 9900 6150 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 9900 6250 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 9900 6350 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 9900 6450 50  0001 L CNN "category"
@@ -3344,14 +3344,13 @@ Text Label 9700 6400 0    50   ~ 0
 TXP
 Wire Wire Line
 	9500 5850 9900 5850
-Connection ~ 9900 5850
 $Comp
 L project:BSS138 Q5
 U 1 1 604E69D4
 P 9500 6000
 F 0 "Q5" V 10050 6150 50  0000 C CNN
 F 1 "BSS138" V 10050 5900 50  0000 C CNN
-F 2 "ON_Semiconductor-318-08-01_2018-AS-*" H 9500 6500 50  0001 L CNN
+F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 9500 6500 50  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 9500 6600 50  0001 L CNN
 F 4 "No" H 9500 6700 50  0001 L CNN "automotive"
 F 5 "Trans" H 9500 6800 50  0001 L CNN "category"
@@ -3409,7 +3408,7 @@ U 1 1 6051DC27
 P 6450 950
 F 0 "Q2" V 7000 1100 50  0000 C CNN
 F 1 "BSS138" V 7000 850 50  0000 C CNN
-F 2 "ON_Semiconductor-318-08-01_2018-AS-*" H 6450 1450 50  0001 L CNN
+F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6450 1450 50  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6450 1550 50  0001 L CNN
 F 4 "No" H 6450 1650 50  0001 L CNN "automotive"
 F 5 "Trans" H 6450 1750 50  0001 L CNN "category"
@@ -3460,7 +3459,7 @@ U 1 1 6051FC43
 P 6450 2050
 F 0 "Q3" V 7000 2200 50  0000 C CNN
 F 1 "BSS138" V 7000 1950 50  0000 C CNN
-F 2 "ON_Semiconductor-318-08-01_2018-AS-*" H 6450 2550 50  0001 L CNN
+F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6450 2550 50  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6450 2650 50  0001 L CNN
 F 4 "No" H 6450 2750 50  0001 L CNN "automotive"
 F 5 "Trans" H 6450 2850 50  0001 L CNN "category"
@@ -3511,7 +3510,7 @@ U 1 1 60520BD4
 P 6400 3150
 F 0 "Q1" V 6950 3300 50  0000 C CNN
 F 1 "BSS138" V 6950 3050 50  0000 C CNN
-F 2 "ON_Semiconductor-318-08-01_2018-AS-*" H 6400 3650 50  0001 L CNN
+F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6400 3650 50  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6400 3750 50  0001 L CNN
 F 4 "No" H 6400 3850 50  0001 L CNN "automotive"
 F 5 "Trans" H 6400 3950 50  0001 L CNN "category"
@@ -3557,51 +3556,12 @@ F 43 "0.8V" H 6400 7750 50  0001 L CNN "typ forward diode voltage"
 	0    -1   1    0   
 $EndComp
 $Comp
-L project:RC0603FR-0710KL R16
-U 1 1 6055870A
-P 7450 5750
-F 0 "R16" H 7800 6055 50  0000 C CNN
-F 1 "RC0603FR-0710KL" H 7450 6050 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 7450 6150 50  0001 L CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 7450 6250 50  0001 L CNN
-F 4 "541-1.00HHCT-ND" H 7450 6350 50  0001 L CNN "approved alternate part number"
-F 5 "Res" H 7450 6450 50  0001 L CNN "category"
-F 6 "Thick Film" H 7450 6550 50  0001 L CNN "composition"
-F 7 "Passive Components" H 7450 6650 50  0001 L CNN "device class L1"
-F 8 "Resistors" H 7450 6750 50  0001 L CNN "device class L2"
-F 9 "Chip SMD Resistors" H 7450 6850 50  0001 L CNN "device class L3"
-F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 7450 6950 50  0001 L CNN "digikey description"
-F 11 "311-10.0KHRTR-ND" H 7450 7050 50  0001 L CNN "digikey part number"
-F 12 "0.5mm" H 7450 7150 50  0001 L CNN "height"
-F 13 "RESC15585X45" H 7450 7250 50  0001 L CNN "ipc land pattern name"
-F 14 "yes" H 7450 7350 50  0001 L CNN "lead free"
-F 15 "368bdb3a487a5469" H 7450 7450 50  0001 L CNN "library id"
-F 16 "Yageo" H 7450 7550 50  0001 L CNN "manufacturer"
-F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 7450 7650 50  0001 L CNN "mouser description"
-F 18 "603-RC0603FR-0710KL" H 7450 7750 50  0001 L CNN "mouser part number"
-F 19 "0603" H 7800 5964 50  0000 C CNN "package"
-F 20 "100mW" H 7450 7950 50  0001 L CNN "power"
-F 21 "0.1W" H 7450 8050 50  0001 L CNN "power rating"
-F 22 "10kΩ" H 7800 5873 50  0000 C CNN "resistance"
-F 23 "yes" H 7450 8250 50  0001 L CNN "rohs"
-F 24 "RC" H 7450 8350 50  0001 L CNN "series"
-F 25 "0mm" H 7450 8450 50  0001 L CNN "standoff height"
-F 26 "100ppm/°C" H 7450 8550 50  0001 L CNN "temperature coefficient"
-F 27 "+155°C" H 7450 8650 50  0001 L CNN "temperature range high"
-F 28 "-55°C" H 7450 8750 50  0001 L CNN "temperature range low"
-F 29 "1%" H 7450 8850 50  0001 L CNN "tolerance"
-F 30 "75V" H 7450 8950 50  0001 L CNN "voltage"
-F 31 "75V" H 7450 9050 50  0001 L CNN "voltage rating"
-	1    7450 5750
-	0    1    1    0   
-$EndComp
-$Comp
 L project:RC0603FR-0710KL R17
 U 1 1 60558730
 P 8250 5750
 F 0 "R17" H 8600 6055 50  0000 C CNN
 F 1 "RC0603FR-0710KL" H 8250 6050 50  0001 L CNN
-F 2 "Yageo-RC0603-0-0-*" H 8250 6150 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 8250 6150 50  0001 L CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 8250 6250 50  0001 L CNN
 F 4 "541-1.00HHCT-ND" H 8250 6350 50  0001 L CNN "approved alternate part number"
 F 5 "Res" H 8250 6450 50  0001 L CNN "category"
@@ -3636,12 +3596,6 @@ F 31 "75V" H 8250 9050 50  0001 L CNN "voltage rating"
 $EndComp
 Wire Wire Line
 	8250 6350 8250 6400
-Wire Wire Line
-	8250 6400 8050 6400
-Wire Wire Line
-	7450 6350 7450 6400
-Wire Wire Line
-	7450 6400 7650 6400
 $Comp
 L power:+5VP #PWR055
 U 1 1 6055873E
@@ -3653,36 +3607,35 @@ F 3 "" H 8250 5800 50  0001 C CNN
 	1    8250 5800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR044
-U 1 1 60558748
-P 7450 5800
-F 0 "#PWR044" H 7450 5650 50  0001 C CNN
-F 1 "+5V" H 7465 5973 50  0000 C CNN
-F 2 "" H 7450 5800 50  0001 C CNN
-F 3 "" H 7450 5800 50  0001 C CNN
-	1    7450 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 5800 7450 5850
 Wire Wire Line
 	8250 5800 8250 5850
-Wire Wire Line
-	7850 6100 7850 5850
 Text Label 7450 6400 0    50   ~ 0
 TX
 Text Label 8050 6400 0    50   ~ 0
 RXP
 Wire Wire Line
-	7450 5850 7850 5850
+	8250 6400 8700 6400
+Wire Wire Line
+	8700 6400 8700 5100
+Wire Wire Line
+	8700 5100 8650 5100
+Connection ~ 8250 6400
+Wire Wire Line
+	7450 6400 7650 6400
+Wire Wire Line
+	8050 6400 8250 6400
+Connection ~ 9900 5850
+Wire Wire Line
+	7850 6100 7850 5850
+Wire Wire Line
+	7850 5850 8250 5850
 $Comp
 L project:BSS138 Q4
-U 1 1 60558781
+U 1 1 60760EB0
 P 7850 6000
 F 0 "Q4" V 8400 6150 50  0000 C CNN
 F 1 "BSS138" V 8400 5900 50  0000 C CNN
-F 2 "ON_Semiconductor-318-08-01_2018-AS-*" H 7850 6500 50  0001 L CNN
+F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 7850 6500 50  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 7850 6600 50  0001 L CNN
 F 4 "No" H 7850 6700 50  0001 L CNN "automotive"
 F 5 "Trans" H 7850 6800 50  0001 L CNN "category"
@@ -3725,14 +3678,6 @@ F 41 "20ns" H 7850 10400 50  0001 L CNN "turn off delay time"
 F 42 "2.5ns" H 7850 10500 50  0001 L CNN "turn on delay time"
 F 43 "0.8V" H 7850 10600 50  0001 L CNN "typ forward diode voltage"
 	1    7850 6000
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
-Connection ~ 7450 5850
-Wire Wire Line
-	8250 6400 8700 6400
-Wire Wire Line
-	8700 6400 8700 5100
-Wire Wire Line
-	8700 5100 8650 5100
-Connection ~ 8250 6400
 $EndSCHEMATC

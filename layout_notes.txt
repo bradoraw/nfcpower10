@@ -1,0 +1,8 @@
+NFCPower10 Layout Notes
+Board outline 
+- NFCPower is 100mm x 25mm
+- Place 10 of these side by side 250mm x 100mm
+- Then increase the lower edge 25mm to fit the display and SD card so 250mm x 125mm
+- Provide 10mm on each side for mounting holes so 270mm x 125mm
+
+In plane senssor on bottom copper
