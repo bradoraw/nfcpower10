@@ -5,7 +5,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 11
 Title "NFC Power 10 Transmitters - YSO"
-Date "2020-11-25"
+Date "2020-11-27"
 Rev "1"
 Comp "NthDegree"
 Comment1 ""
@@ -1241,17 +1241,6 @@ F 26 "200mA" H 2550 1273 50  0000 C CNN "Current"
 	1    2400 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5VP #PWR09
-U 1 1 601CC086
-P 2050 1100
-F 0 "#PWR09" H 2050 950 50  0001 C CNN
-F 1 "+5VP" H 2065 1273 50  0000 C CNN
-F 2 "" H 2050 1100 50  0001 C CNN
-F 3 "" H 2050 1100 50  0001 C CNN
-	1    2050 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2700 1100 2850 1100
 $Comp
@@ -1267,52 +1256,6 @@ F 3 "" H 2850 1100 50  0001 C CNN
 $EndComp
 Text Notes 2150 1750 0    50   ~ 0
 Auto Select Voltage
-$Comp
-L project:PJ-002AH J1
-U 1 1 601F46CA
-P 1600 1100
-F 0 "J1" H 1257 1554 50  0000 C CNN
-F 1 "PJ-002AH" H 1257 1463 50  0000 C CNN
-F 2 "project:CUI_PJ-002AH" H 1600 1400 50  0001 L CNN
-F 3 "https://www.cui.com/product/resource/pj-002ah.pdf" H 1600 1500 50  0001 L CNN
-F 4 "Conn" H 1600 1600 50  0001 L CNN "category"
-F 5 "Silver" H 1600 1700 50  0001 L CNN "contact material"
-F 6 "5A" H 1257 1372 50  0000 C CNN "current rating"
-F 7 "Connectors" H 1600 1900 50  0001 L CNN "device class L1"
-F 8 "Power Connectors" H 1600 2000 50  0001 L CNN "device class L2"
-F 9 "unset" H 1600 2100 50  0001 L CNN "device class L3"
-F 10 "CONN PWR JACK 2X5.5MM SOLDER" H 1257 1281 50  0000 C CNN "digikey description"
-F 11 "CP-002AH-ND" H 1600 2300 50  0001 L CNN "digikey part number"
-F 12 "11.2mm" H 1600 2400 50  0001 L CNN "height"
-F 13 "yes" H 1600 2500 50  0001 L CNN "lead free"
-F 14 "9faf6f1e7549c614" H 1600 2600 50  0001 L CNN "library id"
-F 15 "CUI" H 1600 2700 50  0001 L CNN "manufacturer"
-F 16 "DC Power Connectors Power Jacks" H 1600 2800 50  0001 L CNN "mouser description"
-F 17 "490-PJ-002AH" H 1600 2900 50  0001 L CNN "mouser part number"
-F 18 "2" H 1600 3000 50  0001 L CNN "number of contacts"
-F 19 "CONN_PWR_JACK" H 1600 3100 50  0001 L CNN "package"
-F 20 "yes" H 1600 3200 50  0001 L CNN "rohs"
-F 21 "+85°C" H 1600 3300 50  0001 L CNN "temperature range high"
-F 22 "-25°C" H 1600 3400 50  0001 L CNN "temperature range low"
-F 23 "24V" H 1257 1190 50  0000 C CNN "voltage rating"
-	1    1600 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 1300 1600 1300
-Wire Wire Line
-	1600 1300 1600 1350
-$Comp
-L power:GND #PWR05
-U 1 1 60205E8B
-P 1600 1350
-F 0 "#PWR05" H 1600 1100 50  0001 C CNN
-F 1 "GND" H 1605 1177 50  0000 C CNN
-F 2 "" H 1600 1350 50  0001 C CNN
-F 3 "" H 1600 1350 50  0001 C CNN
-	1    1600 1350
-	1    0    0    -1  
-$EndComp
 $Comp
 L project:FT231XQ-R U2
 U 1 1 602086E6
@@ -1407,9 +1350,6 @@ F 29 "30V" H 1750 5450 50  0001 L CNN "voltage rating"
 	1    1750 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1500 1100 2050 1100
-Connection ~ 2050 1100
 $Comp
 L project:BAT54T1G D2
 U 1 1 602A166B
@@ -2088,51 +2028,7 @@ F 3 "" H 4450 6800 50  0001 C CNN
 $EndComp
 Connection ~ 3500 1100
 Wire Wire Line
-	2050 1400 2050 1450
-$Comp
-L power:GND #PWR010
-U 1 1 60638D2F
-P 2050 1450
-F 0 "#PWR010" H 2050 1200 50  0001 C CNN
-F 1 "GND" H 2055 1277 50  0000 C CNN
-F 2 "" H 2050 1450 50  0001 C CNN
-F 3 "" H 2050 1450 50  0001 C CNN
-	1    2050 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 1100 2050 1200
-Wire Wire Line
-	2050 1100 2400 1100
-Wire Wire Line
 	3500 1100 3500 1200
-$Comp
-L project:CC0805ZKY5V6BB106 C?
-U 1 1 606FC690
-P 2050 1200
-AR Path="/5FC1E32F/606FC690" Ref="C?"  Part="1" 
-AR Path="/606FC690" Ref="C4"  Part="1" 
-F 0 "C4" H 2178 1237 50  0000 L CNN
-F 1 "CC0805ZKY5V6BB106" H 2050 1400 50  0001 L CNN
-F 2 "project:YAGEO-CC0805-0-0-0" H 2050 1500 50  0001 L CNN
-F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 2050 1600 50  0001 L CNN
-F 4 "10uF" H 2178 1146 50  0000 L CNN "capacitance"
-F 5 "Cap" H 2050 1800 50  0001 L CNN "category"
-F 6 "CAP CER 10UF 10V Y5V 0805" H 2050 1900 50  0001 L CNN "digikey description"
-F 7 "311-1355-1-ND" H 2050 2000 50  0001 L CNN "digikey part number"
-F 8 "yes" H 2050 2100 50  0001 L CNN "lead free"
-F 9 "852e7d0cf36849be" H 2050 2200 50  0001 L CNN "library id"
-F 10 "YAGEO" H 2050 2300 50  0001 L CNN "manufacturer"
-F 11 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10uF 10V Y5V-20/+80%" H 2050 2400 50  0001 L CNN "mouser description"
-F 12 "603-CC805ZKY5V6BB106" H 2050 2500 50  0001 L CNN "mouser part number"
-F 13 "0805" H 2178 1055 50  0000 L CNN "package"
-F 14 "yes" H 2050 2700 50  0001 L CNN "rohs"
-F 15 "+85°C" H 2050 2800 50  0001 L CNN "temperature range high"
-F 16 "-30°C" H 2050 2900 50  0001 L CNN "temperature range low"
-F 17 "10V" H 2178 964 50  0000 L CNN "voltage"
-	1    2050 1200
-	1    0    0    -1  
-$EndComp
 $Comp
 L project:CC0603KPX7R9BB104 C?
 U 1 1 6074652A
@@ -2869,120 +2765,120 @@ SDAP
 $Comp
 L project:RC0603FR-0710KL R12
 U 1 1 614310A8
-P 6050 1800
-F 0 "R12" H 6400 2105 50  0000 C CNN
-F 1 "RC0603FR-0710KL" H 6050 2100 50  0001 L CNN
-F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6050 2200 50  0001 L CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6050 2300 50  0001 L CNN
-F 4 "541-1.00HHCT-ND" H 6050 2400 50  0001 L CNN "approved alternate part number"
-F 5 "Res" H 6050 2500 50  0001 L CNN "category"
-F 6 "Thick Film" H 6050 2600 50  0001 L CNN "composition"
-F 7 "Passive Components" H 6050 2700 50  0001 L CNN "device class L1"
-F 8 "Resistors" H 6050 2800 50  0001 L CNN "device class L2"
-F 9 "Chip SMD Resistors" H 6050 2900 50  0001 L CNN "device class L3"
-F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 6050 3000 50  0001 L CNN "digikey description"
-F 11 "311-10.0KHRTR-ND" H 6050 3100 50  0001 L CNN "digikey part number"
-F 12 "0.5mm" H 6050 3200 50  0001 L CNN "height"
-F 13 "RESC15585X45" H 6050 3300 50  0001 L CNN "ipc land pattern name"
-F 14 "yes" H 6050 3400 50  0001 L CNN "lead free"
-F 15 "368bdb3a487a5469" H 6050 3500 50  0001 L CNN "library id"
-F 16 "Yageo" H 6050 3600 50  0001 L CNN "manufacturer"
-F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 6050 3700 50  0001 L CNN "mouser description"
-F 18 "603-RC0603FR-0710KL" H 6050 3800 50  0001 L CNN "mouser part number"
-F 19 "0603" H 6400 2014 50  0000 C CNN "package"
-F 20 "100mW" H 6050 4000 50  0001 L CNN "power"
-F 21 "0.1W" H 6050 4100 50  0001 L CNN "power rating"
-F 22 "10kΩ" H 6400 1923 50  0000 C CNN "resistance"
-F 23 "yes" H 6050 4300 50  0001 L CNN "rohs"
-F 24 "RC" H 6050 4400 50  0001 L CNN "series"
-F 25 "0mm" H 6050 4500 50  0001 L CNN "standoff height"
-F 26 "100ppm/°C" H 6050 4600 50  0001 L CNN "temperature coefficient"
-F 27 "+155°C" H 6050 4700 50  0001 L CNN "temperature range high"
-F 28 "-55°C" H 6050 4800 50  0001 L CNN "temperature range low"
-F 29 "1%" H 6050 4900 50  0001 L CNN "tolerance"
-F 30 "75V" H 6050 5000 50  0001 L CNN "voltage"
-F 31 "75V" H 6050 5100 50  0001 L CNN "voltage rating"
-	1    6050 1800
+P 6050 1550
+F 0 "R12" H 6400 1855 50  0000 C CNN
+F 1 "RC0603FR-0710KL" H 6050 1850 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6050 1950 50  0001 L CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6050 2050 50  0001 L CNN
+F 4 "541-1.00HHCT-ND" H 6050 2150 50  0001 L CNN "approved alternate part number"
+F 5 "Res" H 6050 2250 50  0001 L CNN "category"
+F 6 "Thick Film" H 6050 2350 50  0001 L CNN "composition"
+F 7 "Passive Components" H 6050 2450 50  0001 L CNN "device class L1"
+F 8 "Resistors" H 6050 2550 50  0001 L CNN "device class L2"
+F 9 "Chip SMD Resistors" H 6050 2650 50  0001 L CNN "device class L3"
+F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 6050 2750 50  0001 L CNN "digikey description"
+F 11 "311-10.0KHRTR-ND" H 6050 2850 50  0001 L CNN "digikey part number"
+F 12 "0.5mm" H 6050 2950 50  0001 L CNN "height"
+F 13 "RESC15585X45" H 6050 3050 50  0001 L CNN "ipc land pattern name"
+F 14 "yes" H 6050 3150 50  0001 L CNN "lead free"
+F 15 "368bdb3a487a5469" H 6050 3250 50  0001 L CNN "library id"
+F 16 "Yageo" H 6050 3350 50  0001 L CNN "manufacturer"
+F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 6050 3450 50  0001 L CNN "mouser description"
+F 18 "603-RC0603FR-0710KL" H 6050 3550 50  0001 L CNN "mouser part number"
+F 19 "0603" H 6400 1764 50  0000 C CNN "package"
+F 20 "100mW" H 6050 3750 50  0001 L CNN "power"
+F 21 "0.1W" H 6050 3850 50  0001 L CNN "power rating"
+F 22 "10kΩ" H 6400 1673 50  0000 C CNN "resistance"
+F 23 "yes" H 6050 4050 50  0001 L CNN "rohs"
+F 24 "RC" H 6050 4150 50  0001 L CNN "series"
+F 25 "0mm" H 6050 4250 50  0001 L CNN "standoff height"
+F 26 "100ppm/°C" H 6050 4350 50  0001 L CNN "temperature coefficient"
+F 27 "+155°C" H 6050 4450 50  0001 L CNN "temperature range high"
+F 28 "-55°C" H 6050 4550 50  0001 L CNN "temperature range low"
+F 29 "1%" H 6050 4650 50  0001 L CNN "tolerance"
+F 30 "75V" H 6050 4750 50  0001 L CNN "voltage"
+F 31 "75V" H 6050 4850 50  0001 L CNN "voltage rating"
+	1    6050 1550
 	0    1    1    0   
 $EndComp
 $Comp
 L project:RC0603FR-0710KL R15
 U 1 1 614310CA
-P 6850 1800
-F 0 "R15" H 7200 2105 50  0000 C CNN
-F 1 "RC0603FR-0710KL" H 6850 2100 50  0001 L CNN
-F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6850 2200 50  0001 L CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6850 2300 50  0001 L CNN
-F 4 "541-1.00HHCT-ND" H 6850 2400 50  0001 L CNN "approved alternate part number"
-F 5 "Res" H 6850 2500 50  0001 L CNN "category"
-F 6 "Thick Film" H 6850 2600 50  0001 L CNN "composition"
-F 7 "Passive Components" H 6850 2700 50  0001 L CNN "device class L1"
-F 8 "Resistors" H 6850 2800 50  0001 L CNN "device class L2"
-F 9 "Chip SMD Resistors" H 6850 2900 50  0001 L CNN "device class L3"
-F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 6850 3000 50  0001 L CNN "digikey description"
-F 11 "311-10.0KHRTR-ND" H 6850 3100 50  0001 L CNN "digikey part number"
-F 12 "0.5mm" H 6850 3200 50  0001 L CNN "height"
-F 13 "RESC15585X45" H 6850 3300 50  0001 L CNN "ipc land pattern name"
-F 14 "yes" H 6850 3400 50  0001 L CNN "lead free"
-F 15 "368bdb3a487a5469" H 6850 3500 50  0001 L CNN "library id"
-F 16 "Yageo" H 6850 3600 50  0001 L CNN "manufacturer"
-F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 6850 3700 50  0001 L CNN "mouser description"
-F 18 "603-RC0603FR-0710KL" H 6850 3800 50  0001 L CNN "mouser part number"
-F 19 "0603" H 7200 2014 50  0000 C CNN "package"
-F 20 "100mW" H 6850 4000 50  0001 L CNN "power"
-F 21 "0.1W" H 6850 4100 50  0001 L CNN "power rating"
-F 22 "10kΩ" H 7200 1923 50  0000 C CNN "resistance"
-F 23 "yes" H 6850 4300 50  0001 L CNN "rohs"
-F 24 "RC" H 6850 4400 50  0001 L CNN "series"
-F 25 "0mm" H 6850 4500 50  0001 L CNN "standoff height"
-F 26 "100ppm/°C" H 6850 4600 50  0001 L CNN "temperature coefficient"
-F 27 "+155°C" H 6850 4700 50  0001 L CNN "temperature range high"
-F 28 "-55°C" H 6850 4800 50  0001 L CNN "temperature range low"
-F 29 "1%" H 6850 4900 50  0001 L CNN "tolerance"
-F 30 "75V" H 6850 5000 50  0001 L CNN "voltage"
-F 31 "75V" H 6850 5100 50  0001 L CNN "voltage rating"
-	1    6850 1800
+P 6850 1550
+F 0 "R15" H 7200 1855 50  0000 C CNN
+F 1 "RC0603FR-0710KL" H 6850 1850 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6850 1950 50  0001 L CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6850 2050 50  0001 L CNN
+F 4 "541-1.00HHCT-ND" H 6850 2150 50  0001 L CNN "approved alternate part number"
+F 5 "Res" H 6850 2250 50  0001 L CNN "category"
+F 6 "Thick Film" H 6850 2350 50  0001 L CNN "composition"
+F 7 "Passive Components" H 6850 2450 50  0001 L CNN "device class L1"
+F 8 "Resistors" H 6850 2550 50  0001 L CNN "device class L2"
+F 9 "Chip SMD Resistors" H 6850 2650 50  0001 L CNN "device class L3"
+F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 6850 2750 50  0001 L CNN "digikey description"
+F 11 "311-10.0KHRTR-ND" H 6850 2850 50  0001 L CNN "digikey part number"
+F 12 "0.5mm" H 6850 2950 50  0001 L CNN "height"
+F 13 "RESC15585X45" H 6850 3050 50  0001 L CNN "ipc land pattern name"
+F 14 "yes" H 6850 3150 50  0001 L CNN "lead free"
+F 15 "368bdb3a487a5469" H 6850 3250 50  0001 L CNN "library id"
+F 16 "Yageo" H 6850 3350 50  0001 L CNN "manufacturer"
+F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 6850 3450 50  0001 L CNN "mouser description"
+F 18 "603-RC0603FR-0710KL" H 6850 3550 50  0001 L CNN "mouser part number"
+F 19 "0603" H 7200 1764 50  0000 C CNN "package"
+F 20 "100mW" H 6850 3750 50  0001 L CNN "power"
+F 21 "0.1W" H 6850 3850 50  0001 L CNN "power rating"
+F 22 "10kΩ" H 7200 1673 50  0000 C CNN "resistance"
+F 23 "yes" H 6850 4050 50  0001 L CNN "rohs"
+F 24 "RC" H 6850 4150 50  0001 L CNN "series"
+F 25 "0mm" H 6850 4250 50  0001 L CNN "standoff height"
+F 26 "100ppm/°C" H 6850 4350 50  0001 L CNN "temperature coefficient"
+F 27 "+155°C" H 6850 4450 50  0001 L CNN "temperature range high"
+F 28 "-55°C" H 6850 4550 50  0001 L CNN "temperature range low"
+F 29 "1%" H 6850 4650 50  0001 L CNN "tolerance"
+F 30 "75V" H 6850 4750 50  0001 L CNN "voltage"
+F 31 "75V" H 6850 4850 50  0001 L CNN "voltage rating"
+	1    6850 1550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6850 2400 6850 2450
+	6850 2150 6850 2200
 Wire Wire Line
-	6850 2450 6650 2450
+	6850 2200 6650 2200
 Wire Wire Line
-	6050 2400 6050 2450
+	6050 2150 6050 2200
 Wire Wire Line
-	6050 2450 6250 2450
+	6050 2200 6250 2200
 $Comp
 L power:+5VP #PWR042
 U 1 1 614310D4
-P 6850 1850
-F 0 "#PWR042" H 6850 1700 50  0001 C CNN
-F 1 "+5VP" H 6700 2000 50  0000 L CNN
-F 2 "" H 6850 1850 50  0001 C CNN
-F 3 "" H 6850 1850 50  0001 C CNN
-	1    6850 1850
+P 6850 1600
+F 0 "#PWR042" H 6850 1450 50  0001 C CNN
+F 1 "+5VP" H 6700 1750 50  0000 L CNN
+F 2 "" H 6850 1600 50  0001 C CNN
+F 3 "" H 6850 1600 50  0001 C CNN
+	1    6850 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR038
 U 1 1 614310DA
-P 6050 1850
-F 0 "#PWR038" H 6050 1700 50  0001 C CNN
-F 1 "+5V" H 6065 2023 50  0000 C CNN
-F 2 "" H 6050 1850 50  0001 C CNN
-F 3 "" H 6050 1850 50  0001 C CNN
-	1    6050 1850
+P 6050 1600
+F 0 "#PWR038" H 6050 1450 50  0001 C CNN
+F 1 "+5V" H 6065 1773 50  0000 C CNN
+F 2 "" H 6050 1600 50  0001 C CNN
+F 3 "" H 6050 1600 50  0001 C CNN
+	1    6050 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 1850 6050 1900
+	6050 1600 6050 1650
 Wire Wire Line
-	6850 1850 6850 1900
+	6850 1600 6850 1650
 Wire Wire Line
-	6450 2150 6450 1900
-Text Label 6050 2450 0    50   ~ 0
+	6450 1900 6450 1650
+Text Label 6050 2200 0    50   ~ 0
 SCL
-Text Label 6650 2450 0    50   ~ 0
+Text Label 6650 2200 0    50   ~ 0
 SCLP
 Wire Wire Line
 	5250 2950 5250 3350
@@ -2991,8 +2887,8 @@ Wire Wire Line
 Wire Wire Line
 	2200 7800 2550 7800
 Wire Wire Line
-	6450 1900 6850 1900
-Connection ~ 6850 1900
+	6450 1650 6850 1650
+Connection ~ 6850 1650
 Wire Wire Line
 	6450 800  6850 800 
 Connection ~ 6850 800 
@@ -3014,124 +2910,124 @@ Wire Wire Line
 $Comp
 L project:RC0603FR-0710KL R10
 U 1 1 5FD87EB2
-P 6000 2900
-F 0 "R10" H 6350 3205 50  0000 C CNN
-F 1 "RC0603FR-0710KL" H 6000 3200 50  0001 L CNN
-F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6000 3300 50  0001 L CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6000 3400 50  0001 L CNN
-F 4 "541-1.00HHCT-ND" H 6000 3500 50  0001 L CNN "approved alternate part number"
-F 5 "Res" H 6000 3600 50  0001 L CNN "category"
-F 6 "Thick Film" H 6000 3700 50  0001 L CNN "composition"
-F 7 "Passive Components" H 6000 3800 50  0001 L CNN "device class L1"
-F 8 "Resistors" H 6000 3900 50  0001 L CNN "device class L2"
-F 9 "Chip SMD Resistors" H 6000 4000 50  0001 L CNN "device class L3"
-F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 6000 4100 50  0001 L CNN "digikey description"
-F 11 "311-10.0KHRTR-ND" H 6000 4200 50  0001 L CNN "digikey part number"
-F 12 "0.5mm" H 6000 4300 50  0001 L CNN "height"
-F 13 "RESC15585X45" H 6000 4400 50  0001 L CNN "ipc land pattern name"
-F 14 "yes" H 6000 4500 50  0001 L CNN "lead free"
-F 15 "368bdb3a487a5469" H 6000 4600 50  0001 L CNN "library id"
-F 16 "Yageo" H 6000 4700 50  0001 L CNN "manufacturer"
-F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 6000 4800 50  0001 L CNN "mouser description"
-F 18 "603-RC0603FR-0710KL" H 6000 4900 50  0001 L CNN "mouser part number"
-F 19 "0603" H 6350 3114 50  0000 C CNN "package"
-F 20 "100mW" H 6000 5100 50  0001 L CNN "power"
-F 21 "0.1W" H 6000 5200 50  0001 L CNN "power rating"
-F 22 "10kΩ" H 6350 3023 50  0000 C CNN "resistance"
-F 23 "yes" H 6000 5400 50  0001 L CNN "rohs"
-F 24 "RC" H 6000 5500 50  0001 L CNN "series"
-F 25 "0mm" H 6000 5600 50  0001 L CNN "standoff height"
-F 26 "100ppm/°C" H 6000 5700 50  0001 L CNN "temperature coefficient"
-F 27 "+155°C" H 6000 5800 50  0001 L CNN "temperature range high"
-F 28 "-55°C" H 6000 5900 50  0001 L CNN "temperature range low"
-F 29 "1%" H 6000 6000 50  0001 L CNN "tolerance"
-F 30 "75V" H 6000 6100 50  0001 L CNN "voltage"
-F 31 "75V" H 6000 6200 50  0001 L CNN "voltage rating"
-	1    6000 2900
+P 6050 2450
+F 0 "R10" H 6400 2755 50  0000 C CNN
+F 1 "RC0603FR-0710KL" H 6050 2750 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6050 2850 50  0001 L CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6050 2950 50  0001 L CNN
+F 4 "541-1.00HHCT-ND" H 6050 3050 50  0001 L CNN "approved alternate part number"
+F 5 "Res" H 6050 3150 50  0001 L CNN "category"
+F 6 "Thick Film" H 6050 3250 50  0001 L CNN "composition"
+F 7 "Passive Components" H 6050 3350 50  0001 L CNN "device class L1"
+F 8 "Resistors" H 6050 3450 50  0001 L CNN "device class L2"
+F 9 "Chip SMD Resistors" H 6050 3550 50  0001 L CNN "device class L3"
+F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 6050 3650 50  0001 L CNN "digikey description"
+F 11 "311-10.0KHRTR-ND" H 6050 3750 50  0001 L CNN "digikey part number"
+F 12 "0.5mm" H 6050 3850 50  0001 L CNN "height"
+F 13 "RESC15585X45" H 6050 3950 50  0001 L CNN "ipc land pattern name"
+F 14 "yes" H 6050 4050 50  0001 L CNN "lead free"
+F 15 "368bdb3a487a5469" H 6050 4150 50  0001 L CNN "library id"
+F 16 "Yageo" H 6050 4250 50  0001 L CNN "manufacturer"
+F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 6050 4350 50  0001 L CNN "mouser description"
+F 18 "603-RC0603FR-0710KL" H 6050 4450 50  0001 L CNN "mouser part number"
+F 19 "0603" H 6400 2664 50  0000 C CNN "package"
+F 20 "100mW" H 6050 4650 50  0001 L CNN "power"
+F 21 "0.1W" H 6050 4750 50  0001 L CNN "power rating"
+F 22 "10kΩ" H 6400 2573 50  0000 C CNN "resistance"
+F 23 "yes" H 6050 4950 50  0001 L CNN "rohs"
+F 24 "RC" H 6050 5050 50  0001 L CNN "series"
+F 25 "0mm" H 6050 5150 50  0001 L CNN "standoff height"
+F 26 "100ppm/°C" H 6050 5250 50  0001 L CNN "temperature coefficient"
+F 27 "+155°C" H 6050 5350 50  0001 L CNN "temperature range high"
+F 28 "-55°C" H 6050 5450 50  0001 L CNN "temperature range low"
+F 29 "1%" H 6050 5550 50  0001 L CNN "tolerance"
+F 30 "75V" H 6050 5650 50  0001 L CNN "voltage"
+F 31 "75V" H 6050 5750 50  0001 L CNN "voltage rating"
+	1    6050 2450
 	0    1    1    0   
 $EndComp
 $Comp
 L project:RC0603FR-0710KL R13
 U 1 1 5FD87ED4
-P 6800 2900
-F 0 "R13" H 7150 3205 50  0000 C CNN
-F 1 "RC0603FR-0710KL" H 6800 3200 50  0001 L CNN
-F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6800 3300 50  0001 L CNN
-F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6800 3400 50  0001 L CNN
-F 4 "541-1.00HHCT-ND" H 6800 3500 50  0001 L CNN "approved alternate part number"
-F 5 "Res" H 6800 3600 50  0001 L CNN "category"
-F 6 "Thick Film" H 6800 3700 50  0001 L CNN "composition"
-F 7 "Passive Components" H 6800 3800 50  0001 L CNN "device class L1"
-F 8 "Resistors" H 6800 3900 50  0001 L CNN "device class L2"
-F 9 "Chip SMD Resistors" H 6800 4000 50  0001 L CNN "device class L3"
-F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 6800 4100 50  0001 L CNN "digikey description"
-F 11 "311-10.0KHRTR-ND" H 6800 4200 50  0001 L CNN "digikey part number"
-F 12 "0.5mm" H 6800 4300 50  0001 L CNN "height"
-F 13 "RESC15585X45" H 6800 4400 50  0001 L CNN "ipc land pattern name"
-F 14 "yes" H 6800 4500 50  0001 L CNN "lead free"
-F 15 "368bdb3a487a5469" H 6800 4600 50  0001 L CNN "library id"
-F 16 "Yageo" H 6800 4700 50  0001 L CNN "manufacturer"
-F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 6800 4800 50  0001 L CNN "mouser description"
-F 18 "603-RC0603FR-0710KL" H 6800 4900 50  0001 L CNN "mouser part number"
-F 19 "0603" H 7150 3114 50  0000 C CNN "package"
-F 20 "100mW" H 6800 5100 50  0001 L CNN "power"
-F 21 "0.1W" H 6800 5200 50  0001 L CNN "power rating"
-F 22 "10kΩ" H 7150 3023 50  0000 C CNN "resistance"
-F 23 "yes" H 6800 5400 50  0001 L CNN "rohs"
-F 24 "RC" H 6800 5500 50  0001 L CNN "series"
-F 25 "0mm" H 6800 5600 50  0001 L CNN "standoff height"
-F 26 "100ppm/°C" H 6800 5700 50  0001 L CNN "temperature coefficient"
-F 27 "+155°C" H 6800 5800 50  0001 L CNN "temperature range high"
-F 28 "-55°C" H 6800 5900 50  0001 L CNN "temperature range low"
-F 29 "1%" H 6800 6000 50  0001 L CNN "tolerance"
-F 30 "75V" H 6800 6100 50  0001 L CNN "voltage"
-F 31 "75V" H 6800 6200 50  0001 L CNN "voltage rating"
-	1    6800 2900
+P 6850 2450
+F 0 "R13" H 7200 2755 50  0000 C CNN
+F 1 "RC0603FR-0710KL" H 6850 2750 50  0001 L CNN
+F 2 "project:Yageo-RC0603-0-0-IPC_A" H 6850 2850 50  0001 L CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 6850 2950 50  0001 L CNN
+F 4 "541-1.00HHCT-ND" H 6850 3050 50  0001 L CNN "approved alternate part number"
+F 5 "Res" H 6850 3150 50  0001 L CNN "category"
+F 6 "Thick Film" H 6850 3250 50  0001 L CNN "composition"
+F 7 "Passive Components" H 6850 3350 50  0001 L CNN "device class L1"
+F 8 "Resistors" H 6850 3450 50  0001 L CNN "device class L2"
+F 9 "Chip SMD Resistors" H 6850 3550 50  0001 L CNN "device class L3"
+F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 6850 3650 50  0001 L CNN "digikey description"
+F 11 "311-10.0KHRTR-ND" H 6850 3750 50  0001 L CNN "digikey part number"
+F 12 "0.5mm" H 6850 3850 50  0001 L CNN "height"
+F 13 "RESC15585X45" H 6850 3950 50  0001 L CNN "ipc land pattern name"
+F 14 "yes" H 6850 4050 50  0001 L CNN "lead free"
+F 15 "368bdb3a487a5469" H 6850 4150 50  0001 L CNN "library id"
+F 16 "Yageo" H 6850 4250 50  0001 L CNN "manufacturer"
+F 17 "Surface Mount Thick Film Resistor, RC Series, 10 kohm, 100 mW, - 1%, 50 V, 0603 [1608 Metric]" H 6850 4350 50  0001 L CNN "mouser description"
+F 18 "603-RC0603FR-0710KL" H 6850 4450 50  0001 L CNN "mouser part number"
+F 19 "0603" H 7200 2664 50  0000 C CNN "package"
+F 20 "100mW" H 6850 4650 50  0001 L CNN "power"
+F 21 "0.1W" H 6850 4750 50  0001 L CNN "power rating"
+F 22 "10kΩ" H 7200 2573 50  0000 C CNN "resistance"
+F 23 "yes" H 6850 4950 50  0001 L CNN "rohs"
+F 24 "RC" H 6850 5050 50  0001 L CNN "series"
+F 25 "0mm" H 6850 5150 50  0001 L CNN "standoff height"
+F 26 "100ppm/°C" H 6850 5250 50  0001 L CNN "temperature coefficient"
+F 27 "+155°C" H 6850 5350 50  0001 L CNN "temperature range high"
+F 28 "-55°C" H 6850 5450 50  0001 L CNN "temperature range low"
+F 29 "1%" H 6850 5550 50  0001 L CNN "tolerance"
+F 30 "75V" H 6850 5650 50  0001 L CNN "voltage"
+F 31 "75V" H 6850 5750 50  0001 L CNN "voltage rating"
+	1    6850 2450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6800 3500 6800 3550
+	6850 3050 6850 3100
 Wire Wire Line
-	6800 3550 6600 3550
+	6850 3100 6650 3100
 Wire Wire Line
-	6000 3500 6000 3550
+	6050 3050 6050 3100
 Wire Wire Line
-	6000 3550 6200 3550
+	6050 3100 6250 3100
 $Comp
 L power:+5VP #PWR040
 U 1 1 5FD87EDE
-P 6800 2950
-F 0 "#PWR040" H 6800 2800 50  0001 C CNN
-F 1 "+5VP" H 6650 3100 50  0000 L CNN
-F 2 "" H 6800 2950 50  0001 C CNN
-F 3 "" H 6800 2950 50  0001 C CNN
-	1    6800 2950
+P 6850 2500
+F 0 "#PWR040" H 6850 2350 50  0001 C CNN
+F 1 "+5VP" H 6700 2650 50  0000 L CNN
+F 2 "" H 6850 2500 50  0001 C CNN
+F 3 "" H 6850 2500 50  0001 C CNN
+	1    6850 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR036
 U 1 1 5FD87EE4
-P 6000 2950
-F 0 "#PWR036" H 6000 2800 50  0001 C CNN
-F 1 "+5V" H 6015 3123 50  0000 C CNN
-F 2 "" H 6000 2950 50  0001 C CNN
-F 3 "" H 6000 2950 50  0001 C CNN
-	1    6000 2950
+P 6050 2500
+F 0 "#PWR036" H 6050 2350 50  0001 C CNN
+F 1 "+5V" H 6065 2673 50  0000 C CNN
+F 2 "" H 6050 2500 50  0001 C CNN
+F 3 "" H 6050 2500 50  0001 C CNN
+	1    6050 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 2950 6000 3000
+	6050 2500 6050 2550
 Wire Wire Line
-	6800 2950 6800 3000
+	6850 2500 6850 2550
 Wire Wire Line
-	6400 3250 6400 3000
-Text Label 6000 3550 0    50   ~ 0
+	6450 2800 6450 2550
+Text Label 6050 3100 0    50   ~ 0
 IRQ
-Text Label 6600 3550 0    50   ~ 0
+Text Label 6650 3100 0    50   ~ 0
 IRQP
 Wire Wire Line
-	6400 3000 6800 3000
-Connection ~ 6800 3000
+	6450 2550 6850 2550
+Connection ~ 6850 2550
 Wire Wire Line
 	4250 4800 4500 4800
 Wire Wire Line
@@ -3403,159 +3299,6 @@ Wire Wire Line
 	10350 1000 10250 1000
 Connection ~ 9900 6400
 $Comp
-L project:BSS138 Q2
-U 1 1 6051DC27
-P 6450 950
-F 0 "Q2" V 7000 1100 50  0000 C CNN
-F 1 "BSS138" V 7000 850 50  0000 C CNN
-F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6450 1450 50  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6450 1550 50  0001 L CNN
-F 4 "No" H 6450 1650 50  0001 L CNN "automotive"
-F 5 "Trans" H 6450 1750 50  0001 L CNN "category"
-F 6 "0.22A" V 7100 850 50  0000 C CNN "continuous drain current"
-F 7 "False" H 6450 1950 50  0001 L CNN "depletion mode"
-F 8 "Discrete Semiconductors" H 6450 2050 50  0001 L CNN "device class L1"
-F 9 "Transistors" H 6450 2150 50  0001 L CNN "device class L2"
-F 10 "MOSFETs" H 6450 2250 50  0001 L CNN "device class L3"
-F 11 "MOSFET N-CH 50V 220MA SOT-23" H 6450 2350 50  0001 L CNN "digikey description"
-F 12 "BSS138CT-ND" H 6450 2450 50  0001 L CNN "digikey part number"
-F 13 "50V" V 7100 650 50  0000 C CNN "drain to source breakdown voltage"
-F 14 "0.7Ω" H 6450 2650 50  0001 L CNN "drain to source resistance"
-F 15 "50V" H 6450 2750 50  0001 L CNN "drain to source voltage"
-F 16 "https://www.onsemi.com/pub/Collateral/318-08.PDF" H 6450 2850 50  0001 L CNN "footprint url"
-F 17 "1.7nC @ 10V" H 6450 2950 50  0001 L CNN "gate charge at vgs"
-F 18 "20V" H 6450 3050 50  0001 L CNN "gate to source voltage"
-F 19 "1.11mm" H 6450 3150 50  0001 L CNN "height"
-F 20 "27pF @ 25V" H 6450 3250 50  0001 L CNN "input capacitace at vds"
-F 21 "Yes" H 6450 3350 50  0001 L CNN "lead free"
-F 22 "3f36dc230686dcb0" H 6450 3450 50  0001 L CNN "library id"
-F 23 "ON Semiconductor" H 6450 3550 50  0001 L CNN "manufacturer"
-F 24 "1.4V" H 6450 3650 50  0001 L CNN "max forward diode voltage"
-F 25 "+150°C" H 6450 3750 50  0001 L CNN "max junction temp"
-F 26 "N-Channel Logic Level Enhancement Mode Field Effect Transistor, 50V, 220mA" H 6450 3850 50  0001 L CNN "mouser description"
-F 27 "512-BSS138" H 6450 3950 50  0001 L CNN "mouser part number"
-F 28 "1" H 6450 4050 50  0001 L CNN "number of N channels"
-F 29 "1" H 6450 4150 50  0001 L CNN "number of channels"
-F 30 "SOT23-3" V 7100 1150 50  0000 C CNN "package"
-F 31 "0.36W" H 6450 4350 50  0001 L CNN "power dissipation"
-F 32 "0.88A" H 6450 4450 50  0001 L CNN "pulse drain current"
-F 33 "Yes" H 6450 4550 50  0001 L CNN "rohs"
-F 34 "350°C/W" H 6450 4650 50  0001 L CNN "rthja max"
-F 35 "0.01mm" H 6450 4750 50  0001 L CNN "standoff height"
-F 36 "+150°C" H 6450 4850 50  0001 L CNN "temperature range high"
-F 37 "-55°C" H 6450 4950 50  0001 L CNN "temperature range low"
-F 38 "1.5V" H 6450 5050 50  0001 L CNN "threshold vgs max"
-F 39 "0.8V" H 6450 5150 50  0001 L CNN "threshold vgs min"
-F 40 "0.5S" H 6450 5250 50  0001 L CNN "transconductance"
-F 41 "20ns" H 6450 5350 50  0001 L CNN "turn off delay time"
-F 42 "2.5ns" H 6450 5450 50  0001 L CNN "turn on delay time"
-F 43 "0.8V" H 6450 5550 50  0001 L CNN "typ forward diode voltage"
-	1    6450 950 
-	0    -1   1    0   
-$EndComp
-$Comp
-L project:BSS138 Q3
-U 1 1 6051FC43
-P 6450 2050
-F 0 "Q3" V 7000 2200 50  0000 C CNN
-F 1 "BSS138" V 7000 1950 50  0000 C CNN
-F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6450 2550 50  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6450 2650 50  0001 L CNN
-F 4 "No" H 6450 2750 50  0001 L CNN "automotive"
-F 5 "Trans" H 6450 2850 50  0001 L CNN "category"
-F 6 "0.22A" V 7100 1950 50  0000 C CNN "continuous drain current"
-F 7 "False" H 6450 3050 50  0001 L CNN "depletion mode"
-F 8 "Discrete Semiconductors" H 6450 3150 50  0001 L CNN "device class L1"
-F 9 "Transistors" H 6450 3250 50  0001 L CNN "device class L2"
-F 10 "MOSFETs" H 6450 3350 50  0001 L CNN "device class L3"
-F 11 "MOSFET N-CH 50V 220MA SOT-23" H 6450 3450 50  0001 L CNN "digikey description"
-F 12 "BSS138CT-ND" H 6450 3550 50  0001 L CNN "digikey part number"
-F 13 "50V" V 7100 1750 50  0000 C CNN "drain to source breakdown voltage"
-F 14 "0.7Ω" H 6450 3750 50  0001 L CNN "drain to source resistance"
-F 15 "50V" H 6450 3850 50  0001 L CNN "drain to source voltage"
-F 16 "https://www.onsemi.com/pub/Collateral/318-08.PDF" H 6450 3950 50  0001 L CNN "footprint url"
-F 17 "1.7nC @ 10V" H 6450 4050 50  0001 L CNN "gate charge at vgs"
-F 18 "20V" H 6450 4150 50  0001 L CNN "gate to source voltage"
-F 19 "1.11mm" H 6450 4250 50  0001 L CNN "height"
-F 20 "27pF @ 25V" H 6450 4350 50  0001 L CNN "input capacitace at vds"
-F 21 "Yes" H 6450 4450 50  0001 L CNN "lead free"
-F 22 "3f36dc230686dcb0" H 6450 4550 50  0001 L CNN "library id"
-F 23 "ON Semiconductor" H 6450 4650 50  0001 L CNN "manufacturer"
-F 24 "1.4V" H 6450 4750 50  0001 L CNN "max forward diode voltage"
-F 25 "+150°C" H 6450 4850 50  0001 L CNN "max junction temp"
-F 26 "N-Channel Logic Level Enhancement Mode Field Effect Transistor, 50V, 220mA" H 6450 4950 50  0001 L CNN "mouser description"
-F 27 "512-BSS138" H 6450 5050 50  0001 L CNN "mouser part number"
-F 28 "1" H 6450 5150 50  0001 L CNN "number of N channels"
-F 29 "1" H 6450 5250 50  0001 L CNN "number of channels"
-F 30 "SOT23-3" V 7100 2250 50  0000 C CNN "package"
-F 31 "0.36W" H 6450 5450 50  0001 L CNN "power dissipation"
-F 32 "0.88A" H 6450 5550 50  0001 L CNN "pulse drain current"
-F 33 "Yes" H 6450 5650 50  0001 L CNN "rohs"
-F 34 "350°C/W" H 6450 5750 50  0001 L CNN "rthja max"
-F 35 "0.01mm" H 6450 5850 50  0001 L CNN "standoff height"
-F 36 "+150°C" H 6450 5950 50  0001 L CNN "temperature range high"
-F 37 "-55°C" H 6450 6050 50  0001 L CNN "temperature range low"
-F 38 "1.5V" H 6450 6150 50  0001 L CNN "threshold vgs max"
-F 39 "0.8V" H 6450 6250 50  0001 L CNN "threshold vgs min"
-F 40 "0.5S" H 6450 6350 50  0001 L CNN "transconductance"
-F 41 "20ns" H 6450 6450 50  0001 L CNN "turn off delay time"
-F 42 "2.5ns" H 6450 6550 50  0001 L CNN "turn on delay time"
-F 43 "0.8V" H 6450 6650 50  0001 L CNN "typ forward diode voltage"
-	1    6450 2050
-	0    -1   1    0   
-$EndComp
-$Comp
-L project:BSS138 Q1
-U 1 1 60520BD4
-P 6400 3150
-F 0 "Q1" V 6950 3300 50  0000 C CNN
-F 1 "BSS138" V 6950 3050 50  0000 C CNN
-F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6400 3650 50  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6400 3750 50  0001 L CNN
-F 4 "No" H 6400 3850 50  0001 L CNN "automotive"
-F 5 "Trans" H 6400 3950 50  0001 L CNN "category"
-F 6 "0.22A" V 7050 3050 50  0000 C CNN "continuous drain current"
-F 7 "False" H 6400 4150 50  0001 L CNN "depletion mode"
-F 8 "Discrete Semiconductors" H 6400 4250 50  0001 L CNN "device class L1"
-F 9 "Transistors" H 6400 4350 50  0001 L CNN "device class L2"
-F 10 "MOSFETs" H 6400 4450 50  0001 L CNN "device class L3"
-F 11 "MOSFET N-CH 50V 220MA SOT-23" H 6400 4550 50  0001 L CNN "digikey description"
-F 12 "BSS138CT-ND" H 6400 4650 50  0001 L CNN "digikey part number"
-F 13 "50V" V 7050 2850 50  0000 C CNN "drain to source breakdown voltage"
-F 14 "0.7Ω" H 6400 4850 50  0001 L CNN "drain to source resistance"
-F 15 "50V" H 6400 4950 50  0001 L CNN "drain to source voltage"
-F 16 "https://www.onsemi.com/pub/Collateral/318-08.PDF" H 6400 5050 50  0001 L CNN "footprint url"
-F 17 "1.7nC @ 10V" H 6400 5150 50  0001 L CNN "gate charge at vgs"
-F 18 "20V" H 6400 5250 50  0001 L CNN "gate to source voltage"
-F 19 "1.11mm" H 6400 5350 50  0001 L CNN "height"
-F 20 "27pF @ 25V" H 6400 5450 50  0001 L CNN "input capacitace at vds"
-F 21 "Yes" H 6400 5550 50  0001 L CNN "lead free"
-F 22 "3f36dc230686dcb0" H 6400 5650 50  0001 L CNN "library id"
-F 23 "ON Semiconductor" H 6400 5750 50  0001 L CNN "manufacturer"
-F 24 "1.4V" H 6400 5850 50  0001 L CNN "max forward diode voltage"
-F 25 "+150°C" H 6400 5950 50  0001 L CNN "max junction temp"
-F 26 "N-Channel Logic Level Enhancement Mode Field Effect Transistor, 50V, 220mA" H 6400 6050 50  0001 L CNN "mouser description"
-F 27 "512-BSS138" H 6400 6150 50  0001 L CNN "mouser part number"
-F 28 "1" H 6400 6250 50  0001 L CNN "number of N channels"
-F 29 "1" H 6400 6350 50  0001 L CNN "number of channels"
-F 30 "SOT23-3" V 7050 3350 50  0000 C CNN "package"
-F 31 "0.36W" H 6400 6550 50  0001 L CNN "power dissipation"
-F 32 "0.88A" H 6400 6650 50  0001 L CNN "pulse drain current"
-F 33 "Yes" H 6400 6750 50  0001 L CNN "rohs"
-F 34 "350°C/W" H 6400 6850 50  0001 L CNN "rthja max"
-F 35 "0.01mm" H 6400 6950 50  0001 L CNN "standoff height"
-F 36 "+150°C" H 6400 7050 50  0001 L CNN "temperature range high"
-F 37 "-55°C" H 6400 7150 50  0001 L CNN "temperature range low"
-F 38 "1.5V" H 6400 7250 50  0001 L CNN "threshold vgs max"
-F 39 "0.8V" H 6400 7350 50  0001 L CNN "threshold vgs min"
-F 40 "0.5S" H 6400 7450 50  0001 L CNN "transconductance"
-F 41 "20ns" H 6400 7550 50  0001 L CNN "turn off delay time"
-F 42 "2.5ns" H 6400 7650 50  0001 L CNN "turn on delay time"
-F 43 "0.8V" H 6400 7750 50  0001 L CNN "typ forward diode voltage"
-	1    6400 3150
-	0    -1   1    0   
-$EndComp
-$Comp
 L project:RC0603FR-0710KL R17
 U 1 1 60558730
 P 8250 5750
@@ -3680,4 +3423,403 @@ F 43 "0.8V" H 7850 10600 50  0001 L CNN "typ forward diode voltage"
 	1    7850 6000
 	0    -1   1    0   
 $EndComp
+$Comp
+L project:INA219AIDCNR U24
+U 1 1 5FC372D1
+P 5900 3750
+F 0 "U24" H 6500 4105 50  0000 C CNN
+F 1 "INA219AIDCNR" H 6500 4014 50  0000 C CNN
+F 2 "project:Texas_Instruments-DCN0008A-0-0-MFG" H 5900 4150 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ina219.pdf?ts=1599696930953&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DINA219AIDCNR%2526keyMatch%253DINA219AIDCNR%2526tisearch%253DSearch-EN-everything%2526usecase%253DOPN" H 5900 4250 50  0001 L CNN
+F 4 "+85°C" H 5900 4350 50  0001 L CNN "ambient temperature range high"
+F 5 "-25°C" H 5900 4450 50  0001 L CNN "ambient temperature range low"
+F 6 "No" H 5900 4550 50  0001 L CNN "automotive"
+F 7 "IC" H 5900 4650 50  0001 L CNN "category"
+F 8 "Integrated Circuits (ICs)" H 5900 4750 50  0001 L CNN "device class L1"
+F 9 "Power Management ICs" H 5900 4850 50  0001 L CNN "device class L2"
+F 10 "unset" H 5900 4950 50  0001 L CNN "device class L3"
+F 11 "IC CURRENT MONITOR 1% SOT23-8" H 5900 5050 50  0001 L CNN "digikey description"
+F 12 "296-23770-1-ND" H 5900 5150 50  0001 L CNN "digikey part number"
+F 13 "1.45mm" H 5900 5250 50  0001 L CNN "height"
+F 14 "Yes" H 5900 5350 50  0001 L CNN "lead free"
+F 15 "d9964224a5575dbc" H 5900 5450 50  0001 L CNN "library id"
+F 16 "Texas Instruments" H 5900 5550 50  0001 L CNN "manufacturer"
+F 17 "+150°C" H 5900 5650 50  0001 L CNN "max junction temp"
+F 18 "5.5V" H 5900 5750 50  0001 L CNN "max supply voltage"
+F 19 "3V" H 5900 5850 50  0001 L CNN "min supply voltage"
+F 20 "595-INA219AIDCNR" H 5900 5950 50  0001 L CNN "mouser part number"
+F 21 "0.7mA" H 5900 6050 50  0001 L CNN "nominal supply current"
+F 22 "1" H 5900 6150 50  0001 L CNN "number of outputs"
+F 23 "10mA" H 5900 6250 50  0001 L CNN "output current"
+F 24 "SOT23-8" H 6500 3923 50  0000 C CNN "package"
+F 25 "Yes" H 5900 6450 50  0001 L CNN "rohs"
+F 26 "0mm" H 5900 6550 50  0001 L CNN "standoff height"
+F 27 "+125°C" H 5900 6650 50  0001 L CNN "temperature range high"
+F 28 "-40°C" H 5900 6750 50  0001 L CNN "temperature range low"
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:BSS138 Q1
+U 1 1 60520BD4
+P 6450 2700
+F 0 "Q1" V 6350 2600 50  0000 L CNN
+F 1 "BSS138" V 6450 2400 50  0000 L CNN
+F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6450 3200 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6450 3300 50  0001 L CNN
+F 4 "No" H 6450 3400 50  0001 L CNN "automotive"
+F 5 "Trans" H 6450 3500 50  0001 L CNN "category"
+F 6 "0.22A" V 6650 2450 50  0000 L CNN "continuous drain current"
+F 7 "False" H 6450 3700 50  0001 L CNN "depletion mode"
+F 8 "Discrete Semiconductors" H 6450 3800 50  0001 L CNN "device class L1"
+F 9 "Transistors" H 6450 3900 50  0001 L CNN "device class L2"
+F 10 "MOSFETs" H 6450 4000 50  0001 L CNN "device class L3"
+F 11 "MOSFET N-CH 50V 220MA SOT-23" H 6450 4100 50  0001 L CNN "digikey description"
+F 12 "BSS138CT-ND" H 6450 4200 50  0001 L CNN "digikey part number"
+F 13 "50V" V 6750 2450 50  0000 L CNN "drain to source breakdown voltage"
+F 14 "0.7Ω" H 6450 4400 50  0001 L CNN "drain to source resistance"
+F 15 "50V" H 6450 4500 50  0001 L CNN "drain to source voltage"
+F 16 "https://www.onsemi.com/pub/Collateral/318-08.PDF" H 6450 4600 50  0001 L CNN "footprint url"
+F 17 "1.7nC @ 10V" H 6450 4700 50  0001 L CNN "gate charge at vgs"
+F 18 "20V" H 6450 4800 50  0001 L CNN "gate to source voltage"
+F 19 "1.11mm" H 6450 4900 50  0001 L CNN "height"
+F 20 "27pF @ 25V" H 6450 5000 50  0001 L CNN "input capacitace at vds"
+F 21 "Yes" H 6450 5100 50  0001 L CNN "lead free"
+F 22 "3f36dc230686dcb0" H 6450 5200 50  0001 L CNN "library id"
+F 23 "ON Semiconductor" H 6450 5300 50  0001 L CNN "manufacturer"
+F 24 "1.4V" H 6450 5400 50  0001 L CNN "max forward diode voltage"
+F 25 "+150°C" H 6450 5500 50  0001 L CNN "max junction temp"
+F 26 "N-Channel Logic Level Enhancement Mode Field Effect Transistor, 50V, 220mA" H 6450 5600 50  0001 L CNN "mouser description"
+F 27 "512-BSS138" H 6450 5700 50  0001 L CNN "mouser part number"
+F 28 "1" H 6450 5800 50  0001 L CNN "number of N channels"
+F 29 "1" H 6450 5900 50  0001 L CNN "number of channels"
+F 30 "SOT23-3" V 6550 2350 50  0000 L CNN "package"
+F 31 "0.36W" H 6450 6100 50  0001 L CNN "power dissipation"
+F 32 "0.88A" H 6450 6200 50  0001 L CNN "pulse drain current"
+F 33 "Yes" H 6450 6300 50  0001 L CNN "rohs"
+F 34 "350°C/W" H 6450 6400 50  0001 L CNN "rthja max"
+F 35 "0.01mm" H 6450 6500 50  0001 L CNN "standoff height"
+F 36 "+150°C" H 6450 6600 50  0001 L CNN "temperature range high"
+F 37 "-55°C" H 6450 6700 50  0001 L CNN "temperature range low"
+F 38 "1.5V" H 6450 6800 50  0001 L CNN "threshold vgs max"
+F 39 "0.8V" H 6450 6900 50  0001 L CNN "threshold vgs min"
+F 40 "0.5S" H 6450 7000 50  0001 L CNN "transconductance"
+F 41 "20ns" H 6450 7100 50  0001 L CNN "turn off delay time"
+F 42 "2.5ns" H 6450 7200 50  0001 L CNN "turn on delay time"
+F 43 "0.8V" H 6450 7300 50  0001 L CNN "typ forward diode voltage"
+	1    6450 2700
+	0    -1   1    0   
+$EndComp
+$Comp
+L project:BSS138 Q2
+U 1 1 5FC59223
+P 6450 950
+F 0 "Q2" V 6350 850 50  0000 L CNN
+F 1 "BSS138" V 6450 650 50  0000 L CNN
+F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6450 1450 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6450 1550 50  0001 L CNN
+F 4 "No" H 6450 1650 50  0001 L CNN "automotive"
+F 5 "Trans" H 6450 1750 50  0001 L CNN "category"
+F 6 "0.22A" V 6650 700 50  0000 L CNN "continuous drain current"
+F 7 "False" H 6450 1950 50  0001 L CNN "depletion mode"
+F 8 "Discrete Semiconductors" H 6450 2050 50  0001 L CNN "device class L1"
+F 9 "Transistors" H 6450 2150 50  0001 L CNN "device class L2"
+F 10 "MOSFETs" H 6450 2250 50  0001 L CNN "device class L3"
+F 11 "MOSFET N-CH 50V 220MA SOT-23" H 6450 2350 50  0001 L CNN "digikey description"
+F 12 "BSS138CT-ND" H 6450 2450 50  0001 L CNN "digikey part number"
+F 13 "50V" V 6750 700 50  0000 L CNN "drain to source breakdown voltage"
+F 14 "0.7Ω" H 6450 2650 50  0001 L CNN "drain to source resistance"
+F 15 "50V" H 6450 2750 50  0001 L CNN "drain to source voltage"
+F 16 "https://www.onsemi.com/pub/Collateral/318-08.PDF" H 6450 2850 50  0001 L CNN "footprint url"
+F 17 "1.7nC @ 10V" H 6450 2950 50  0001 L CNN "gate charge at vgs"
+F 18 "20V" H 6450 3050 50  0001 L CNN "gate to source voltage"
+F 19 "1.11mm" H 6450 3150 50  0001 L CNN "height"
+F 20 "27pF @ 25V" H 6450 3250 50  0001 L CNN "input capacitace at vds"
+F 21 "Yes" H 6450 3350 50  0001 L CNN "lead free"
+F 22 "3f36dc230686dcb0" H 6450 3450 50  0001 L CNN "library id"
+F 23 "ON Semiconductor" H 6450 3550 50  0001 L CNN "manufacturer"
+F 24 "1.4V" H 6450 3650 50  0001 L CNN "max forward diode voltage"
+F 25 "+150°C" H 6450 3750 50  0001 L CNN "max junction temp"
+F 26 "N-Channel Logic Level Enhancement Mode Field Effect Transistor, 50V, 220mA" H 6450 3850 50  0001 L CNN "mouser description"
+F 27 "512-BSS138" H 6450 3950 50  0001 L CNN "mouser part number"
+F 28 "1" H 6450 4050 50  0001 L CNN "number of N channels"
+F 29 "1" H 6450 4150 50  0001 L CNN "number of channels"
+F 30 "SOT23-3" V 6550 600 50  0000 L CNN "package"
+F 31 "0.36W" H 6450 4350 50  0001 L CNN "power dissipation"
+F 32 "0.88A" H 6450 4450 50  0001 L CNN "pulse drain current"
+F 33 "Yes" H 6450 4550 50  0001 L CNN "rohs"
+F 34 "350°C/W" H 6450 4650 50  0001 L CNN "rthja max"
+F 35 "0.01mm" H 6450 4750 50  0001 L CNN "standoff height"
+F 36 "+150°C" H 6450 4850 50  0001 L CNN "temperature range high"
+F 37 "-55°C" H 6450 4950 50  0001 L CNN "temperature range low"
+F 38 "1.5V" H 6450 5050 50  0001 L CNN "threshold vgs max"
+F 39 "0.8V" H 6450 5150 50  0001 L CNN "threshold vgs min"
+F 40 "0.5S" H 6450 5250 50  0001 L CNN "transconductance"
+F 41 "20ns" H 6450 5350 50  0001 L CNN "turn off delay time"
+F 42 "2.5ns" H 6450 5450 50  0001 L CNN "turn on delay time"
+F 43 "0.8V" H 6450 5550 50  0001 L CNN "typ forward diode voltage"
+	1    6450 950 
+	0    -1   1    0   
+$EndComp
+$Comp
+L project:BSS138 Q3
+U 1 1 5FC5B348
+P 6450 1800
+F 0 "Q3" V 6350 1700 50  0000 L CNN
+F 1 "BSS138" V 6450 1500 50  0000 L CNN
+F 2 "project:ON_Semiconductor-318-08-01_2018-AS-MFG" H 6450 2300 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 6450 2400 50  0001 L CNN
+F 4 "No" H 6450 2500 50  0001 L CNN "automotive"
+F 5 "Trans" H 6450 2600 50  0001 L CNN "category"
+F 6 "0.22A" V 6650 1550 50  0000 L CNN "continuous drain current"
+F 7 "False" H 6450 2800 50  0001 L CNN "depletion mode"
+F 8 "Discrete Semiconductors" H 6450 2900 50  0001 L CNN "device class L1"
+F 9 "Transistors" H 6450 3000 50  0001 L CNN "device class L2"
+F 10 "MOSFETs" H 6450 3100 50  0001 L CNN "device class L3"
+F 11 "MOSFET N-CH 50V 220MA SOT-23" H 6450 3200 50  0001 L CNN "digikey description"
+F 12 "BSS138CT-ND" H 6450 3300 50  0001 L CNN "digikey part number"
+F 13 "50V" V 6750 1550 50  0000 L CNN "drain to source breakdown voltage"
+F 14 "0.7Ω" H 6450 3500 50  0001 L CNN "drain to source resistance"
+F 15 "50V" H 6450 3600 50  0001 L CNN "drain to source voltage"
+F 16 "https://www.onsemi.com/pub/Collateral/318-08.PDF" H 6450 3700 50  0001 L CNN "footprint url"
+F 17 "1.7nC @ 10V" H 6450 3800 50  0001 L CNN "gate charge at vgs"
+F 18 "20V" H 6450 3900 50  0001 L CNN "gate to source voltage"
+F 19 "1.11mm" H 6450 4000 50  0001 L CNN "height"
+F 20 "27pF @ 25V" H 6450 4100 50  0001 L CNN "input capacitace at vds"
+F 21 "Yes" H 6450 4200 50  0001 L CNN "lead free"
+F 22 "3f36dc230686dcb0" H 6450 4300 50  0001 L CNN "library id"
+F 23 "ON Semiconductor" H 6450 4400 50  0001 L CNN "manufacturer"
+F 24 "1.4V" H 6450 4500 50  0001 L CNN "max forward diode voltage"
+F 25 "+150°C" H 6450 4600 50  0001 L CNN "max junction temp"
+F 26 "N-Channel Logic Level Enhancement Mode Field Effect Transistor, 50V, 220mA" H 6450 4700 50  0001 L CNN "mouser description"
+F 27 "512-BSS138" H 6450 4800 50  0001 L CNN "mouser part number"
+F 28 "1" H 6450 4900 50  0001 L CNN "number of N channels"
+F 29 "1" H 6450 5000 50  0001 L CNN "number of channels"
+F 30 "SOT23-3" V 6550 1450 50  0000 L CNN "package"
+F 31 "0.36W" H 6450 5200 50  0001 L CNN "power dissipation"
+F 32 "0.88A" H 6450 5300 50  0001 L CNN "pulse drain current"
+F 33 "Yes" H 6450 5400 50  0001 L CNN "rohs"
+F 34 "350°C/W" H 6450 5500 50  0001 L CNN "rthja max"
+F 35 "0.01mm" H 6450 5600 50  0001 L CNN "standoff height"
+F 36 "+150°C" H 6450 5700 50  0001 L CNN "temperature range high"
+F 37 "-55°C" H 6450 5800 50  0001 L CNN "temperature range low"
+F 38 "1.5V" H 6450 5900 50  0001 L CNN "threshold vgs max"
+F 39 "0.8V" H 6450 6000 50  0001 L CNN "threshold vgs min"
+F 40 "0.5S" H 6450 6100 50  0001 L CNN "transconductance"
+F 41 "20ns" H 6450 6200 50  0001 L CNN "turn off delay time"
+F 42 "2.5ns" H 6450 6300 50  0001 L CNN "turn on delay time"
+F 43 "0.8V" H 6450 6400 50  0001 L CNN "typ forward diode voltage"
+	1    6450 1800
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5FC9B34B
+P 5950 3700
+F 0 "#PWR0101" H 5950 3550 50  0001 C CNN
+F 1 "+5V" H 5965 3873 50  0000 C CNN
+F 2 "" H 5950 3700 50  0001 C CNN
+F 3 "" H 5950 3700 50  0001 C CNN
+	1    5950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3750 5950 3750
+Wire Wire Line
+	5950 3750 5950 3700
+$Comp
+L project:CC0805ZKY5V6BB106 C?
+U 1 1 606FC690
+P 2050 1200
+AR Path="/5FC1E32F/606FC690" Ref="C?"  Part="1" 
+AR Path="/606FC690" Ref="C4"  Part="1" 
+F 0 "C4" H 2178 1237 50  0000 L CNN
+F 1 "CC0805ZKY5V6BB106" H 2050 1400 50  0001 L CNN
+F 2 "project:YAGEO-CC0805-0-0-0" H 2050 1500 50  0001 L CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_Y5V_6.3V-to-50V_8.pdf" H 2050 1600 50  0001 L CNN
+F 4 "10uF" H 2178 1146 50  0000 L CNN "capacitance"
+F 5 "Cap" H 2050 1800 50  0001 L CNN "category"
+F 6 "CAP CER 10UF 10V Y5V 0805" H 2050 1900 50  0001 L CNN "digikey description"
+F 7 "311-1355-1-ND" H 2050 2000 50  0001 L CNN "digikey part number"
+F 8 "yes" H 2050 2100 50  0001 L CNN "lead free"
+F 9 "852e7d0cf36849be" H 2050 2200 50  0001 L CNN "library id"
+F 10 "YAGEO" H 2050 2300 50  0001 L CNN "manufacturer"
+F 11 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10uF 10V Y5V-20/+80%" H 2050 2400 50  0001 L CNN "mouser description"
+F 12 "603-CC805ZKY5V6BB106" H 2050 2500 50  0001 L CNN "mouser part number"
+F 13 "0805" H 2178 1055 50  0000 L CNN "package"
+F 14 "yes" H 2050 2700 50  0001 L CNN "rohs"
+F 15 "+85°C" H 2050 2800 50  0001 L CNN "temperature range high"
+F 16 "-30°C" H 2050 2900 50  0001 L CNN "temperature range low"
+F 17 "10V" H 2178 964 50  0000 L CNN "voltage"
+	1    2050 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1100 2400 1100
+Wire Wire Line
+	2050 1100 2050 1200
+$Comp
+L power:GND #PWR010
+U 1 1 60638D2F
+P 2050 1450
+F 0 "#PWR010" H 2050 1200 50  0001 C CNN
+F 1 "GND" H 2055 1277 50  0000 C CNN
+F 2 "" H 2050 1450 50  0001 C CNN
+F 3 "" H 2050 1450 50  0001 C CNN
+	1    2050 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1400 2050 1450
+Connection ~ 2050 1100
+$Comp
+L power:+5VP #PWR09
+U 1 1 601CC086
+P 2050 1100
+F 0 "#PWR09" H 2050 950 50  0001 C CNN
+F 1 "+5VP" H 2065 1273 50  0000 C CNN
+F 2 "" H 2050 1100 50  0001 C CNN
+F 3 "" H 2050 1100 50  0001 C CNN
+	1    2050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:PJ-002AH J1
+U 1 1 601F46CA
+P 1400 1100
+F 0 "J1" H 1050 1400 50  0000 C CNN
+F 1 "PJ-002AH" H 1050 1300 50  0000 C CNN
+F 2 "project:CUI_PJ-002AH" H 1400 1400 50  0001 L CNN
+F 3 "https://www.cui.com/product/resource/pj-002ah.pdf" H 1400 1500 50  0001 L CNN
+F 4 "Conn" H 1400 1600 50  0001 L CNN "category"
+F 5 "Silver" H 1400 1700 50  0001 L CNN "contact material"
+F 6 "5A" H 1150 1200 50  0000 C CNN "current rating"
+F 7 "Connectors" H 1400 1900 50  0001 L CNN "device class L1"
+F 8 "Power Connectors" H 1400 2000 50  0001 L CNN "device class L2"
+F 9 "unset" H 1400 2100 50  0001 L CNN "device class L3"
+F 10 "CONN PWR JACK 2X5.5MM SOLDER" H 1200 550 50  0000 C CNN "digikey description"
+F 11 "CP-002AH-ND" H 1400 2300 50  0001 L CNN "digikey part number"
+F 12 "11.2mm" H 1400 2400 50  0001 L CNN "height"
+F 13 "yes" H 1400 2500 50  0001 L CNN "lead free"
+F 14 "9faf6f1e7549c614" H 1400 2600 50  0001 L CNN "library id"
+F 15 "CUI" H 1400 2700 50  0001 L CNN "manufacturer"
+F 16 "DC Power Connectors Power Jacks" H 1400 2800 50  0001 L CNN "mouser description"
+F 17 "490-PJ-002AH" H 1400 2900 50  0001 L CNN "mouser part number"
+F 18 "2" H 1400 3000 50  0001 L CNN "number of contacts"
+F 19 "CONN_PWR_JACK" H 1400 3100 50  0001 L CNN "package"
+F 20 "yes" H 1400 3200 50  0001 L CNN "rohs"
+F 21 "+85°C" H 1400 3300 50  0001 L CNN "temperature range high"
+F 22 "-25°C" H 1400 3400 50  0001 L CNN "temperature range low"
+F 23 "24V" H 950 1200 50  0000 C CNN "voltage rating"
+	1    1400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1300 1400 1300
+Wire Wire Line
+	1400 1300 1400 1350
+$Comp
+L power:GND #PWR05
+U 1 1 60205E8B
+P 1400 1350
+F 0 "#PWR05" H 1400 1100 50  0001 C CNN
+F 1 "GND" H 1405 1177 50  0000 C CNN
+F 2 "" H 1400 1350 50  0001 C CNN
+F 3 "" H 1400 1350 50  0001 C CNN
+	1    1400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L project:RL2512FK-070R1L R16
+U 1 1 5FD2D8C3
+P 1500 1100
+F 0 "R16" H 1750 1497 50  0000 C CNN
+F 1 "RL2512FK-070R1L" H 1500 1400 50  0001 L CNN
+F 2 "project:YAGEO-RL2512-02_2018-10-MFG" H 1500 1500 50  0001 L CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RL_Group_521_RoHS_L_2.pdf" H 1500 1600 50  0001 L CNN
+F 4 "Yes" H 1500 1700 50  0001 L CNN "automotive"
+F 5 "Grade 0" H 1500 1800 50  0001 L CNN "automotive grade"
+F 6 "Res" H 1500 1900 50  0001 L CNN "category"
+F 7 "Thick Film" H 1500 2000 50  0001 L CNN "composition"
+F 8 "Passive Components" H 1500 2100 50  0001 L CNN "device class L1"
+F 9 "Resistors" H 1500 2200 50  0001 L CNN "device class L2"
+F 10 "Chip SMD Resistors" H 1500 2300 50  0001 L CNN "device class L3"
+F 11 "RES 0.1 OHM 1% 1W 2512" H 1500 2400 50  0001 L CNN "digikey description"
+F 12 "311-0.1TCT-ND" H 1500 2500 50  0001 L CNN "digikey part number"
+F 13 "http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf" H 1500 2600 50  0001 L CNN "footprint url"
+F 14 "0.65mm" H 1500 2700 50  0001 L CNN "height"
+F 15 "RESC635320X55" H 1500 2800 50  0001 L CNN "ipc land pattern name"
+F 16 "Yes" H 1500 2900 50  0001 L CNN "lead free"
+F 17 "15048a7efe84bced" H 1500 3000 50  0001 L CNN "library id"
+F 18 "YAGEO" H 1500 3100 50  0001 L CNN "manufacturer"
+F 19 "Current Sense Resistors 0.1ohm 1% 1W" H 1500 3200 50  0001 L CNN "mouser description"
+F 20 "603-RL252FK070R1L" H 1500 3300 50  0001 L CNN "mouser part number"
+F 21 "2512" H 1750 1406 50  0000 C CNN "package"
+F 22 "1W" H 1750 1315 50  0000 C CNN "power rating"
+F 23 "100mΩ" H 1750 1224 50  0000 C CNN "resistance"
+F 24 "Yes" H 1500 3700 50  0001 L CNN "rohs"
+F 25 "RL" H 1500 3800 50  0001 L CNN "series"
+F 26 "600ppm/°C" H 1500 3900 50  0001 L CNN "temperature coefficient"
+F 27 "+155°C" H 1500 4000 50  0001 L CNN "temperature range high"
+F 28 "-55°C" H 1500 4100 50  0001 L CNN "temperature range low"
+F 29 "1%" H 1500 4200 50  0001 L CNN "tolerance"
+	1    1500 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1100 1300 1100
+Wire Wire Line
+	2000 1100 2050 1100
+Text Label 1350 1100 0    50   ~ 0
+VIN
+Wire Wire Line
+	6000 4050 5800 4050
+Text Label 5850 4050 0    50   ~ 0
+VIN
+$Comp
+L power:+5VP #PWR0102
+U 1 1 5FDC3834
+P 5950 4150
+F 0 "#PWR0102" H 5950 4000 50  0001 C CNN
+F 1 "+5VP" V 5965 4278 50  0000 L CNN
+F 2 "" H 5950 4150 50  0001 C CNN
+F 3 "" H 5950 4150 50  0001 C CNN
+	1    5950 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 4150 6000 4150
+Wire Wire Line
+	7000 3750 7200 3750
+Wire Wire Line
+	7000 3850 7200 3850
+Wire Wire Line
+	7000 4050 7050 4050
+Wire Wire Line
+	7050 4050 7050 4150
+Wire Wire Line
+	7000 4350 7050 4350
+Connection ~ 7050 4350
+Wire Wire Line
+	7050 4350 7050 4400
+Wire Wire Line
+	7000 4150 7050 4150
+Connection ~ 7050 4150
+Wire Wire Line
+	7050 4150 7050 4350
+$Comp
+L power:GND #PWR0103
+U 1 1 5FE7B82E
+P 7050 4400
+F 0 "#PWR0103" H 7050 4150 50  0001 C CNN
+F 1 "GND" H 7100 4250 50  0000 R CNN
+F 2 "" H 7050 4400 50  0001 C CNN
+F 3 "" H 7050 4400 50  0001 C CNN
+	1    7050 4400
+	1    0    0    -1  
+$EndComp
+Text Label 7000 3750 0    50   ~ 0
+SCL
+Text Label 7000 3850 0    50   ~ 0
+SDA
 $EndSCHEMATC

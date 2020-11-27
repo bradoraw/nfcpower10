@@ -1405,13 +1405,13 @@ VDD_D
 Text Label 4400 1450 0    50   ~ 0
 VDD_RF
 Text Label 6400 1050 0    50   ~ 0
-RFO1
-Text Label 6400 1150 0    50   ~ 0
 RFO2
+Text Label 6400 1150 0    50   ~ 0
+RFO1
 Text Label 8400 1050 0    50   ~ 0
-RF1
-Text Label 8400 1850 0    50   ~ 0
 RF2
+Text Label 8400 1850 0    50   ~ 0
+RF1
 Text Label 6400 2050 0    50   ~ 0
 AGDC
 Wire Wire Line

@@ -868,6 +868,51 @@ X 2 2 0 -50 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# INA219AIDCNR
+#
+DEF INA219AIDCNR U 0 40 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "INA219AIDCNR" 0 300 50 H V L CNN
+F2 "project:Texas_Instruments-DCN0008A-0-0-MFG" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "+85°C" 0 600 50 H I L CNN "ambient temperature range high"
+F5 "-25°C" 0 700 50 H I L CNN "ambient temperature range low"
+F6 "No" 0 800 50 H I L CNN "automotive"
+F7 "IC" 0 900 50 H I L CNN "category"
+F8 "Integrated Circuits (ICs)" 0 1000 50 H I L CNN "device class L1"
+F9 "Power Management ICs" 0 1100 50 H I L CNN "device class L2"
+F10 "unset" 0 1200 50 H I L CNN "device class L3"
+F11 "IC CURRENT MONITOR 1% SOT23-8" 0 1300 50 H I L CNN "digikey description"
+F12 "296-23770-1-ND" 0 1400 50 H I L CNN "digikey part number"
+F13 "1.45mm" 0 1500 50 H I L CNN "height"
+F14 "Yes" 0 1600 50 H I L CNN "lead free"
+F15 "d9964224a5575dbc" 0 1700 50 H I L CNN "library id"
+F16 "Texas Instruments" 0 1800 50 H I L CNN "manufacturer"
+F17 "+150°C" 0 1900 50 H I L CNN "max junction temp"
+F18 "5.5V" 0 2000 50 H I L CNN "max supply voltage"
+F19 "3V" 0 2100 50 H I L CNN "min supply voltage"
+F20 "595-INA219AIDCNR" 0 2200 50 H I L CNN "mouser part number"
+F21 "0.7mA" 0 2300 50 H I L CNN "nominal supply current"
+F22 "1" 0 2400 50 H I L CNN "number of outputs"
+F23 "10mA" 0 2500 50 H I L CNN "output current"
+F24 "SOT23-8" 0 2600 50 H V L CNN "package"
+F25 "Yes" 0 2700 50 H I L CNN "rohs"
+F26 "0mm" 0 2800 50 H I L CNN "standoff height"
+F27 "+125°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-40°C" 0 3000 50 H I L CNN "temperature range low"
+DRAW
+S 200 100 1000 -700 1 1 0 f
+X IN+ 1 100 -300 100 R 40 40 1 1 P
+X IN- 2 100 -400 100 R 40 40 1 1 I
+X GND 3 1100 -600 100 L 40 40 1 1 W
+X VS 4 100 0 100 R 40 40 1 1 W
+X SCL 5 1100 0 100 L 40 40 1 1 I C
+X SDA 6 1100 -100 100 L 40 40 1 1 B
+X A0 7 1100 -300 100 L 40 40 1 1 I
+X A1 8 1100 -400 100 L 40 40 1 1 I
+ENDDRAW
+ENDDEF
+#
 # LTST-C190KGKT
 #
 DEF LTST-C190KGKT D 0 40 Y Y 1 F N
@@ -1448,6 +1493,52 @@ P 2 1 1 0 430 50 480 -50 N
 P 2 1 1 0 480 -50 500 0 N
 X 1 1 100 0 100 R 40 0 1 1 P
 X 2 2 600 0 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# RL2512FK-070R1L
+#
+DEF RL2512FK-070R1L R 0 40 Y Y 1 F N
+F0 "R" 0 200 50 H V L CNN
+F1 "RL2512FK-070R1L" 0 300 50 H I L CNN
+F2 "project:YAGEO-RL2512-02_2018-10-MFG" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "Yes" 0 600 50 H I L CNN "automotive"
+F5 "Grade 0" 0 700 50 H I L CNN "automotive grade"
+F6 "Res" 0 800 50 H I L CNN "category"
+F7 "Thick Film" 0 900 50 H I L CNN "composition"
+F8 "Passive Components" 0 1000 50 H I L CNN "device class L1"
+F9 "Resistors" 0 1100 50 H I L CNN "device class L2"
+F10 "Chip SMD Resistors" 0 1200 50 H I L CNN "device class L3"
+F11 "RES 0.1 OHM 1% 1W 2512" 0 1300 50 H I L CNN "digikey description"
+F12 "311-0.1TCT-ND" 0 1400 50 H I L CNN "digikey part number"
+F13 "http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf" 0 1500 50 H I L CNN "footprint url"
+F14 "0.65mm" 0 1600 50 H I L CNN "height"
+F15 "RESC635320X55" 0 1700 50 H I L CNN "ipc land pattern name"
+F16 "Yes" 0 1800 50 H I L CNN "lead free"
+F17 "15048a7efe84bced" 0 1900 50 H I L CNN "library id"
+F18 "YAGEO" 0 2000 50 H I L CNN "manufacturer"
+F19 "Current Sense Resistors 0.1ohm 1% 1W" 0 2100 50 H I L CNN "mouser description"
+F20 "603-RL252FK070R1L" 0 2200 50 H I L CNN "mouser part number"
+F21 "2512" 0 2300 50 H V L CNN "package"
+F22 "1W" 0 2400 50 H V L CNN "power rating"
+F23 "100mΩ" 0 2500 50 H V L CNN "resistance"
+F24 "Yes" 0 2600 50 H I L CNN "rohs"
+F25 "RL" 0 2700 50 H I L CNN "series"
+F26 "600ppm/°C" 0 2800 50 H I L CNN "temperature coefficient"
+F27 "+155°C" 0 2900 50 H I L CNN "temperature range high"
+F28 "-55°C" 0 3000 50 H I L CNN "temperature range low"
+F29 "1%" 0 3100 50 H I L CNN "tolerance"
+DRAW
+P 2 1 1 0 100 0 130 50 N
+P 2 1 1 0 130 50 180 -50 N
+P 2 1 1 0 180 -50 230 50 N
+P 2 1 1 0 230 50 280 -50 N
+P 2 1 1 0 280 -50 330 50 N
+P 2 1 1 0 330 50 380 -50 N
+P 2 1 1 0 380 -50 400 0 N
+X 1 1 0 0 100 R 40 0 1 1 P
+X 2 2 500 0 100 L 40 0 1 1 P
 ENDDRAW
 ENDDEF
 #
