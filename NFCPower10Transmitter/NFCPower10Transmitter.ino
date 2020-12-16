@@ -9,7 +9,7 @@
 
 uint8_t address = 0;
 uint8_t reg = 0;
-uint8_t registers[5] = {0,0,0,0,0};
+uint8_t registers[5] = {2,0,0,0,0};
 enum{TX_REG_LEDS,TX_REG_VDET1_MSB,TX_REG_VDET1_LSB,TX_REG_VDET2_MSB,TX_REG_VDET2_LSB};
 
 bool measure_field = false;
@@ -72,7 +72,7 @@ void handleMessage(String input_msg){
     Wire.onReceive(receiveEvent); // register event
     Wire.onRequest(requestEvent); // register event
     Serial.print("ADDRESS HOP "); // print the address hop message
-    Serial.println(address+1); // increment next address
+    Serial.println(address+1); // increment next address    
   }
 }
 
@@ -99,19 +99,19 @@ void requestEvent() {
 
 // update state of LEDs
 void updateState(){
-  if(registers[TX_REG_LEDS]&0x01>0){
+  if((registers[TX_REG_LEDS]&0x01)>0){
     digitalWrite(PIN_LED_RED,HIGH);
   }
   else{
     digitalWrite(PIN_LED_RED,LOW);
   }
-  if(registers[TX_REG_LEDS]&0x02>0){
+  if((registers[TX_REG_LEDS]&0x02)>0){
     digitalWrite(PIN_LED_GRN,HIGH);
   }
   else{
     digitalWrite(PIN_LED_GRN,LOW);
   }
-  if(registers[TX_REG_LEDS]&0x41>0){
+  if((registers[TX_REG_LEDS]&0x04)>0){
     digitalWrite(PIN_LED_BLU,HIGH);
   }
   else{

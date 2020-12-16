@@ -47,23 +47,55 @@ Adafruit_SI5351 clockgen = Adafruit_SI5351();
 #define F4 "27.072 MHz"
 #define F5 "27.004 MHz"
 
+#define PIN_LED_BLU 13 // PB5, SCK
+#define PIN_LED_RED 7 // PD7
+#define PIN_OEB 17 // PC3
+#define PIN_SSEN 16 // PC2
+#define PIN_SDA 18 // PC4
+
 String inputString = "";            // incoming serial data buffer
 bool stringComplete = false;        // string complete flag
 bool read_field_detectors = true;   // read field detectors flag
+uint16_t read_field_detectors_counter = 0;
+
+uint16_t demo_pattern_counter = 0;      // demo pattern counter
+uint8_t demo_pattern = 0;
+
+bool blue_toggle = false;
 
 void setup() {
+  pinMode(PIN_LED_RED, OUTPUT); 
+  digitalWrite(PIN_LED_RED, HIGH);   
   Serial.begin(115200); // create serial
   printIDNVERSION(); // print identifier and firmware version
   delay(100); // wait for slaves to startup
+  pinMode(PIN_SDA, INPUT); // debug
+  Wire.begin(); // join i2c bus (address optional for master) // debug  
+  Serial.println("Assign Transmitter Addresses");
   assignTXAddresses(); // assign I2C TX addresses
+  Serial.println("Start I2C");  
+  //Wire.setClock(100000); // standard
+  //Wire.setClock(400000); // fast
+  //Wire.setClock(1000000); // fast plus
+  //Wire.setClock(3400000); // high speed
   Wire.begin(); // join i2c bus (address optional for master)
+  Serial.println("Start Current Sensor");
   ina219.begin(); // start current sensor
+  Serial.println("Start Clock Generator");
   setupClockGen(); // setup clock generator frequencies
   if(nfc_connected()){
+    Serial.println("Turn on NFC Field");
     nfc_field_on();
   }
-  setTransmitterLEDsTestPattern();
-  Serial.println("Ready");
+  else{
+    Serial.println("NFC Readers not Connected");
+  }
+  Serial.println("Set Transmitter LEDs Test Pattern");
+  setTransmitterLEDsTestPattern(demo_pattern);
+  setup_timer2(); // setup timer2 1ms interrupt  
+  Serial.println("Ready");  
+  pinMode(PIN_LED_BLU, OUTPUT);
+  digitalWrite(PIN_LED_BLU, LOW);
 }
 
 void loop() {
@@ -73,8 +105,22 @@ void loop() {
     inputString = "";
   }
   if(read_field_detectors){
-    readTransmitterFieldDetectors();
+    if(++read_field_detectors_counter>10){
+      readTransmitterFieldDetectors(); 
+      read_field_detectors_counter = 0;
+    }    
     read_field_detectors = false;
+    if(++demo_pattern_counter>1000){
+      blue_toggle = !blue_toggle;
+      digitalWrite(PIN_LED_BLU, (blue_toggle)?(HIGH):(LOW));
+      if(++demo_pattern>2){
+        demo_pattern = 0;
+      }
+      setTransmitterLEDsTestPattern(demo_pattern);      
+      demo_pattern_counter = 0; // reset counter
+      measureCurrentVoltage();
+      printCurrentVoltage();
+    }
   }
 }
 
@@ -114,11 +160,17 @@ void assignTXAddresses(){
   inputString = ""; // clear string
   Serial.print("ADDRESS HOP "); // print the transmitter address hop message
   Serial.println(ADDRESS_TX1); // print first address
-  while(!stringComplete); // wait for response message
-  if(inputString != "ADDRESS HOP 10"){
-    Serial.print("Error ADDRESS HOP "); // print error message
+  while(!stringComplete){ // wait for response message
+    serialEvent(); // call serialEvent to check for received message
+  }
+  if(inputString != "ADDRESS HOP "+String(ADDRESS_TX1+10)){
+    Serial.print("Error Assigning Addresses: "); // print error message
     Serial.println(inputString); // echo input string
-  }  
+  }
+  else{    
+    Serial.print("Success Assigning Addresses: ");
+    Serial.println(inputString); // echo input string
+  }
   stringComplete = false; // clear flag
   inputString = ""; // clear string  
 }
@@ -138,8 +190,8 @@ void readTransmitterFieldDetectors(){
   }
 }
 
-void setTransmitterLEDsTestPattern(){
-  uint8_t leds = 1;
+void setTransmitterLEDsTestPattern(uint8_t offset){
+  uint8_t leds = 1 << offset;
   for(int addr = ADDRESS_TX1; addr<(ADDRESS_TX1+11); addr++){    
     setTransmitterLEDs(addr,leds);
     leds <<=1;
@@ -187,13 +239,13 @@ void printCurrentVoltage(){
 
 // setup clock generator frequencies
 void setupClockGen(){
-  Serial.println("Connecting to SI5351...");
+  //Serial.println("Connecting to SI5351...");
   if (clockgen.begin() != ERROR_NONE){ // Initialise the sensor
     Serial.println("SI5351 Not Detected.");
     while(1);
   }
   Serial.println("SI5351 Connected.");
-  Serial.print("Set PLLA to "); Serial.println(PLL);
+  //Serial.print("Set PLLA to "); Serial.println(PLL);
   clockgen.setupPLLInt(SI5351_PLL_A, PLL_M);
   Serial.print("Set Output 1 to "); Serial.println(F1);  
   clockgen.setupMultisynth(1, SI5351_PLL_A, FOUT_DIV, FOUT_N, FOUT_D1);
@@ -206,6 +258,10 @@ void setupClockGen(){
   Serial.print("Set Output 5 to "); Serial.println(F5);  
   clockgen.setupMultisynth(5, SI5351_PLL_A, FOUT_DIV, FOUT_N, FOUT_D5);
   clockgen.enableOutputs(true); // Enable the clocks  
+  pinMode(PIN_SSEN, OUTPUT);
+  digitalWrite(PIN_SSEN, LOW); // disable spread spectrum
+  pinMode(PIN_OEB, OUTPUT);
+  digitalWrite(PIN_OEB, LOW); // enable outputs, active low
 }
 
 void nfc_field_on(){
