@@ -139,9 +139,21 @@ ISR(TIMER2_COMPA_vect){ // Handle Timer2 COMPA interrupt
 
 void measureFieldDetectors(){
   //val_field_detector1 = analogRead(ANALOG_PIN_VDET1);  // read the input pin
-  //val_field_detector2 = analogRead(ANALOG_PIN_VDET2);  // read the input pin  
-  val_field_detector1 += (analogRead(ANALOG_PIN_VDET1)-val_field_detector1)/10;  // read the input pin
-  val_field_detector2 += (analogRead(ANALOG_PIN_VDET2)-val_field_detector1)/10;  // read the input pin  
+  //val_field_detector2 = analogRead(ANALOG_PIN_VDET2);  // read the input pin    
+  uint16_t val1 = analogRead(ANALOG_PIN_VDET1);  // read the input pin
+  uint16_t val2 = analogRead(ANALOG_PIN_VDET2);  // read the input pin  
+  if(val1 > val_field_detector1){
+    val_field_detector1 += (val1-val_field_detector1)>>4; // add error divided by 16
+  }
+  else{
+    val_field_detector1 -= (val_field_detector1-val1)>>4; // subtract error divided by 16
+  }
+  if(val2 > val_field_detector2){
+    val_field_detector2 += (val2-val_field_detector2)>>4; // add error divided by 16
+  }
+  else{
+    val_field_detector2 -= (val_field_detector2-val2)>>4; // subtract error divided by 16
+  }
   registers[TX_REG_VDET1_MSB] = val_field_detector1 >> 8;
   registers[TX_REG_VDET1_LSB] = val_field_detector1 & 0xFF;
   registers[TX_REG_VDET2_MSB] = val_field_detector2 >> 8;

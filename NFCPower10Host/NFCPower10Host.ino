@@ -194,7 +194,7 @@ void readTransmitterFieldDetectors(){
     uint16_t val = Wire.read()<<8; // read MSB
     val += Wire.read(); // read LSB
     val_field_detectors[(addr-ADDRESS_TX1)*2] = val;
-    if(addr<(ADDRESS_TX1+5)){
+    if(true){//if(addr<(ADDRESS_TX1+5)){
       msg_HSEN1 += String(val) + " ";
     }
     continue;
