@@ -68,16 +68,10 @@ void setup() {
   digitalWrite(PIN_LED_RED, HIGH);   
   Serial.begin(115200); // create serial
   printIDNVERSION(); // print identifier and firmware version
-  delay(100); // wait for slaves to startup
-  pinMode(PIN_SDA, INPUT); // debug
-  Wire.begin(); // join i2c bus (address optional for master) // debug  
+  delay(500); // wait for slaves to startup
   Serial.println("Assign Transmitter Addresses");
   assignTXAddresses(); // assign I2C TX addresses
   Serial.println("Start I2C");  
-  //Wire.setClock(100000); // standard
-  //Wire.setClock(400000); // fast
-  //Wire.setClock(1000000); // fast plus
-  //Wire.setClock(3400000); // high speed
   Wire.begin(); // join i2c bus (address optional for master)
   Serial.println("Start Current Sensor");
   ina219.begin(); // start current sensor
@@ -90,6 +84,10 @@ void setup() {
   else{
     Serial.println("NFC Readers not Connected");
   }
+  //Wire.setClock(100000); // standard
+  //Wire.setClock(400000); // fast
+  //Wire.setClock(1000000); // fast plus
+  Wire.setClock(3400000); // high speed
   Serial.println("Set Transmitter LEDs Test Pattern");
   setTransmitterLEDsTestPattern(demo_pattern);
   setup_timer2(); // setup timer2 1ms interrupt  
@@ -119,7 +117,7 @@ void loop() {
       setTransmitterLEDsTestPattern(demo_pattern);      
       demo_pattern_counter = 0; // reset counter
       measureCurrentVoltage();
-      printCurrentVoltage();
+      //printCurrentVoltage();
     }
   }
 }
@@ -155,39 +153,60 @@ void printIDNVERSION(){
 // The 10 transmitter uart tx and rx are cascaded.
 // When a transmitter receives the hop message it assigns its own address to the hop number. 
 // Then it increments the hop number and sends to the next transmitter.
-void assignTXAddresses(){
+bool assignTXAddresses(){
   stringComplete = false; // clear flag
   inputString = ""; // clear string
   Serial.print("ADDRESS HOP "); // print the transmitter address hop message
   Serial.println(ADDRESS_TX1); // print first address
+  uint16_t timeout_counter = 0;
   while(!stringComplete){ // wait for response message
     serialEvent(); // call serialEvent to check for received message
+    if(++timeout_counter>100){
+      Serial.println("Timeout Assigning Addresses");
+      return false;
+    }
+    delay(1);
   }
+  bool ret_val = true;
   if(inputString != "ADDRESS HOP "+String(ADDRESS_TX1+10)){
     Serial.print("Error Assigning Addresses: "); // print error message
     Serial.println(inputString); // echo input string
+    ret_val = false;
   }
   else{    
     Serial.print("Success Assigning Addresses: ");
     Serial.println(inputString); // echo input string
   }
   stringComplete = false; // clear flag
-  inputString = ""; // clear string  
+  inputString = ""; // clear string
+  return ret_val;
 }
 
-void readTransmitterFieldDetectors(){
-  for(int addr = ADDRESS_TX1; addr<(ADDRESS_TX1+11); addr++){
+void readTransmitterFieldDetectors(){  
+  String msg_HSEN1 = "";//"HSEN1: ";
+  String msg_HSEN2 = "";//"HSEN2: ";
+  for(int addr = ADDRESS_TX1; addr<(ADDRESS_TX1+10); addr++){
     Wire.beginTransmission(addr); // transmit to device at addr
     Wire.write(TX_REG_VDET1_MSB); // sends one byte
     Wire.endTransmission(); // stop transmitting
-    Wire.requestFrom(addr, 4);    // request 4 bytes
+    //Wire.requestFrom(addr, 4);    // request 4 bytes
+    Wire.requestFrom(addr, 2);    // request 2 bytes
     uint16_t val = Wire.read()<<8; // read MSB
     val += Wire.read(); // read LSB
     val_field_detectors[(addr-ADDRESS_TX1)*2] = val;
+    if(addr<(ADDRESS_TX1+5)){
+      msg_HSEN1 += String(val) + " ";
+    }
+    continue;
     val = Wire.read()<<8; // read MSB
     val += Wire.read(); // read LSB
     val_field_detectors[(addr-ADDRESS_TX1)*2+1] = val;
+    if(addr>(ADDRESS_TX1+5)){
+      msg_HSEN2 += String(val) + " ";
+    }
   }
+  Serial.println(msg_HSEN1);
+  //Serial.println(msg_HSEN2);
 }
 
 void setTransmitterLEDsTestPattern(uint8_t offset){
@@ -238,11 +257,16 @@ void printCurrentVoltage(){
 }
 
 // setup clock generator frequencies
-void setupClockGen(){
+bool setupClockGen(){
   //Serial.println("Connecting to SI5351...");
+  //pinMode(PIN_SSEN, OUTPUT);
+  //digitalWrite(PIN_SSEN, LOW); // disable spread spectrum
+  //pinMode(PIN_OEB, OUTPUT);
+  //digitalWrite(PIN_OEB, HIGH); // enable outputs, active low
   if (clockgen.begin() != ERROR_NONE){ // Initialise the sensor
     Serial.println("SI5351 Not Detected.");
-    while(1);
+    //while(1);
+    return false;
   }
   Serial.println("SI5351 Connected.");
   //Serial.print("Set PLLA to "); Serial.println(PLL);
@@ -257,11 +281,8 @@ void setupClockGen(){
   clockgen.setupMultisynth(4, SI5351_PLL_A, FOUT_DIV, FOUT_N, FOUT_D4);
   Serial.print("Set Output 5 to "); Serial.println(F5);  
   clockgen.setupMultisynth(5, SI5351_PLL_A, FOUT_DIV, FOUT_N, FOUT_D5);
-  clockgen.enableOutputs(true); // Enable the clocks  
-  pinMode(PIN_SSEN, OUTPUT);
-  digitalWrite(PIN_SSEN, LOW); // disable spread spectrum
-  pinMode(PIN_OEB, OUTPUT);
-  digitalWrite(PIN_OEB, LOW); // enable outputs, active low
+  clockgen.enableOutputs(true); // Enable the clocks
+  return true;
 }
 
 void nfc_field_on(){

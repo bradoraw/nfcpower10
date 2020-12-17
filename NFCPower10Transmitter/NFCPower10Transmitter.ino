@@ -90,11 +90,10 @@ void receiveEvent(int howMany){
 
 // function that executes whenever data is requested by master
 // this function is registered as an event, see setup()
-void requestEvent() {
-  Wire.write(registers[reg]);  
-  if(reg>TX_REG_LEDS){
-    Wire.write(registers[reg+1]);  
-  }  
+void requestEvent(int howMany) {   
+  for(int i=0; i<howMany; i++){
+    Wire.write(registers[reg+i]);
+  }
 }
 
 // update state of LEDs
@@ -139,6 +138,12 @@ ISR(TIMER2_COMPA_vect){ // Handle Timer2 COMPA interrupt
 }
 
 void measureFieldDetectors(){
-  val_field_detector1 = analogRead(ANALOG_PIN_VDET1);  // read the input pin
-  val_field_detector2 = analogRead(ANALOG_PIN_VDET2);  // read the input pin
+  //val_field_detector1 = analogRead(ANALOG_PIN_VDET1);  // read the input pin
+  //val_field_detector2 = analogRead(ANALOG_PIN_VDET2);  // read the input pin  
+  val_field_detector1 += (analogRead(ANALOG_PIN_VDET1)-val_field_detector1)/10;  // read the input pin
+  val_field_detector2 += (analogRead(ANALOG_PIN_VDET2)-val_field_detector1)/10;  // read the input pin  
+  registers[TX_REG_VDET1_MSB] = val_field_detector1 >> 8;
+  registers[TX_REG_VDET1_LSB] = val_field_detector1 & 0xFF;
+  registers[TX_REG_VDET2_MSB] = val_field_detector2 >> 8;
+  registers[TX_REG_VDET2_LSB] = val_field_detector2 & 0xFF;  
 }
