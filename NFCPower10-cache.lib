@@ -1,6 +1,23 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Generic_Conn_01x01
+#
+DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Generic_Conn_02x03_Odd_Even
 #
 DEF Connector_Generic_Conn_02x03_Odd_Even J 0 40 Y N 1 F N
@@ -71,6 +88,19 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
 # power_VBUS
 #
 DEF power_VBUS #PWR 0 0 Y Y 1 F P
@@ -131,7 +161,7 @@ P 2 1 1 0 -420 -600 -200 -600 N
 P 2 1 1 0 -420 -400 -200 -400 N
 P 2 1 1 0 -420 -200 -200 -200 N
 P 2 1 1 0 -420 0 -200 0 N
-X VBUS 1 -100 0 100 L 40 40 1 1 P
+X VBUS 1 -100 0 100 L 40 40 1 1 w
 X MNT_5 10 -800 -100 100 R 40 40 1 1 P
 X MNT_6 11 -800 100 100 R 40 40 1 1 P
 X D- 2 -100 -200 100 L 40 40 1 1 P
@@ -202,39 +232,39 @@ F20 "417A53D3-7F28-4C25-88A7-47DF99564268" 0 2200 50 H I L CNN "vault revision"
 F21 "yes" 0 2300 50 H I L CNN "imported"
 DRAW
 S 200 100 1800 -2800 1 1 0 f
-X PD3/PCINT19/OC2B/INT1 1 1900 -1400 100 L 40 40 1 1 B
-X PD6/PCINT22/OC0A/AIN0 10 1900 -1700 100 L 40 40 1 1 B
-X PD7/PCINT23/AIN1 11 1900 -1800 100 L 40 40 1 1 B
-X PB0/PCINT0/CLKO/ICP1 12 1900 -2000 100 L 40 40 1 1 B
-X PB1/PCINT1/OC1A 13 1900 -2100 100 L 40 40 1 1 B
-X RB2/~SS~/OC1B 14 1900 -2200 100 L 40 40 1 1 B
-X PB3/PCINT3/OC2A/MOSI 15 1900 -2300 100 L 40 40 1 1 B
-X PB4/PCINT4/MISO 16 1900 -2400 100 L 40 40 1 1 B
-X PB5/SCK/PCINT5 17 1900 -2500 100 L 40 40 1 1 B
+X PD3/PCINT19/OC2B/INT1 1 1900 -1400 100 L 40 40 1 1 P
+X PD6/PCINT22/OC0A/AIN0 10 1900 -1700 100 L 40 40 1 1 P
+X PD7/PCINT23/AIN1 11 1900 -1800 100 L 40 40 1 1 P
+X PB0/PCINT0/CLKO/ICP1 12 1900 -2000 100 L 40 40 1 1 P
+X PB1/PCINT1/OC1A 13 1900 -2100 100 L 40 40 1 1 P
+X PB2/~SS~/OC1B 14 1900 -2200 100 L 40 40 1 1 P
+X PB3/PCINT3/OC2A/MOSI 15 1900 -2300 100 L 40 40 1 1 P
+X PB4/PCINT4/MISO 16 1900 -2400 100 L 40 40 1 1 P
+X PB5/SCK/PCINT5 17 1900 -2500 100 L 40 40 1 1 P
 X AVCC 18 100 -300 100 R 40 40 1 1 W
 X ADC6 19 1900 0 100 L 40 40 1 1 I
-X PD4/PCINT20/XCK/T0 2 1900 -1500 100 L 40 40 1 1 B
+X PD4/PCINT20/XCK/T0 2 1900 -1500 100 L 40 40 1 1 P
 X AREF 20 100 -500 100 R 40 40 1 1 P
 X GND 21 100 -2500 100 R 40 40 1 1 W
 X ADC7 22 1900 -100 100 L 40 40 1 1 I
-X PC0/ADC0/PCINT8 23 1900 -300 100 L 40 40 1 1 B
-X PC1/ADC1/PCINT9 24 1900 -400 100 L 40 40 1 1 B
-X PC2/ADC2/PCINT10 25 1900 -500 100 L 40 40 1 1 B
-X PC3/ADC3/PCINT11 26 1900 -600 100 L 40 40 1 1 B
-X PC4/ADC4/SDA/PCINT12 27 1900 -700 100 L 40 40 1 1 B
-X PC5/ADC5/SCL/PCINT13 28 1900 -800 100 L 40 40 1 1 B
-X ~RESET~/PCINT14 29 1900 -900 100 L 40 40 1 1 B
+X PC0/ADC0/PCINT8 23 1900 -300 100 L 40 40 1 1 P
+X PC1/ADC1/PCINT9 24 1900 -400 100 L 40 40 1 1 P
+X PC2/ADC2/PCINT10 25 1900 -500 100 L 40 40 1 1 P
+X PC3/ADC3/PCINT11 26 1900 -600 100 L 40 40 1 1 P
+X PC4/ADC4/SDA/PCINT12 27 1900 -700 100 L 40 40 1 1 P
+X PC5/ADC5/SCL/PCINT13 28 1900 -800 100 L 40 40 1 1 P
+X ~RESET~/PCINT14 29 1900 -900 100 L 40 40 1 1 P
 X GND 3 100 -2300 100 R 40 40 1 1 W
-X PD0/RXD/PCINT16 30 1900 -1100 100 L 40 40 1 1 B
-X PD1/TXD/PCINT17 31 1900 -1200 100 L 40 40 1 1 B
-X PD2/INT0/PCINT18 32 1900 -1300 100 L 40 40 1 1 B
+X PD0/RXD/PCINT16 30 1900 -1100 100 L 40 40 1 1 P
+X PD1/TXD/PCINT17 31 1900 -1200 100 L 40 40 1 1 P
+X PD2/INT0/PCINT18 32 1900 -1300 100 L 40 40 1 1 P
 X DAP 33 100 -2700 100 R 40 40 1 1 W
 X VCC 4 100 -100 100 R 40 40 1 1 W
 X GND 5 100 -2400 100 R 40 40 1 1 W
 X VCC 6 100 0 100 R 40 40 1 1 W
-X PB6/PCINT6/XTAL1/TOSC1 7 1900 -2600 100 L 40 40 1 1 B
-X PB7/PCINT7/XTAL2/TOSC2 8 1900 -2700 100 L 40 40 1 1 B
-X PD5/PCINT21/OC0B/T1 9 1900 -1600 100 L 40 40 1 1 B
+X PB6/PCINT6/XTAL1/TOSC1 7 1900 -2600 100 L 40 40 1 1 P
+X PB7/PCINT7/XTAL2/TOSC2 8 1900 -2700 100 L 40 40 1 1 P
+X PD5/PCINT21/OC0B/T1 9 1900 -1600 100 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -468,6 +498,86 @@ F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
 F26 "0.1" 0 2700 50 H I L CNN "tolerance"
 F27 "50 V" 0 2800 50 H V L CNN "voltage"
 F28 "50 V" 0 2900 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# project_CC0603KRX7R6BB224
+#
+DEF project_CC0603KRX7R6BB224 C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "project_CC0603KRX7R6BB224" 0 200 50 H I L CNN
+F2 "project:YAGEO-CC0603-0-0-0" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "220 nF" 0 600 50 H V L CNN "capacitance"
+F6 "Cap" 0 700 50 H I L CNN "category"
+F7 "Passive Components" 0 800 50 H I L CNN "device class L1"
+F8 "Capacitors" 0 900 50 H I L CNN "device class L2"
+F9 "Ceramic Capacitors" 0 1000 50 H I L CNN "device class L3"
+F10 "CAP CER 0.22UF 10V X7R 0603" 0 1100 50 H I L CNN "digikey description"
+F11 "311-1346-2-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "http://www.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf" 0 1300 50 H I L CNN "footprint url"
+F13 "0.9mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "147b81c849cacb0c" 0 1600 50 H I L CNN "library id"
+F16 "YAGEO" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "Multilayer Ceramic Capacitor, Cc Series, 0.22 - F, - 10%, X7r, 10 V, 0603 [1608 Metric]" 0 1900 50 H I L CNN "mouser description"
+F19 "603-CC603KRX7R6BB224" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "X7R" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "15%" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.1" 0 2700 50 H I L CNN "tolerance"
+F27 "10 V" 0 2800 50 H I L CNN "voltage"
+F28 "10 V" 0 2900 50 H I L CNN "voltage rating"
+DRAW
+P 2 1 1 0 100 -130 -100 -130 N
+P 2 1 1 0 100 -70 -100 -70 N
+X 1 1 0 0 70 D 40 0 1 1 P
+X 2 2 0 -200 60 U 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# project_CC0603KRX7R7BB105
+#
+DEF project_CC0603KRX7R7BB105 C 0 40 Y Y 1 F N
+F0 "C" 0 100 50 H V L CNN
+F1 "project_CC0603KRX7R7BB105" 0 200 50 H I L CNN
+F2 "project:YAGEO-CC0603-0-0-0" 0 300 50 H I L CNN
+F3 "" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "1 uF" 0 600 50 H V L CNN "capacitance"
+F6 "Cap" 0 700 50 H I L CNN "category"
+F7 "Passive Components" 0 800 50 H I L CNN "device class L1"
+F8 "Capacitors" 0 900 50 H I L CNN "device class L2"
+F9 "Ceramic Capacitors" 0 1000 50 H I L CNN "device class L3"
+F10 "CAP CER 1UF 16V X7R 0603" 0 1100 50 H I L CNN "digikey description"
+F11 "311-1446-2-ND" 0 1200 50 H I L CNN "digikey part number"
+F12 "http://www.yageo.com/exep/pages/download/literatures/UPY-C_GEN_24.pdf" 0 1300 50 H I L CNN "footprint url"
+F13 "0.9mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "6c798684017dc330" 0 1600 50 H I L CNN "library id"
+F16 "YAGEO" 0 1700 50 H I L CNN "manufacturer"
+F17 "Ceramic" 0 1800 50 H I L CNN "material"
+F18 "Multilayer Ceramic Capacitor, CC Series, 1 - F, - 10%, X7R, 16 V, 0603 [1608 Metric]" 0 1900 50 H I L CNN "mouser description"
+F19 "603-CC603KRX7R7BB105" 0 2000 50 H I L CNN "mouser part number"
+F20 "0603" 0 2100 50 H V L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "X7R" 0 2300 50 H I L CNN "temperature characteristic"
+F23 "15%" 0 2400 50 H I L CNN "temperature coefficient"
+F24 "+125°C" 0 2500 50 H I L CNN "temperature range high"
+F25 "-55°C" 0 2600 50 H I L CNN "temperature range low"
+F26 "0.1" 0 2700 50 H I L CNN "tolerance"
+F27 "16 V" 0 2800 50 H I L CNN "voltage"
+F28 "16 V" 0 2900 50 H I L CNN "voltage rating"
 DRAW
 P 2 1 1 0 100 -130 -100 -130 N
 P 2 1 1 0 100 -70 -100 -70 N
@@ -799,7 +909,7 @@ X RXD 1 1800 -100 100 L 40 40 1 1 I
 X 3V3OUT 10 100 -900 100 R 40 40 1 1 O
 X ~RESET~ 11 100 -600 100 R 40 40 1 1 I
 X VCC 12 100 0 100 R 40 40 1 1 W
-X GND 13 1800 -1500 100 L 40 40 1 1 E
+X GND 13 1800 -1500 100 L 40 40 1 1 W
 X CBUS1 14 1800 -1000 100 L 40 40 1 1 B
 X CBUS0 15 1800 -900 100 L 40 40 1 1 B
 X CBUS3 16 1800 -1200 100 L 40 40 1 1 B
@@ -875,6 +985,84 @@ X SCL 5 1100 0 100 L 40 40 1 1 I C
 X SDA 6 1100 -100 100 L 40 40 1 1 B
 X A0 7 1100 -300 100 L 40 40 1 1 I
 X A1 8 1100 -400 100 L 40 40 1 1 I
+ENDDRAW
+ENDDEF
+#
+# project_LP3985IM5X-2.8_NOPB
+#
+DEF project_LP3985IM5X-2.8_NOPB U 0 40 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "project_LP3985IM5X-2.8_NOPB" 0 300 50 H V L CNN
+F2 "project:TI_National_Semiconductor-LP3985IM5X-2.8_NOPB-Level_A" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "LDO IC" 0 600 50 H I L CNN "Comp Type"
+F5 "LP3985 Datasheet" 0 700 50 H I L CNN "Component Link 1 Description"
+F6 "http://www.national.com/ds/LP/LP3985.pdf" 0 800 50 H I L CNN "Component Link 1 URL"
+F7 "LP3985 Web Page" 0 900 50 H I L CNN "Component Link 2 Description"
+F8 "http://www.national.com/pf/LP/LP3985.html" 0 1000 50 H I L CNN "Component Link 2 URL"
+F9 "MF05A Package Page" 0 1100 50 H I L CNN "Component Link 3 Description"
+F10 "http://www.national.com/packaging/folders/mf05a.html" 0 1200 50 H I L CNN "Component Link 3 URL"
+F11 "Aug-2005" 0 1300 50 H I L CNN "Datasheet Version"
+F12 "Molded SOT-23, .115 x .063 x .040 in Body, 5 Lead, .0375 in Pitch" 0 1400 50 H I L CNN "Package Description"
+F13 "LCJB*XTT" 0 1500 50 H I L CNN "Package Top Marking"
+F14 "revD, Aug-2008" 0 1600 50 H I L CNN "Package Version"
+F15 "5" 0 1700 50 H I L CNN "Pin Count"
+F16 "N" 0 1800 50 H I L CNN "Power Wise"
+F17 "IC" 0 1900 50 H I L CNN "category"
+F18 "1508621" 0 2000 50 H I L CNN "ciiva ids"
+F19 "bb9987ab42f2117d" 0 2100 50 H I L CNN "library id"
+F20 "TI National Semiconductor" 0 2200 50 H I L CNN "manufacturer"
+F21 "SOT-23-5" 0 2300 50 H V L CNN "package"
+F22 "1308101124" 0 2400 50 H I L CNN "release date"
+F23 "Yes" 0 2500 50 H I L CNN "rohs"
+F24 "CB05A474-27DF-4319-B878-CE20F2FC7E9E" 0 2600 50 H I L CNN "vault revision"
+F25 "yes" 0 2700 50 H I L CNN "imported"
+DRAW
+S 200 100 800 -400 1 1 0 f
+X IN 1 100 0 100 R 40 40 1 1 W
+X GND 2 500 -500 100 U 40 40 1 1 W
+X EN 3 100 -200 100 R 40 40 1 1 I
+X BYP 4 900 -200 100 L 40 40 1 1 P
+X OUT 5 900 0 100 L 40 40 1 1 w
+ENDDRAW
+ENDDEF
+#
+# project_LP3985IM5X-3.3_NOPB
+#
+DEF project_LP3985IM5X-3.3_NOPB U 0 40 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "project_LP3985IM5X-3.3_NOPB" 0 300 50 H V L CNN
+F2 "project:TI_National_Semiconductor-LP3985IM5X-3.3_NOPB-Level_A" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "LDO IC" 0 600 50 H I L CNN "Comp Type"
+F5 "LP3985 Datasheet" 0 700 50 H I L CNN "Component Link 1 Description"
+F6 "http://www.national.com/ds/LP/LP3985.pdf" 0 800 50 H I L CNN "Component Link 1 URL"
+F7 "LP3985 Web Page" 0 900 50 H I L CNN "Component Link 2 Description"
+F8 "http://www.national.com/pf/LP/LP3985.html" 0 1000 50 H I L CNN "Component Link 2 URL"
+F9 "MF05A Package Page" 0 1100 50 H I L CNN "Component Link 3 Description"
+F10 "http://www.national.com/packaging/folders/mf05a.html" 0 1200 50 H I L CNN "Component Link 3 URL"
+F11 "Aug-2005" 0 1300 50 H I L CNN "Datasheet Version"
+F12 "Molded SOT-23, .115 x .063 x .040 in Body, 5 Lead, .0375 in Pitch" 0 1400 50 H I L CNN "Package Description"
+F13 "LDQB*XTT" 0 1500 50 H I L CNN "Package Top Marking"
+F14 "revD, Aug-2008" 0 1600 50 H I L CNN "Package Version"
+F15 "5" 0 1700 50 H I L CNN "Pin Count"
+F16 "N" 0 1800 50 H I L CNN "Power Wise"
+F17 "IC" 0 1900 50 H I L CNN "category"
+F18 "1508623" 0 2000 50 H I L CNN "ciiva ids"
+F19 "93f2042cc49aca16" 0 2100 50 H I L CNN "library id"
+F20 "TI National Semiconductor" 0 2200 50 H I L CNN "manufacturer"
+F21 "SOT-23-5" 0 2300 50 H V L CNN "package"
+F22 "1308101126" 0 2400 50 H I L CNN "release date"
+F23 "Yes" 0 2500 50 H I L CNN "rohs"
+F24 "94AD9BB4-1EB8-4550-B313-F899CF9C4885" 0 2600 50 H I L CNN "vault revision"
+F25 "yes" 0 2700 50 H I L CNN "imported"
+DRAW
+S 200 100 800 -400 1 1 0 f
+X IN 1 100 0 100 R 40 40 1 1 W
+X GND 2 500 -500 100 U 40 40 1 1 W
+X EN 3 100 -200 100 R 40 40 1 1 I
+X BYP 4 900 -200 100 L 40 40 1 1 P
+X OUT 5 900 0 100 L 40 40 1 1 w
 ENDDRAW
 ENDDEF
 #
@@ -1130,57 +1318,9 @@ P 2 1 1 0 -380 -150 -350 -200 N
 P 2 1 1 0 -280 -130 -250 -150 N
 P 2 1 1 0 -250 -150 -250 -100 N
 P 2 1 1 0 -220 -130 -250 -150 N
-X 1 1 -100 0 500 L 40 0 1 1 P
+X 1 1 -100 0 500 L 40 0 1 1 w
 X 2 2 -100 -200 250 L 40 0 1 1 P
 X 3 3 -100 -100 150 L 40 0 1 1 P
-ENDDRAW
-ENDDEF
-#
-# project_RC0603FR-07100RL
-#
-DEF project_RC0603FR-07100RL R 0 40 Y Y 1 F N
-F0 "R" 0 200 50 H V L CNN
-F1 "project_RC0603FR-07100RL" 0 300 50 H I L CNN
-F2 "project:Yageo-RC0603-0-0-IPC_A" 0 400 50 H I L CNN
-F3 "" 0 500 50 H I L CNN
-F4 "541-1.00HHCT-ND" 0 600 50 H I L CNN "approved alternate part number"
-F5 "Res" 0 700 50 H I L CNN "category"
-F6 "Thick Film" 0 800 50 H I L CNN "composition"
-F7 "Passive Components" 0 900 50 H I L CNN "device class L1"
-F8 "Resistors" 0 1000 50 H I L CNN "device class L2"
-F9 "Chip SMD Resistors" 0 1100 50 H I L CNN "device class L3"
-F10 "RES SMD 100 OHM 1% 1/10W 0603" 0 1200 50 H I L CNN "digikey description"
-F11 "311-100HRTR-ND" 0 1300 50 H I L CNN "digikey part number"
-F12 "0.5mm" 0 1400 50 H I L CNN "height"
-F13 "RESC15585X45" 0 1500 50 H I L CNN "ipc land pattern name"
-F14 "yes" 0 1600 50 H I L CNN "lead free"
-F15 "e6c4b1ad25ddfe2f" 0 1700 50 H I L CNN "library id"
-F16 "Yageo" 0 1800 50 H I L CNN "manufacturer"
-F17 "YAGEO (PHYCOMP) - RC0603FR-07100RL - RES, THICK FILM, 100R, 1%, 0.1W, 0603" 0 1900 50 H I L CNN "mouser description"
-F18 "603-RC0603FR-07100RL" 0 2000 50 H I L CNN "mouser part number"
-F19 "0603" 0 2100 50 H V L CNN "package"
-F20 "100mW" 0 2200 50 H I L CNN "power"
-F21 "0.1W" 0 2300 50 H I L CNN "power rating"
-F22 "100Ω" 0 2400 50 H V L CNN "resistance"
-F23 "yes" 0 2500 50 H I L CNN "rohs"
-F24 "RC" 0 2600 50 H I L CNN "series"
-F25 "0mm" 0 2700 50 H I L CNN "standoff height"
-F26 "100ppm/°C" 0 2800 50 H I L CNN "temperature coefficient"
-F27 "+155°C" 0 2900 50 H I L CNN "temperature range high"
-F28 "-55°C" 0 3000 50 H I L CNN "temperature range low"
-F29 "1%" 0 3100 50 H I L CNN "tolerance"
-F30 "75V" 0 3200 50 H I L CNN "voltage"
-F31 "75V" 0 3300 50 H I L CNN "voltage rating"
-DRAW
-P 2 1 1 0 200 0 230 50 N
-P 2 1 1 0 230 50 280 -50 N
-P 2 1 1 0 280 -50 330 50 N
-P 2 1 1 0 330 50 380 -50 N
-P 2 1 1 0 380 -50 430 50 N
-P 2 1 1 0 430 50 480 -50 N
-P 2 1 1 0 480 -50 500 0 N
-X 1 1 100 0 100 R 40 0 1 1 P
-X 2 2 600 0 100 L 40 0 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -1521,9 +1661,9 @@ X IRQ 27 100 -1100 100 R 40 40 1 1 O
 X MCU_CLK 28 100 -2000 100 R 40 40 1 1 O
 X BSS 29 100 -1000 100 R 40 40 1 1 I
 X VDD_D 3 100 -300 100 R 40 40 1 1 W
-X SCLK/SCL 30 100 -1500 100 R 40 40 1 1 I
-X MOSI 31 100 -1300 100 R 40 40 1 1 I
-X MISO/SDA 32 100 -1400 100 R 40 40 1 1 O
+X SCLK/SCL 30 100 -1500 100 R 40 40 1 1 U
+X MOSI 31 100 -1300 100 R 40 40 1 1 U
+X MISO/SDA 32 100 -1400 100 R 40 40 1 1 U
 X EP 33 1500 -1900 100 L 40 40 1 1 P
 X XTO 4 100 -2500 100 R 40 40 1 1 P
 X XTI 5 100 -2400 100 R 40 40 1 1 P
@@ -1622,6 +1762,66 @@ X 1 1 100 0 100 R 40 0 1 1 U
 X GND 2 200 -200 100 R 40 0 1 1 U
 X 3 3 500 0 100 L 40 0 1 1 U
 X GND 4 400 -200 100 L 40 0 1 1 U
+ENDDRAW
+ENDDEF
+#
+# project_VL6180XV0NR_1
+#
+DEF project_VL6180XV0NR_1 U 0 40 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "project_VL6180XV0NR_1" 0 300 50 H V L CNN
+F2 "project:STMicroelectronics-VL6180XV0NR_1-MFG" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "No" 0 600 50 H I L CNN "automotive"
+F5 "IC" 0 700 50 H I L CNN "category"
+F6 "Sensors" 0 800 50 H I L CNN "device class L1"
+F7 "Proximity Sensors" 0 900 50 H I L CNN "device class L2"
+F8 "unset" 0 1000 50 H I L CNN "device class L3"
+F9 "SENSOR OPT AMBIENT 12SMD" 0 1100 50 H I L CNN "digikey description"
+F10 "497-14702-1-ND" 0 1200 50 H I L CNN "digikey part number"
+F11 "400kHz" 0 1300 50 H I L CNN "frequency"
+F12 "1.1mm" 0 1400 50 H I L CNN "height"
+F13 "Yes" 0 1500 50 H I L CNN "lead free"
+F14 "974cf57bfc173836" 0 1600 50 H I L CNN "library id"
+F15 "STMicroelectronics" 0 1700 50 H I L CNN "manufacturer"
+F16 "3V" 0 1800 50 H I L CNN "max supply voltage"
+F17 "2.6V" 0 1900 50 H I L CNN "min supply voltage"
+F18 "511-VL6180XV0NR/1" 0 2000 50 H I L CNN "mouser part number"
+F19 "1.7mA" 0 2100 50 H I L CNN "operating supply current"
+F20 "LGA12" 0 2200 50 H V L CNN "package"
+F21 "Yes" 0 2300 50 H I L CNN "rohs"
+F22 "0-100mm" 0 2400 50 H I L CNN "sensing distance"
+F23 "Optical" 0 2500 50 H I L CNN "sensing method"
+F24 "I2C" 0 2600 50 H I L CNN "sensor output"
+F25 "+70°C" 0 2700 50 H I L CNN "temperature range high"
+F26 "-20°C" 0 2800 50 H I L CNN "temperature range low"
+DRAW
+S 200 100 1800 -900 1 1 0 f
+X GPIO1 1 100 -500 100 R 40 40 1 1 B
+X AVDD 10 100 0 100 R 40 40 1 1 W
+X NC 11 1900 -300 100 L 40 40 1 1 P
+X AVSS 12 1900 -700 100 L 40 40 1 1 W
+X NC 2 1900 0 100 L 40 40 1 1 P
+X NC 3 1900 -100 100 L 40 40 1 1 P
+X GPIO0 4 100 -400 100 R 40 40 1 1 B
+X SCL 5 100 -800 100 R 40 40 1 1 I
+X SDA 6 100 -700 100 R 40 40 1 1 B
+X NC 7 1900 -200 100 L 40 40 1 1 P
+X AVDD_VCSEL 8 100 -100 100 R 40 40 1 1 W
+X AVSS_VCSEL 9 1900 -800 100 L 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# project_fiducial
+#
+DEF project_fiducial FID 0 40 Y Y 1 F N
+F0 "FID" 200 50 50 H V C CNN
+F1 "project_fiducial" 250 -50 50 H V C CNN
+F2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" 150 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 50 0 1 0 N
+C 0 0 100 0 1 0 N
 ENDDRAW
 ENDDEF
 #

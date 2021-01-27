@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "(5.1.6)-1"
+      "Version":     "(5.1.5-0-10_14)"
     },
-    "CreationDate":  "2020-11-27T14:01:37-07:00"
+    "CreationDate":  "2021-01-27T10:41:07-07:00"
   },
   "GeneralSpecs":
   {
@@ -15,12 +15,12 @@
     {
       "Name": "NFCPower10",
       "GUID": "4e464350-6f77-4657-9231-302e6b696361",
-      "Revision": "1"
+      "Revision": "2"
     },
     "Size":
     {
       "X": 271.000,
-      "Y": 126.000
+      "Y": 122.000
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -32,7 +32,7 @@
       "PadToPad":  0.152,
       "PadToTrack":  0.152,
       "TrackToTrack":  0.152,
-      "MinLineWidth":  0.250,
+      "MinLineWidth":  0.200,
       "TrackToRegion":  0.200,
       "RegionToRegion":  0.200
     }
@@ -52,6 +52,11 @@
     {
       "Path":  "NFCPower10-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "NFCPower10-B_Paste.gbr",
+      "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
@@ -110,6 +115,10 @@
     {
       "Type":  "SolderMask",
       "Notes":  "Layer B.Mask"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer B.Paste"
     },
     {
       "Type":  "Legend",

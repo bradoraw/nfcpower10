@@ -38,6 +38,14 @@ $CMP CC0603KPX7R9BB104
 F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
 $ENDCMP
 #
+$CMP CC0603KRX7R6BB224
+F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
+$ENDCMP
+#
+$CMP CC0603KRX7R7BB105
+F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
+$ENDCMP
+#
 $CMP CC0603KRX7R9BB102
 F http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf
 $ENDCMP
@@ -135,6 +143,10 @@ D RC0603FR-071KL
 F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
 $ENDCMP
 #
+$CMP RC0603FR-071ML
+F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
+$ENDCMP
+#
 $CMP RC0603FR-074K7L
 F http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf
 $ENDCMP
@@ -179,6 +191,10 @@ $ENDCMP
 #
 $CMP TSX-3225_16.0000MF09Z-AC3
 F https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-238V_en.pdf
+$ENDCMP
+#
+$CMP VL6180XV0NR_1
+F https://www.st.com/resource/en/datasheet/vl6180x.pdf
 $ENDCMP
 #
 $CMP XRCGB27M120F3M00R0
