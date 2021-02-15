@@ -1,6 +1,11 @@
 /*
  * NFCPower10Host
  *  - Microcontroller ATMEGA328
+ *  2021/02/15
+ *    - Create a trigger signal using the transmitter field sensors
+ *	  - print Min value or Max value when we detect the min and max field
+ *    - also print the time in ms since last min/or max
+ *    - mask the trigger while duration is less than 20ms
  */
 #define IDN "NFCPower10Host"
 #define VERSION "1.0.0"
@@ -63,6 +68,22 @@ uint8_t demo_pattern = 0;
 
 bool blue_toggle = false;
 
+int16_t field_signal = 0;
+int16_t field_signal_lpf2 = 0;
+int16_t field_signal_lpf4 = 0;
+int16_t field_diff = 0;
+int16_t field_diff_lpf2 = 0;
+int16_t field_diff_lpf4 = 0;
+int16_t field_diff2 = 0;
+int16_t field_diff2_lpf2 = 0;
+int16_t field_diff2_lpf4 = 0;
+bool field_diff2_positive = false;
+bool field_diff2_negative = false;
+bool last_field_diff2_positive = false;
+bool last_field_diff2_negative = false;
+int16_t last_field_diff_lpf4 = 0;
+int16_t field_duration = 0;
+
 void setup() {
   pinMode(PIN_LED_RED, OUTPUT); 
   digitalWrite(PIN_LED_RED, HIGH);   
@@ -103,10 +124,11 @@ void loop() {
     inputString = "";
   }
   if(read_field_detectors){
-    if(++read_field_detectors_counter>10){
-      readTransmitterFieldDetectors(); 
-      read_field_detectors_counter = 0;
-    }    
+	calculateTrigger(); // calculate the trigger
+    //if(++read_field_detectors_counter>10){
+    //  readTransmitterFieldDetectors(); 
+    //  read_field_detectors_counter = 0;
+    //}    
     read_field_detectors = false;
     if(++demo_pattern_counter>1000){
       blue_toggle = !blue_toggle;
@@ -116,10 +138,10 @@ void loop() {
       }
       setTransmitterLEDsTestPattern(demo_pattern);      
       demo_pattern_counter = 0; // reset counter
-      measureCurrentVoltage();
+      //measureCurrentVoltage();
       //printCurrentVoltage();
     }
-  }
+  }  
 }
 
 void serialEvent(){
@@ -132,6 +154,57 @@ void serialEvent(){
       inputString += inChar; // add character to string
     }
   }
+}
+
+void calculateTrigger(void){
+	field_duration++; // increment duration
+	// 1. Read the field strength signal
+	field_signal = (int16_t)readTransmitterFieldDetector(1); // read first transmitter field strength
+	// 2. Calculate signal low pass filter 2
+	field_signal_lpf2 = (field_signal - field_signal_lpf2)/2 + field_signal_lpf2;
+	// 3. Calculate signal low pass filter 4
+	field_signal_lpf4 = (field_signal - field_signal_lpf4)/4 + field_signal_lpf4;
+	// 4. Calculate difference of low pass 2 - 4
+	field_diff = field_signal_lpf2 - field_signal_lpf4;
+	// 5. Calculate difference low pass filter 2
+	field_diff_lpf2 = (field_diff - field_diff_lpf2)/2 + field_diff_lpf2;
+	// 6. Calculate difference low pass filter 4
+	field_diff_lpf4 = (field_diff - field_diff_lpf4)/4 + field_diff_lpf4;
+	// 7. Calculate 2nd difference of low pass 2 - 4
+	field_diff2 = field_diff_lpf2 - field_diff_lpf4;
+	// 8. Calculate 2nd difference low pass filter 2
+	field_diff2_lpf2 = (field_diff2 - field_diff2_lpf2)/2 + field_diff2_lpf2;
+	// 9. Calculate 2nd difference low pass filter 4
+	field_diff2_lpf4 = (field_diff2 - field_diff2_lpf4)/4 + field_diff2_lpf4;
+	// 10. Calculate 2nd difference positivity
+	field_diff2_positive = field_diff2_lpf4>0
+	// 11. Calculate 2nd difference negativity
+	field_diff2_negative = field_diff2_lpf4<0
+	// 12. Calculate is minimum
+	bool is_positive = field_diff2_positive || last_field_diff2_positive;
+	bool is_minimum = (field_diff_lpf4 > 0) && (last_field_diff_lpf4 < 0) && is_positive;
+	// 13. Calculate is maximum
+	bool is_negative = field_diff2_negative || last_field_diff2_negative;
+	bool is_maximum = (field_diff_lpf4 < 0) && (last_field_diff_lpf4 > 0) && is_positive;
+	
+	if(is_minimum && field_duration > 20){ // mask trigger if duration is not greater than 20ms
+		Serial.print("Min "); // print minimum trigger
+		Serial.print(field_signal_lpf4); // print the signal low pass 4 value
+		Serial.print(" "); // print a space
+		Serial.print(field_duration); // print duration (ms) since last trigger
+		field_duration = 0; // clear duration
+	}
+	else if(is_maximum && field_duration > 20){ // mask trigger if duration is not greater than 20ms
+		Serial.print("Max "); // print maximum trigger
+		Serial.print(field_signal_lpf4); // print the signal low pass 4 value
+		Serial.print(" "); // print a space
+		Serial.print(field_duration); // print duration (ms) since last trigger
+		field_duration = 0; // clear duration
+	}
+	
+	last_field_diff2_positive = field_diff2_positive; // set last
+	last_field_diff2_negative = field_diff2_negative; // set last
+	last_field_diff_lpf4 = field_diff_lpf4; // set last
 }
 
 void handleMessage(String input_msg){
@@ -180,6 +253,20 @@ bool assignTXAddresses(){
   stringComplete = false; // clear flag
   inputString = ""; // clear string
   return ret_val;
+}
+
+uint16_t readTransmitterFieldDetector(uint8_t ntx){	
+	uint16_t val = 0; // initialize the return value to zero
+	if(ntx>0 && ntx <= 10){ // verify ntx is between 1 and 10
+		int addr = ADDRESS_TX1 + ntx-1; // set the transmitter address
+		Wire.beginTransmission(addr); // transmit to device at addr
+		Wire.write(TX_REG_VDET1_MSB); // sends one byte, set the register to VDET1_MSB
+		Wire.endTransmission(); // stop transmitting
+		Wire.requestFrom(addr, 2);    // request 2 bytes, VDET1_MSB and VDET1_LSB
+		val = Wire.read()<<8; // read VDET1_MSB
+		val += Wire.read(); // read VDET1_LSB		
+	}
+	return val; // return the value
 }
 
 void readTransmitterFieldDetectors(){  
