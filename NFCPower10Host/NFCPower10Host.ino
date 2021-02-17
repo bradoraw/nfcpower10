@@ -6,6 +6,15 @@
  *	  - print Min value or Max value when we detect the min and max field
  *    - also print the time in ms since last min/or max
  *    - mask the trigger while duration is less than 20ms
+ *  2021/02/16
+ *    - Field signal period is 750ms but lamp is in view for only about 50ms
+ *      so time scales are different. Sampling field at 10ms and then delaying
+ *      min field detection 5 samples would exceed the duration the lamp is in view.
+ *      So instead we will change to a photo gate to trigger the lamp rows.
+ *  2021/02/17
+ *    - Use IRQ driven by a photo gate to trigger on each lamp row.
+ *    - Print "Trig" when IRQ interrupt detected
+ *    - Then read the 10 field values and print "Field " followed by 10 space separated values
  */
 #define IDN "NFCPower10Host"
 #define VERSION "1.0.0"
@@ -58,6 +67,8 @@ Adafruit_SI5351 clockgen = Adafruit_SI5351();
 #define PIN_SSEN 16 // PC2
 #define PIN_SDA 18 // PC4
 
+#define PIN_IRQ 2 // PD2, INT0
+
 String inputString = "";            // incoming serial data buffer
 bool stringComplete = false;        // string complete flag
 bool read_field_detectors = true;   // read field detectors flag
@@ -71,6 +82,7 @@ bool blue_toggle = false;
 int16_t field_signal = 0;
 int16_t field_signal_lpf2 = 0;
 int16_t field_signal_lpf4 = 0;
+int16_t field_signal_lpf32 = 0;
 int16_t field_diff = 0;
 int16_t field_diff_lpf2 = 0;
 int16_t field_diff_lpf4 = 0;
@@ -83,6 +95,11 @@ bool last_field_diff2_positive = false;
 bool last_field_diff2_negative = false;
 int16_t last_field_diff_lpf4 = 0;
 int16_t field_duration = 0;
+
+String msg_field_values = "";
+bool irq_flag = false;
+long irq_start_time = 0;
+bool step_demo_pattern = false;
 
 void setup() {
   pinMode(PIN_LED_RED, OUTPUT); 
@@ -115,6 +132,8 @@ void setup() {
   Serial.println("Ready");  
   pinMode(PIN_LED_BLU, OUTPUT);
   digitalWrite(PIN_LED_BLU, LOW);
+  pinMode(PIN_IRQ, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(PIN_IRQ), isrIRQ, FALLING);
 }
 
 void loop() {
@@ -124,24 +143,66 @@ void loop() {
     inputString = "";
   }
   if(read_field_detectors){
-	calculateTrigger(); // calculate the trigger
-    //if(++read_field_detectors_counter>10){
-    //  readTransmitterFieldDetectors(); 
-    //  read_field_detectors_counter = 0;
-    //}    
-    read_field_detectors = false;
-    if(++demo_pattern_counter>1000){
-      blue_toggle = !blue_toggle;
-      digitalWrite(PIN_LED_BLU, (blue_toggle)?(HIGH):(LOW));
-      if(++demo_pattern>2){
-        demo_pattern = 0;
-      }
-      setTransmitterLEDsTestPattern(demo_pattern);      
-      demo_pattern_counter = 0; // reset counter
-      //measureCurrentVoltage();
-      //printCurrentVoltage();
+	  //calculateTrigger(); // calculate the trigger
+    if(++read_field_detectors_counter>10){ // 10ms read
+      //msg_field_values = readTransmitterFieldDetectors();
+      //calculateTrigger(); // calculate the trigger      
+      read_field_detectors_counter = 0;
     }
-  }  
+    //measureCurrentVoltage();
+    //printCurrentVoltage();
+    read_field_detectors = false;
+  }
+  if(step_demo_pattern){    
+    blue_toggle = !blue_toggle;
+    digitalWrite(PIN_LED_BLU, (blue_toggle)?(HIGH):(LOW));
+    if(++demo_pattern>2){
+      demo_pattern = 0;
+    }
+    setTransmitterLEDsTestPattern(demo_pattern);
+    step_demo_pattern = false; // clear flag  
+  }
+  if(irq_flag){
+    long irq_stop_time = millis();
+    Serial.println("Trig"); // print trigger message
+    long start_time = millis();
+    msg_field_values = readTransmitterFieldDetectors();
+    long read_time = millis();
+    Serial.print("Fields ");
+    Serial.println(msg_field_values); // print field values
+    long stop_time = millis();
+    #define DO_PRINT_TIMES false
+    if(DO_PRINT_TIMES){
+      Serial.print("IRQ Time ");
+      Serial.print((irq_stop_time-irq_start_time));
+      Serial.print(" Read Time ");
+      Serial.print((read_time-start_time));
+      Serial.print(" Send time ");
+      Serial.println((stop_time-read_time));
+    }
+    irq_flag = 0; // clear flag
+  }
+}
+
+void isrIRQ(){
+  irq_flag = true; // set flag, handle in loop
+  irq_start_time = millis();
+}
+
+void setup_timer2(){ // setup timer2, compare A, 1ms interrupt
+  TCCR2A=(1<<WGM21);    //Set the CTC mode   
+  TCCR2B|=(1<<CS22);    //Set the prescale 1/64 clock, 16MHz/64 = 250kHz
+  OCR2A=0xFA;           //Value for 1ms, 250kHz/250 = 1kHz
+  TIMSK2|=(1<<OCIE2A);  //Set the interrupt request
+  sei();                //Enable interrupt
+}
+
+ISR(TIMER2_COMPA_vect){ // Handle Timer2 COMPA interrupt
+  //read_field_detectors = true; // set the flag, handle in loop
+  if(++demo_pattern_counter>1000){
+    step_demo_pattern = true; // set the flag, handle in loop
+    demo_pattern_counter = 0; // reset counter
+  }
 }
 
 void serialEvent(){
@@ -159,52 +220,72 @@ void serialEvent(){
 void calculateTrigger(void){
 	field_duration++; // increment duration
 	// 1. Read the field strength signal
-	field_signal = (int16_t)readTransmitterFieldDetector(1); // read first transmitter field strength
+	field_signal = (int16_t)readTransmitterFieldDetector(5)*4; // read first transmitter field strength
+	field_signal_lpf32 = (field_signal*8 - field_signal_lpf32)/32 + field_signal_lpf32;
 	// 2. Calculate signal low pass filter 2
 	field_signal_lpf2 = (field_signal - field_signal_lpf2)/2 + field_signal_lpf2;
 	// 3. Calculate signal low pass filter 4
 	field_signal_lpf4 = (field_signal - field_signal_lpf4)/4 + field_signal_lpf4;
 	// 4. Calculate difference of low pass 2 - 4
-	field_diff = field_signal_lpf2 - field_signal_lpf4;
+	field_diff = (field_signal_lpf2 - field_signal_lpf4)*4;
 	// 5. Calculate difference low pass filter 2
 	field_diff_lpf2 = (field_diff - field_diff_lpf2)/2 + field_diff_lpf2;
 	// 6. Calculate difference low pass filter 4
 	field_diff_lpf4 = (field_diff - field_diff_lpf4)/4 + field_diff_lpf4;
 	// 7. Calculate 2nd difference of low pass 2 - 4
-	field_diff2 = field_diff_lpf2 - field_diff_lpf4;
+	field_diff2 = (field_diff_lpf2 - field_diff_lpf4)*4;
 	// 8. Calculate 2nd difference low pass filter 2
 	field_diff2_lpf2 = (field_diff2 - field_diff2_lpf2)/2 + field_diff2_lpf2;
 	// 9. Calculate 2nd difference low pass filter 4
 	field_diff2_lpf4 = (field_diff2 - field_diff2_lpf4)/4 + field_diff2_lpf4;
 	// 10. Calculate 2nd difference positivity
-	field_diff2_positive = field_diff2_lpf4>0
+	field_diff2_positive = field_diff2_lpf4>0;
 	// 11. Calculate 2nd difference negativity
-	field_diff2_negative = field_diff2_lpf4<0
+	field_diff2_negative = field_diff2_lpf4<0;  
 	// 12. Calculate is minimum
 	bool is_positive = field_diff2_positive || last_field_diff2_positive;
-	bool is_minimum = (field_diff_lpf4 > 0) && (last_field_diff_lpf4 < 0) && is_positive;
+	bool is_minimum = (field_diff_lpf4 > 0) && (last_field_diff_lpf4 < -2) && is_positive;  
 	// 13. Calculate is maximum
 	bool is_negative = field_diff2_negative || last_field_diff2_negative;
-	bool is_maximum = (field_diff_lpf4 < 0) && (last_field_diff_lpf4 > 0) && is_positive;
-	
-	if(is_minimum && field_duration > 20){ // mask trigger if duration is not greater than 20ms
+	bool is_maximum = (field_diff_lpf4 < 0) && (last_field_diff_lpf4 > 2) && is_negative;  
+
+  // print min max triggers
+  #define DO_PRINT_MIN_MAX false
+	if(DO_PRINT_MIN_MAX && is_minimum && field_duration > 20){ // mask trigger if duration is not greater than 20ms
 		Serial.print("Min "); // print minimum trigger
 		Serial.print(field_signal_lpf4); // print the signal low pass 4 value
 		Serial.print(" "); // print a space
-		Serial.print(field_duration); // print duration (ms) since last trigger
+		Serial.println(field_duration); // print duration (ms) since last trigger
 		field_duration = 0; // clear duration
 	}
-	else if(is_maximum && field_duration > 20){ // mask trigger if duration is not greater than 20ms
+	else if(DO_PRINT_MIN_MAX && is_maximum && field_duration > 20){ // mask trigger if duration is not greater than 20ms
 		Serial.print("Max "); // print maximum trigger
 		Serial.print(field_signal_lpf4); // print the signal low pass 4 value
 		Serial.print(" "); // print a space
-		Serial.print(field_duration); // print duration (ms) since last trigger
+		Serial.println(field_duration); // print duration (ms) since last trigger
 		field_duration = 0; // clear duration
 	}
 	
 	last_field_diff2_positive = field_diff2_positive; // set last
 	last_field_diff2_negative = field_diff2_negative; // set last
 	last_field_diff_lpf4 = field_diff_lpf4; // set last
+
+  // debug signals with serial plotter
+  #define DO_PRINT_SERIAL_PLOTTER true
+  if(DO_PRINT_SERIAL_PLOTTER){
+    //Serial.print(field_signal);Serial.print(" ");
+    //Serial.print(field_signal_lpf2);Serial.print(" ");
+    //Serial.print(field_signal_lpf4/2);Serial.print(" ");
+    //Serial.print(field_signal_lpf32/16);Serial.print(" ");
+    //Serial.print(field_diff);Serial.print(" ");
+    //Serial.print(field_diff_lpf2);Serial.print(" ");
+    //Serial.print(field_diff_lpf4);Serial.print(" ");
+    Serial.print(field_diff_lpf4);Serial.print(" ");
+    Serial.print(field_diff2_lpf4);Serial.print(" ");
+    //Serial.print(is_positive?("1000"):("0"));Serial.print(" ");
+    Serial.print(is_minimum?("1000"):("0"));Serial.print(" ");
+    Serial.println(""); 
+  }
 }
 
 void handleMessage(String input_msg){
@@ -269,7 +350,7 @@ uint16_t readTransmitterFieldDetector(uint8_t ntx){
 	return val; // return the value
 }
 
-void readTransmitterFieldDetectors(){  
+String readTransmitterFieldDetectors(){  
   String msg_HSEN1 = "";//"HSEN1: ";
   String msg_HSEN2 = "";//"HSEN2: ";
   for(int addr = ADDRESS_TX1; addr<(ADDRESS_TX1+10); addr++){
@@ -292,8 +373,9 @@ void readTransmitterFieldDetectors(){
       msg_HSEN2 += String(val) + " ";
     }
   }
-  Serial.println(msg_HSEN1);
+  //Serial.println(msg_HSEN1);
   //Serial.println(msg_HSEN2);
+  return msg_HSEN1;
 }
 
 void setTransmitterLEDsTestPattern(uint8_t offset){
@@ -310,18 +392,6 @@ void setTransmitterLEDs(int addr, uint8_t leds){
   Wire.write(TX_REG_LEDS); // sends one byte
   Wire.write(leds); // sends one byte
   Wire.endTransmission(); // stop transmitting
-}
-
-void setup_timer2(){ // setup timer2, compare A, 1ms interrupt
-  TCCR2A=(1<<WGM21);    //Set the CTC mode   
-  TCCR2B|=(1<<CS22);    //Set the prescale 1/64 clock, 16MHz/64 = 250kHz
-  OCR2A=0xFA;           //Value for 1ms, 250kHz/250 = 1kHz
-  TIMSK2|=(1<<OCIE2A);  //Set the interrupt request
-  sei();                //Enable interrupt
-}
-
-ISR(TIMER2_COMPA_vect){ // Handle Timer2 COMPA interrupt
-  read_field_detectors = true; // set the flag, handle in loop
 }
 
 // measure current and voltage
